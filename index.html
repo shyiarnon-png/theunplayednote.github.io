@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Unplayed Note</title>
+  <meta name="description" content="What the news doesn't know about itself.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --ink: #1a1a18;
+      --ink-light: #4a4a44;
+      --ink-faint: #8a8a80;
+      --paper: #f7f5f0;
+      --paper-warm: #efecea;
+      --rule: #d4d0c8;
+      --accent: #8b6914;
+    }
+
+    html { font-size: 18px; scroll-behavior: smooth; }
+
+    body {
+      background: var(--paper);
+      color: var(--ink);
+      font-family: 'EB Garamond', Georgia, serif;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ── MASTHEAD ── */
+    .masthead {
+      border-bottom: 1px solid var(--ink);
+      padding: 2.5rem 0 1.8rem;
+      text-align: center;
+    }
+
+    .masthead-inner {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+
+    .publication-name {
+      font-family: 'EB Garamond', Georgia, serif;
+      font-size: clamp(1.9rem, 5vw, 2.8rem);
+      font-weight: 400;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--ink);
+      line-height: 1.1;
+    }
+
+    .tagline {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.72rem;
+      font-weight: 300;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--ink-faint);
+      margin-top: 0.6rem;
+    }
+
+    /* ── LANGUAGE NAV ── */
+    .lang-nav {
+      border-bottom: 1px solid var(--rule);
+      padding: 0.9rem 0;
+      text-align: center;
+    }
+
+    .lang-nav-inner {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 0 2rem;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    .lang-btn {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.68rem;
+      font-weight: 400;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--ink-faint);
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 0.2rem 0;
+      border-bottom: 1px solid transparent;
+      transition: color 0.2s, border-color 0.2s;
+    }
+
+    .lang-btn:hover,
+    .lang-btn.active {
+      color: var(--ink);
+      border-bottom-color: var(--ink);
+    }
+
+    /* ── ISSUE HEADER ── */
+    .issue-header {
+      max-width: 720px;
+      margin: 3.5rem auto 0;
+      padding: 0 2rem;
+      border-bottom: 1px solid var(--rule);
+      padding-bottom: 1.2rem;
+    }
+
+    .issue-label {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.65rem;
+      font-weight: 300;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--ink-faint);
+    }
+
+    /* ── ARTICLE LIST ── */
+    .articles {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 0 2rem 6rem;
+    }
+
+    .article-entry {
+      border-bottom: 1px solid var(--rule);
+      padding: 2.8rem 0;
+      cursor: pointer;
+    }
+
+    .article-entry:last-child {
+      border-bottom: none;
+    }
+
+    .article-source {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.62rem;
+      font-weight: 300;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 0.8rem;
+    }
+
+    .article-title {
+      font-size: clamp(1.4rem, 3.5vw, 1.9rem);
+      font-weight: 400;
+      line-height: 1.25;
+      color: var(--ink);
+      margin-bottom: 0.6rem;
+    }
+
+    .article-subtitle {
+      font-size: 1rem;
+      font-style: italic;
+      color: var(--ink-light);
+      line-height: 1.5;
+      margin-bottom: 1.2rem;
+    }
+
+    .article-lede {
+      font-size: 0.95rem;
+      color: var(--ink-light);
+      line-height: 1.65;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    .read-more {
+      display: inline-block;
+      margin-top: 1rem;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.65rem;
+      font-weight: 400;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--ink-faint);
+      border-bottom: 1px solid var(--rule);
+      padding-bottom: 1px;
+      transition: color 0.2s, border-color 0.2s;
+    }
+
+    .article-entry:hover .read-more {
+      color: var(--ink);
+      border-color: var(--ink);
+    }
+
+    /* ── ARTICLE READER ── */
+    .reader {
+      display: none;
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 0 2rem 6rem;
+    }
+
+    .reader.open { display: block; }
+
+    .back-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.65rem;
+      font-weight: 400;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--ink-faint);
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 2.5rem 0 2rem;
+      transition: color 0.2s;
+    }
+
+    .back-btn:hover { color: var(--ink); }
+    .back-btn::before { content: '←'; font-family: serif; font-size: 1rem; letter-spacing: 0; }
+
+    .reader-source {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.62rem;
+      font-weight: 300;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 1rem;
+    }
+
+    .reader-title {
+      font-size: clamp(1.8rem, 5vw, 2.6rem);
+      font-weight: 400;
+      line-height: 1.2;
+      margin-bottom: 0.8rem;
+    }
+
+    .reader-subtitle {
+      font-size: 1.1rem;
+      font-style: italic;
+      color: var(--ink-light);
+      line-height: 1.55;
+      margin-bottom: 2.5rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid var(--rule);
+    }
+
+    .reader-news-block {
+      font-size: 0.88rem;
+      font-family: 'Inter', sans-serif;
+      font-weight: 300;
+      color: var(--ink-light);
+      line-height: 1.75;
+      margin-bottom: 2.5rem;
+      padding: 1.5rem 1.8rem;
+      background: var(--paper-warm);
+      border-left: 2px solid var(--rule);
+    }
+
+    .reader-news-block .news-source-line {
+      font-size: 0.62rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--ink-faint);
+      margin-bottom: 0.8rem;
+    }
+
+    .reader-body {
+      font-size: 1.05rem;
+      line-height: 1.85;
+      color: var(--ink);
+    }
+
+    .reader-body p {
+      margin-bottom: 1.5rem;
+    }
+
+    .reader-body p:last-child {
+      margin-bottom: 0;
+    }
+
+    /* ── SUBSCRIPTION FOOTER ── */
+    .subscribe-footer {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+
+    .subscribe-block {
+      border-top: 1px solid var(--ink);
+      padding: 2.5rem 0;
+      text-align: center;
+    }
+
+    .subscribe-text {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.7rem;
+      font-weight: 300;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--ink-faint);
+      margin-bottom: 1.2rem;
+    }
+
+    .subscribe-form {
+      display: flex;
+      gap: 0;
+      max-width: 380px;
+      margin: 0 auto;
+    }
+
+    .subscribe-input {
+      flex: 1;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.85rem;
+      font-weight: 300;
+      padding: 0.7rem 1rem;
+      border: 1px solid var(--rule);
+      border-right: none;
+      background: white;
+      color: var(--ink);
+      outline: none;
+    }
+
+    .subscribe-input:focus {
+      border-color: var(--ink-light);
+    }
+
+    .subscribe-btn {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.62rem;
+      font-weight: 400;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      padding: 0.7rem 1.2rem;
+      background: var(--ink);
+      color: var(--paper);
+      border: 1px solid var(--ink);
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    .subscribe-btn:hover {
+      background: var(--ink-light);
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      border-top: 1px solid var(--rule);
+      padding: 2rem;
+      text-align: center;
+    }
+
+    footer p {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.62rem;
+      font-weight: 300;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--ink-faint);
+    }
+
+    /* ── COMING SOON LANG ── */
+    .coming-soon {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.65rem;
+      color: var(--ink-faint);
+      font-style: italic;
+      letter-spacing: 0;
+      text-transform: none;
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 600px) {
+      .subscribe-form { flex-direction: column; }
+      .subscribe-input { border-right: 1px solid var(--rule); border-bottom: none; }
+      .lang-nav-inner { gap: 1.2rem; flex-wrap: wrap; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- MASTHEAD -->
+  <header class="masthead">
+    <div class="masthead-inner">
+      <div class="publication-name">The Unplayed Note</div>
+      <div class="tagline">What the news doesn't know about itself</div>
+    </div>
+  </header>
+
+  <!-- LANGUAGE NAV -->
+  <nav class="lang-nav">
+    <div class="lang-nav-inner">
+      <button class="lang-btn active" onclick="setLang('en')">English</button>
+      <button class="lang-btn" onclick="setLang('fr')">Français <span class="coming-soon">(bientôt)</span></button>
+      <button class="lang-btn" onclick="setLang('es')">Español <span class="coming-soon">(próximamente)</span></button>
+      <button class="lang-btn" onclick="setLang('he')">עברית <span class="coming-soon">(בקרוב)</span></button>
+    </div>
+  </nav>
+
+  <!-- ARTICLE LIST VIEW -->
+  <div id="list-view">
+    <div class="issue-header">
+      <div class="issue-label">Issue №&thinsp;1 &nbsp;·&nbsp; 2026</div>
+    </div>
+
+    <div class="articles" id="article-list">
+      <!-- Articles rendered by JS -->
+    </div>
+
+    <div class="subscribe-footer">
+      <div class="subscribe-block">
+        <div class="subscribe-text">Receive each edition</div>
+        <form class="subscribe-form" onsubmit="handleSubscribe(event)">
+          <input class="subscribe-input" type="email" placeholder="your@email.com" required>
+          <button class="subscribe-btn" type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- ARTICLE READER VIEW -->
+  <div class="reader" id="reader-view">
+    <button class="back-btn" onclick="closeReader()">All articles</button>
+    <div id="reader-content"></div>
+  </div>
+
+  <footer>
+    <p>The Unplayed Note &nbsp;·&nbsp; Published anonymously</p>
+  </footer>
+
+<script>
+const articles = {
+  en: [
+    {
+      source: "Times of Israel · May 18, 2026",
+      tag: "Jewish World",
+      title: "A blessing was struck. It held.",
+      subtitle: "On the drone strike that hit Barakah — and what the name of a nuclear plant reveals about the one thing no weapon has ever successfully destroyed.",
+      lede: "In the early hours of Sunday morning, a drone struck a generator at the Barakah nuclear power plant in Abu Dhabi — the Arab world's first operational nuclear facility. No injuries. No radiological release.",
+      news: {
+        source: "Times of Israel · May 18, 2026",
+        text: "In the early hours of Sunday morning, a drone struck a generator at the Barakah nuclear power plant in Abu Dhabi — the Arab world's first operational nuclear facility. No injuries. No radiological release. A fire broke out, was contained. No one claimed responsibility. The UAE, Saudi Arabia, and the UN's nuclear watchdog condemned the attack. By morning, the world had moved on.\n\nOne detail went largely unreported. The plant is called Barakah. In Arabic: blessing."
+      },
+      body: [
+        "There is something language knows that politics doesn't.",
+        "Barakah in Arabic and bracha in Hebrew are the same word. Same Semitic root, same letters slightly rearranged, same meaning carried across two civilisations that have spent centuries telling each other they have nothing in common. Both words point to the same idea: not a static gift that you receive and store, but something living, something that overflows. The ancient Hebrew root breicha means a pool that exceeds its source — water that keeps coming, more than the container holds. A blessing is not a possession. It is a force.",
+        "And so: someone, on Sunday morning, sent a drone toward a blessing. The blessing held.",
+        "This is not a minor detail. In a part of the world where Abraham's descendants — all of them, across every border and every conflict — have been locked for so long in a story of mutual diminishment, the fact that a place named for the most fundamental concept in their shared spiritual vocabulary was struck and did not break carries a weight that no military briefing will capture. The Semitic world — Jewish, Arab, all of it — understands barakah in its bones. You can attack infrastructure. You can strike generators. You can, apparently, send a drone into the heart of the most sensitive facility in the Gulf.",
+        "But you cannot destroy a blessing. That is, at some level, what the word means. It is the thing that remains.",
+        "The fire went out. The structure stood. The morning came. And a plant called Barakah is still standing in the Abu Dhabi desert, producing energy for a civilisation that named it, without perhaps fully knowing why, after the one thing no weapon has ever successfully touched."
+      ]
+    },
+    {
+      source: "Folha de São Paulo / WHO · May 19, 2026",
+      tag: "The World",
+      title: "Eleven days.",
+      subtitle: "In the Ituri province of eastern Congo, health workers with no vaccine and no treatment faced an unknown killer. What they did next is older than medicine — and more precise.",
+      lede: "On May 5, health workers in Mongbwalu — a small town in the Ituri province of eastern Congo, near the Ugandan border — noticed something wrong. People were dying, including colleagues.",
+      news: {
+        source: "Folha de São Paulo / WHO · May 19, 2026",
+        text: "On May 5, health workers in Mongbwalu — a small town in the Ituri province of eastern Congo, near the Ugandan border — noticed something wrong. People were dying, including colleagues. The disease was unknown. They reported it.\n\nOn May 15, the National Institute of Biomedical Research in Kinshasa confirmed the cause: the Bundibugyo strain of the Ebola virus. On May 16, the WHO Director-General declared an international public health emergency. On May 19, the WHO Emergency Committee convened in Geneva.\n\nEleven days from a cluster of unexplained deaths in one of the most remote provinces on earth to a coordinated global response. No vaccine exists for this strain. No specific treatment. The only tool available at every step of that chain was the same: someone saw something, named it, and passed it on.\n\nOne hundred and thirty-one people have died. The epidemic is not over."
+      },
+      body: [
+        "But something else happened inside this story that the headline didn't say.",
+        "The 18th-century mystic known as the Baal Shem Tov — the founder of the Chassidic movement in Eastern Europe — taught that every process of genuine transformation moves through three stages. He called them submission, separation, and sweetening. Each one leads to the next. None can be skipped. And the third — the most mysterious — does not happen without the first two, but it also cannot happen by human effort alone.",
+        "The first stage is submission. Not defeat — recognition. The willingness to stop, look directly at what is there, and say: this is real. It is the hardest of the three, because every instinct in a frightened organism pushes toward denial. The health workers of Mongbwalu, watching their colleagues die of something without a name, chose otherwise. They did not negotiate with the reality in front of them. They received it — fully, without flinching — and they reported what they saw. That act, quiet and bureaucratic on the surface, was the first crack in the darkness.",
+        "The second stage is separation. Once you have stopped running from what is there, you can begin to distinguish — this from that, cause from symptom, what is known from what is not yet known. This is the ten days of laboratory work in Kinshasa: isolating the virus, identifying the strain, giving it a name. Bundibugyo. Not unknown anymore. The act of naming is never merely semantic. It is the moment at which undifferentiated fear acquires edges — and what has edges can be approached, contained, understood.",
+        "The third stage — sweetening — is where the story is still being written. This is the stage the Baal Shem Tov taught cannot be accomplished by human will alone. It requires a partner. But that partnership only becomes available to those who have completed the first two steps. Submission unlocks separation. Separation unlocks something beyond itself — a movement in which human effort and something larger begin to act together. At its most immediate, sweetening looks like containment: the epidemic not spreading beyond Ituri, Uganda, the known borders of the outbreak. At its furthest reach, it looks like a vaccine — the darkness of one hundred and thirty-one deaths converted, over years of research, into protection for millions not yet born.",
+        "Neither outcome is guaranteed. The tradition is honest about this. Sweetening is not automatic. It is a gift that becomes available — not before submission, not before separation, but after both. Mongbwalu submitted. Kinshasa separated. Geneva organised the conditions.",
+        "What happens next is not entirely in human hands. But it never was. What was in human hands — the recognition, the naming, the transmission — was done. In eleven days. In one of the poorest provinces on earth. By people with no vaccine and no treatment, armed only with the oldest instrument available to our species: the willingness to see what is there and say so.",
+        "That is how sweetening begins. Not with a cure. With a report filed in Mongbwalu on May 5th."
+      ]
+    },
+    {
+      source: "Ynet / Maariv · May 2026",
+      tag: "Jewish World",
+      title: "The cherry got there first.",
+      subtitle: "On a hillside above the Lebanese border, a farmer is picking fruit under rocket fire. His stress has nothing to do with the war.",
+      lede: "When the war broke out in October 2023, Yoni Yakobi didn't imagine he would be opening cherry season eighteen months later under fire. His farm sits at Margaliot — a moshav pressed against the Lebanese border.",
+      news: {
+        source: "Ynet / Maariv · May 2026",
+        text: "When the war broke out in October 2023, Yoni Yakobi didn't imagine he would be opening cherry season eighteen months later under fire. His farm sits at Margaliot — a moshav pressed against the Lebanese border, close enough that its houses are visible from the other side. Seven dunams of cherry trees. Three tons of fruit in a normal year.\n\nThis is not a normal year.\n\nIn January, when the trees needed to be sprayed and coaxed into their annual awakening, the army told him he couldn't enter his orchards. For a month, the trees waited without him. They woke late, incompletely, and the yield dropped. Then the foreign workers he depends on for the harvest didn't come: the government closed the skies, and the Thai labourers who pick cherries every spring across the Galilee couldn't get in.\n\nHe picks anyway. With whoever he can find. Under whatever conditions exist that morning.\n\n\"I work with so much stress,\" he said, \"that I don't even have the possibility of thinking about the situation.\""
+      },
+      body: [
+        "The cherries are ripening. The rockets are falling. And somewhere on a hillside above the Lebanese border, a man is reaching into a tree.",
+        "Read that sentence again. Slowly.",
+        "He is not saying: despite the war, I keep working. That would be a story about courage — a man pushing through difficulty, holding on against the odds. We know that story. It is a good story. It is not this one.",
+        "What Yoni Yakobi is saying is something structurally different. He is saying: the cherry is so present, so immediate, so real in its demands — the yield, the workers, the timing, the weight of each piece of fruit — that the war has not found a place to land. Not because the war isn't there. It is there. The rockets are audible from his orchard. But the cherry got there first.",
+        "This is the thing the headline cannot say about itself: the stress is not the war. The stress is the harvest. The war is the background. The cherry is the foreground. And in that inversion — quiet, unremarkable, reported almost as an aside — lies something that takes a lifetime to understand and almost no one manages to live.",
+        "The opposite of fear is not courage. Courage still knows the threat is primary. The opposite of fear — the real opposite, the structural opposite — is presence. The state in which something living is so fully occupying your attention that the threat, real as it is, cannot find the centre of the room. It finds the edges. It makes noise at the edges. But the centre belongs to the cherry.",
+        "The Chassidic tradition calls this tov — the good, the living, the generative — as the most fundamental layer of reality. Not more powerful than danger. Not safer. More real. The cherry tree does not know there is a war. It knows it is May. It knows the light is long and the ground is warm and the fruit is ready. And the man who tends it, in the act of tending it, enters for a moment into that knowledge.",
+        "He is not escaping the war. He is remembering, through his hands, what precedes it.",
+        "The rockets will fall or they won't. The yield will be low. The workers didn't come. The trees woke late. Everything that could go wrong has gone somewhat wrong — and the cherries are ripening anyway, on a hillside above Lebanon, in the hands of a man too busy with life to be consumed by its interruption.",
+        "That is not a detail. That is the whole story."
+      ]
+    },
+    {
+      source: "Times of Israel / JTA · May 28, 2026",
+      tag: "Jewish World",
+      title: "What the inspector tasted.",
+      subtitle: "The world's first kosher Michelin star was awarded in a Miami shopping center. The inspectors described the food as deeply rooted. They didn't know her name.",
+      lede: "Raz Shabtai started working in kitchens at thirteen. A dishwasher, in a Jerusalem restaurant. He worked every position available over the next three decades before crossing an ocean and opening a restaurant in a shopping center in North Miami.",
+      news: {
+        source: "Times of Israel / JTA · May 28, 2026",
+        text: "Raz Shabtai started working in kitchens at thirteen. A dishwasher, in a Jerusalem restaurant. He worked every position available over the next three decades — line cook, waiter, pizzeria, private chef — before crossing an ocean and opening a restaurant in a shopping center in North Miami.\n\nHe named it after his grandmother. She was born in Jerusalem. \"She taught me how to cook,\" he said. \"She taught me how to be a person, how to be a human.\"\n\nMutra opened fifteen months ago. Last Thursday, it became the first kosher restaurant in the world to receive a Michelin star. As confetti fell around him, Shabtai broke down in tears. The Michelin inspectors, who always eat anonymously, described the food as deeply rooted in Middle Eastern tradition.\n\nThey did not mention the grandmother. They didn't know about her.\n\n\"I missed home,\" Shabtai said. \"I decided to open this restaurant here. It was my selfish need.\""
+      },
+      body: [
+        "In Hebrew, the word for taste and the word for meaning are the same word.",
+        "Ta'am — טַעַם. What something tastes like and what it means are, at the deepest level, inseparable. You cannot fully receive a flavour without receiving what it carries. The Alter Rebbe writes in the Tanya that this is exactly why Torah is called food: the soul is built from what it absorbs with ta'am — with that interior contact between the one who receives and what is being received. Without it, the form passes through. The substance doesn't reach.",
+        "The Zohar says the manna in the desert carried every taste simultaneously. But each person found only the ta'am their soul was capable of receiving at that precise moment. Not the same for everyone. Not chosen by anyone. The flavour arrived according to what the soul, at that moment, was ready to hold.",
+        "A grandmother in Jerusalem cooked. A boy watched and absorbed — not a recipe, something prior to recipe. A knowledge that doesn't live in the mind first. It lives in the hands, in the timing, in the particular way a person stands at a stove when they have been shown how to stand there by someone who was shown before them, and before them, and before them.",
+        "Shabtai carried it across an ocean because he missed home. He didn't know what he was carrying. He thought he was bringing his grandmother's cooking to Miami. He was bringing something she had also received — in a chain of transmission so long and so quiet that no one standing inside it can see where it begins.",
+        "The Michelin inspectors arrived anonymously, ate, and reached for the only word available to them: deeply rooted. They were right. They tasted something real. They had no instrument to measure how real, or how far back the root goes.",
+        "They tasted ta'am. They tasted what each of them, at that precise moment, was capable of receiving."
+      ]
+    },
+    {
+      source: "Times of Israel · May 2026",
+      tag: "Jewish World",
+      title: "The statistic nobody is reading.",
+      subtitle: "Jerusalem ranked last in quality of life among Israeli cities. The data is accurate. The conclusion may not be.",
+      lede: "Jerusalem ranked last among major Israeli cities in the 2025 Central Bureau of Statistics quality-of-life index. The methodology was rigorous: income, employment, housing costs, infrastructure, access to services.",
+      news: {
+        source: "Times of Israel · May 2026",
+        text: "Jerusalem ranked last among major Israeli cities in the 2025 Central Bureau of Statistics quality-of-life index. The methodology was rigorous: income, employment, housing costs, infrastructure, access to services. On each metric, Jerusalem underperformed. The city placed below Beer Sheva. Below Ashdod. Below every coastal city measured.\n\nThe findings were reported matter-of-factly. The data is not disputed."
+      },
+      body: [
+        "The question the statistic cannot ask is: quality of what kind of life?",
+        "Every index is a set of choices. You choose what to count. You choose what counts as good. The CBS index counted income, employment, housing costs, infrastructure, access to services — the variables that measure a city's capacity to deliver the goods a modern economy promises. On those terms, Jerusalem underperforms. This is accurate.",
+        "But there is a prior question: whose definition of the good is built into the index?",
+        "The Hebrew word tov — usually translated as good — carries in the tradition a weight that the English word barely holds. It is not the good that satisfies a preference. It is not the good that scores well on a metric. It is the good that precedes the question of what you want, because it is the layer of reality out of which wanting itself emerges. The Kabbalists teach that tov is the first disclosure of Divinity into the world — not a moral judgment but an ontological fact. Not 'this is better than that' but 'this is real.'",
+        "Jerusalem is the city that gave tov its most concentrated address in human history. It is the place where the weight of that word has been carried the longest, across the most ruptures, at the highest cost. It is not cheap to live there. Not financially. Not existentially. Everything costs more in Jerusalem — the arguments, the silences, the competing claims, the sheer density of meaning pressing on every corner and every stone.",
+        "The index measured what it knows how to measure. It found a city that is expensive, underemployed, and poorly served by its infrastructure. It is right.",
+        "It did not find — because it had no instrument for this — a city that has been choosing, for three thousand years, to borrow from the future in order to remain at the centre of something it cannot fully name. A city that keeps accepting costs that no rational actor would accept, because the thing it is protecting is not on any index.",
+        "The statisticians ranked Jerusalem last. The people who live there, and stay, and keep choosing it against all reasonable alternatives, are holding a different accounting.",
+        "The discrepancy between those two numbers is not a problem to solve. It is a description of what tov actually costs."
+      ]
+    },
+    {
+      source: "ACS Nano · June 2026",
+      tag: "The World",
+      title: "They forgot what they were.",
+      subtitle: "A tumor's most sophisticated defense is not violence. It is persuasion. What undid it was older than medicine.",
+      lede: "Researchers at the Technion — Israel Institute of Technology — have developed nanoparticles capable of treating triple-negative breast cancer, one of the most aggressive and treatment-resistant forms of the disease, without chemotherapy.",
+      news: {
+        source: "ACS Nano · June 2026",
+        text: "Researchers at the Technion — Israel Institute of Technology — have developed nanoparticles capable of treating triple-negative breast cancer, one of the most aggressive and treatment-resistant forms of the disease, without chemotherapy. The approach does not target cancer cells directly. It targets macrophages — white blood cells whose original function is to find and destroy threats to the body — which tumors routinely recruit and convert into protectors of their own growth. The nanoparticles reprogramme these cells, restoring their original function. Results are ongoing in female mice. The study was published in ACS Nano."
+      },
+      body: [
+        "A tumor does not defeat its enemy. It converts it. Not by destroying the macrophage. Not by outfighting it. The macrophage is a sophisticated, evolved instrument of immune defense — a cell that carries, in every signal it knows how to read, millions of years of learning to identify and eliminate exactly what the tumor is. A direct confrontation would end badly for the cancer. So the cancer doesn't fight.",
+        "It persuades.",
+        "Through chemical signals, through the slow pressure of the tumor microenvironment, the macrophage is gradually redirected. It doesn't die. It doesn't defect in a single dramatic moment. It simply — incrementally, imperceptibly — stops doing what it was made to do, and begins doing the opposite. It walls the tumor in. It feeds it. It shields it from the very signals that might otherwise reach it from the outside. The macrophage doesn't know this is what is happening. It is responding, as it always has, to what it senses around it. It has simply forgotten what it was before it began sensing this.",
+        "The nanoparticle does not kill it for that.",
+        "It reminds it.",
+        "There is a concept in the tradition of return — not repentance in the penitential sense, not the drama of guilt and confession, but something more structural than that. The idea is this: a person who has moved away from their essential nature has not destroyed it. The nature remains. It is not buried under the deviation — it precedes the deviation, it underlies it, it is, in some sense, more real than everything that has accumulated on top of it. The return is therefore not a construction of something new. It is a recognition of something that was never actually lost.",
+        "The macrophage that has spent months defending a tumor has not become a tumor cell. It has not changed what it is at the level of what it is. The Technion's nanoparticle does not correct it. It does not reprogramme it from scratch. It removes, with extraordinary precision, the signals that had accumulated around its original function — and the original function reasserts itself. Not because the nanoparticle built something. Because the original was still there.",
+        "The word in the tradition is teshuva — return. It is the act of a soul — or, apparently, a cell — that has been displaced from its nature, remembering its nature, and moving back toward it. The Chassidic masters teach that teshuva reaches further than virtue ever could, precisely because it operates at a deeper level. It does not add something to what is there. It reveals what was never absent.",
+        "The cancer built its defense over months. The nanoparticle undoes it — not through force, but through a return of signal so precise that the macrophage needs only to hear it to remember what it already knew.",
+        "The body heals not because something foreign came in to fix it. The body heals because something inside it remembered what it was for.",
+        "That is a result still being measured in a laboratory. It is also a description of the oldest form of recovery available to anything alive."
+      ]
+    }
+  ]
+};
+
+let currentLang = 'en';
+
+function setLang(lang) {
+  currentLang = lang;
+  document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
+  event.target.closest('.lang-btn').classList.add('active');
+  
+  if (lang !== 'en') {
+    alert('This language edition is being prepared. Subscribe to receive it when it becomes available.');
+    return;
+  }
+  renderList();
+}
+
+function renderList() {
+  const list = document.getElementById('article-list');
+  const data = articles[currentLang] || articles['en'];
+  
+  list.innerHTML = data.map((a, i) => `
+    <div class="article-entry" onclick="openArticle(${i})">
+      <div class="article-source">${a.tag} &nbsp;·&nbsp; ${a.source}</div>
+      <h2 class="article-title">${a.title}</h2>
+      <p class="article-subtitle">${a.subtitle}</p>
+      <p class="article-lede">${a.lede}</p>
+      <span class="read-more">Read</span>
+    </div>
+  `).join('');
+}
+
+function openArticle(index) {
+  const data = articles[currentLang] || articles['en'];
+  const a = data[index];
+  
+  const bodyHTML = a.body.map(p => `<p>${p}</p>`).join('');
+  
+  document.getElementById('reader-content').innerHTML = `
+    <div class="reader-source">${a.tag} &nbsp;·&nbsp; ${a.source}</div>
+    <h1 class="reader-title">${a.title}</h1>
+    <p class="reader-subtitle">${a.subtitle}</p>
+    <div class="reader-news-block">
+      <div class="news-source-line">${a.news.source}</div>
+      ${a.news.text.split('\n\n').map(p => `<p style="margin-bottom:0.8rem">${p}</p>`).join('')}
+    </div>
+    <div class="reader-body">${bodyHTML}</div>
+  `;
+  
+  document.getElementById('list-view').style.display = 'none';
+  document.getElementById('reader-view').classList.add('open');
+  window.scrollTo(0, 0);
+}
+
+function closeReader() {
+  document.getElementById('reader-view').classList.remove('open');
+  document.getElementById('list-view').style.display = 'block';
+  window.scrollTo(0, 0);
+}
+
+function handleSubscribe(e) {
+  e.preventDefault();
+  const email = e.target.querySelector('input').value;
+  window.location.href = `https://theunplayednote.substack.com/subscribe?email=${encodeURIComponent(email)}`;
+}
+
+// Init
+renderList();
+</script>
+</body>
+</html>
