@@ -888,8 +888,9 @@ function renderList() {
   const data = articles[currentLang] || articles['en'];
   const ui = uiStrings[currentLang] || uiStrings['en'];
 
-  list.innerHTML = data.map((a, i) => `
-    <div class="article-entry" onclick="openArticle(${i})">
+  const reversed = [...data].reverse();
+  list.innerHTML = reversed.map((a, i) => `
+    <div class="article-entry" onclick="openArticle(${data.length - 1 - i})">
       <div class="article-source">${a.tag} &nbsp;·&nbsp; ${a.source}</div>
       <h2 class="article-title">${a.title}</h2>
       <p class="article-subtitle">${a.subtitle}</p>
