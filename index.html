@@ -678,6 +678,7 @@ const articles = {
         "A number that answers to no calendar but its own, that cannot be caught early by anything hunting on a shorter clock, that comes due at the exact moment it was always going to come due — measured the whole time, known the whole time, whether the field was being watched or not."
       ]
     }
+
   ],
   fr: [
     {
@@ -923,6 +924,7 @@ const articles = {
         "Un nombre qui ne répond à aucun calendrier que le sien, qui ne peut pas être devancé par quoi que ce soit chassant sur une horloge plus courte, qui arrive à terme au moment exact où il a toujours été sur le point d'arriver — mesuré tout le temps, connu tout le temps, que le champ soit observé ou non."
       ]
     }
+
   ],
   es: [
     {
@@ -1168,14 +1170,15 @@ const articles = {
         "Un número que no responde a ningún calendario más que al suyo, que no puede ser atrapado antes de tiempo por nada que cace en un reloj más corto, que vence en el momento exacto en que siempre iba a vencer — medido todo el tiempo, conocido todo el tiempo, tanto si el campo estaba siendo observado como si no."
       ]
     }
+
   ]
 };
 
 const uiStrings = {
-  en: { issueLabel: 'Issue №\u20091 · 2026', readMore: 'Read', backBtn: 'All articles', subscribeText: 'Receive each edition', subscribePlaceholder: 'your@email.com', tagline: "What the news doesn't know about itself" },
-  fr: { issueLabel: 'Numéro №\u20091 · 2026', readMore: 'Lire', backBtn: 'Tous les articles', subscribeText: 'Recevoir chaque édition', subscribePlaceholder: 'votre@email.com', tagline: "Ce que l'actualité ne sait pas d'elle-même" },
-  es: { issueLabel: 'Número №\u20091 · 2026', readMore: 'Leer', backBtn: 'Todos los artículos', subscribeText: 'Recibir cada edición', subscribePlaceholder: 'tu@email.com', tagline: "Lo que las noticias no saben de sí mismas" },
-  he: { issueLabel: 'גיליון №\u20091 · 2026', readMore: 'קרא', backBtn: 'כל המאמרים', subscribeText: 'קבל כל גיליון', subscribePlaceholder: 'האימייל שלך', tagline: "מה שהחדשות אינן יודעות על עצמן" }
+  en: { issueLabel: 'Issue №\u20091 · 2026', readMore: 'Read', backBtn: 'All articles', subscribeText: 'Receive each edition', subscribePlaceholder: 'your@email.com', tagline: "What the news doesn't know about itself", subscribeBtn: 'Subscribe' },
+  fr: { issueLabel: 'Numéro №\u20091 · 2026', readMore: 'Lire', backBtn: 'Tous les articles', subscribeText: 'Recevoir chaque édition', subscribePlaceholder: 'votre@email.com', tagline: "Ce que l'actualité ne sait pas d'elle-même", subscribeBtn: "S'abonner" },
+  es: { issueLabel: 'Número №\u20091 · 2026', readMore: 'Leer', backBtn: 'Todos los artículos', subscribeText: 'Recibir cada edición', subscribePlaceholder: 'tu@email.com', tagline: "Lo que las noticias no saben de sí mismas", subscribeBtn: 'Suscribirse' },
+  he: { issueLabel: 'גיליון №\u20091 · 2026', readMore: 'קרא', backBtn: 'כל המאמרים', subscribeText: 'קבל כל גיליון', subscribePlaceholder: 'האימייל שלך', tagline: "מה שהחדשות אינן יודעות על עצמן", subscribeBtn: 'הרשמה' }
 };
 
 let currentLang = 'en';
@@ -1224,6 +1227,8 @@ function openArticle(index) {
   const ui = uiStrings[currentLang] || uiStrings['en'];
   const a = data[index];
 
+  window.location.hash = `${currentLang}/${index}`;
+
   const bodyHTML = a.body.map(p => `<p>${p}</p>`).join('');
 
   document.getElementById('reader-content').innerHTML = `
@@ -1235,6 +1240,15 @@ function openArticle(index) {
       ${a.news.text.split('\n\n').map(p => `<p style="margin-bottom:0.8rem">${p}</p>`).join('')}
     </div>
     <div class="reader-body">${bodyHTML}</div>
+    <div class="subscribe-footer" style="margin-top:3rem;">
+      <div class="subscribe-block">
+        <div class="subscribe-text">${ui.subscribeText}</div>
+        <form class="subscribe-form" onsubmit="handleSubscribe(event)">
+          <input class="subscribe-input" type="email" placeholder="${ui.subscribePlaceholder}" required>
+          <button class="subscribe-btn" type="submit">${ui.subscribeBtn}</button>
+        </form>
+      </div>
+    </div>
   `;
 
   document.querySelector('.back-btn').textContent = '← ' + ui.backBtn;
@@ -1255,8 +1269,21 @@ function handleSubscribe(e) {
   window.location.href = `https://theunplayednote.substack.com/subscribe?email=${encodeURIComponent(email)}`;
 }
 
+function parseHashAndOpen() {
+  const hash = window.location.hash.slice(1); // ex: "en/8"
+  if (!hash) return;
+  const [lang, idxStr] = hash.split('/');
+  const idx = parseInt(idxStr, 10);
+  if (articles[lang] && !isNaN(idx) && articles[lang][idx]) {
+    currentLang = lang;
+    renderList();
+    openArticle(idx);
+  }
+}
+
 // Init
 renderList();
+parseHashAndOpen();
 </script>
 <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "6f4ad3eb27b94b4e92f2f1d16346bb41"}'></script><!-- End Cloudflare Web Analytics -->
 </body>
