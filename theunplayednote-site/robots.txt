@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://theunplayednote.com/sitemap.xml

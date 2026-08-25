@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Le mauvais jour. — The Unplayed Note</title>
+  <meta name="description" content="Une communauté près de la mer Morte utilisait un calendrier qu'elle savait erroné. Une étude publiée ce mois-ci explique ce qu'elle préservait réellement.">
+  <link rel="canonical" href="https://theunplayednote.com/fr/le-mauvais-jour/">
+  <link rel="alternate" hreflang="en" href="https://theunplayednote.com/en/the-wrong-day/">
+  <link rel="alternate" hreflang="fr" href="https://theunplayednote.com/fr/le-mauvais-jour/">
+  <link rel="alternate" hreflang="es" href="https://theunplayednote.com/es/el-dia-equivocado/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+  <style>
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --ink: #1a1a18;
+      --ink-light: #4a4a44;
+      --ink-faint: #8a8a80;
+      --paper: #f7f5f0;
+      --paper-warm: #efecea;
+      --rule: #d4d0c8;
+      --accent: #8b6914;
+    }
+
+    html { font-size: 18px; scroll-behavior: smooth; }
+
+    body {
+      background: var(--paper);
+      color: var(--ink);
+      font-family: 'EB Garamond', Georgia, serif;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ── MASTHEAD ── */
+    .masthead {
+      border-bottom: 1px solid var(--ink);
+      padding: 2.5rem 0 1.8rem;
+      text-align: center;
+    }
+
+    .masthead-inner {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+
+    .publication-name {
+      font-family: 'EB Garamond', Georgia, serif;
+      font-size: clamp(1.9rem, 5vw, 2.8rem);
+      font-weight: 400;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--ink);
+      line-height: 1.1;
+    }
+
+    .tagline {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.72rem;
+      font-weight: 300;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--ink-faint);
+      margin-top: 0.6rem;
+    }
+
+    /* ── LANGUAGE NAV ── */
+    .lang-nav {
+      border-bottom: 1px solid var(--rule);
+      padding: 0.9rem 0;
+      text-align: center;
+    }
+
+    .lang-nav-inner {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 0 2rem;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    .lang-btn {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.68rem;
+      font-weight: 400;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--ink-faint);
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 0.2rem 0;
+      border-bottom: 1px solid transparent;
+      transition: color 0.2s, border-color 0.2s;
+    }
+
+    .lang-btn:hover,
+    .lang-btn.active {
+      color: var(--ink);
+      border-bottom-color: var(--ink);
+    }
+
+    /* ── ISSUE HEADER ── */
+    .issue-header {
+      max-width: 720px;
+      margin: 3.5rem auto 0;
+      padding: 0 2rem;
+      border-bottom: 1px solid var(--rule);
+      padding-bottom: 1.2rem;
+    }
+
+    .issue-label {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.65rem;
+      font-weight: 300;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--ink-faint);
+    }
+
+    .mission-statement {
+      font-family: 'EB Garamond', Georgia, serif;
+      font-style: italic;
+      font-size: 1rem;
+      line-height: 1.6;
+      color: var(--ink-light);
+      max-width: 480px;
+      margin: 0.9rem auto 0;
+    }
+
+    /* ── ARTICLE LIST ── */
+    .articles {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 0 2rem 6rem;
+    }
+
+    .article-entry {
+      border-bottom: 1px solid var(--rule);
+      padding: 2.8rem 0;
+      cursor: pointer;
+    }
+
+    .article-entry:last-child {
+      border-bottom: none;
+    }
+
+    .article-source {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.62rem;
+      font-weight: 300;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 0.8rem;
+    }
+
+    .article-title {
+      font-size: clamp(1.4rem, 3.5vw, 1.9rem);
+      font-weight: 400;
+      line-height: 1.25;
+      color: var(--ink);
+      margin-bottom: 0.6rem;
+    }
+
+    .article-subtitle {
+      font-size: 1rem;
+      font-style: italic;
+      color: var(--ink-light);
+      line-height: 1.5;
+      margin-bottom: 1.2rem;
+    }
+
+    .article-lede {
+      font-size: 0.95rem;
+      color: var(--ink-light);
+      line-height: 1.65;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    .read-more {
+      display: inline-block;
+      margin-top: 1rem;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.65rem;
+      font-weight: 400;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--ink-faint);
+      border-bottom: 1px solid var(--rule);
+      padding-bottom: 1px;
+      transition: color 0.2s, border-color 0.2s;
+    }
+
+    .article-entry:hover .read-more {
+      color: var(--ink);
+      border-color: var(--ink);
+    }
+
+    /* ── ARTICLE READER ── */
+    .reader {
+      display: none;
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 0 2rem 6rem;
+    }
+
+    .reader.open { display: block; }
+
+    .back-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.65rem;
+      font-weight: 400;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--ink-faint);
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 2.5rem 0 2rem;
+      transition: color 0.2s;
+    }
+
+    .back-btn:hover { color: var(--ink); }
+    .back-btn::before { content: '←'; font-family: serif; font-size: 1rem; letter-spacing: 0; }
+
+    .reader-ornament {
+      margin: 0 0 2.2rem;
+    }
+
+    .reader-ornament svg {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    .reader-source {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.62rem;
+      font-weight: 300;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 1rem;
+    }
+
+    .reader-title {
+      font-size: clamp(1.8rem, 5vw, 2.6rem);
+      font-weight: 400;
+      line-height: 1.2;
+      margin-bottom: 0.8rem;
+    }
+
+    .reader-subtitle {
+      font-size: 1.1rem;
+      font-style: italic;
+      color: var(--ink-light);
+      line-height: 1.55;
+      margin-bottom: 2.5rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid var(--rule);
+    }
+
+    .reader-news-block {
+      font-size: 0.88rem;
+      font-family: 'Inter', sans-serif;
+      font-weight: 300;
+      color: var(--ink-light);
+      line-height: 1.75;
+      margin-bottom: 2.5rem;
+      padding: 1.5rem 1.8rem;
+      background: var(--paper-warm);
+      border-left: 2px solid var(--rule);
+    }
+
+    .reader-news-block .news-source-line {
+      font-size: 0.62rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--ink-faint);
+      margin-bottom: 0.8rem;
+    }
+
+    .reader-body {
+      font-size: 1.05rem;
+      line-height: 1.85;
+      color: var(--ink);
+    }
+
+    .reader-body p {
+      margin-bottom: 1.5rem;
+    }
+
+    .reader-body p:last-child {
+      margin-bottom: 0;
+    }
+
+    /* ── SUBSCRIPTION FOOTER ── */
+    .subscribe-footer {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+
+    .subscribe-block {
+      border-top: 1px solid var(--ink);
+      padding: 2.5rem 0;
+      text-align: center;
+    }
+
+    .subscribe-text {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.7rem;
+      font-weight: 300;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--ink-faint);
+      margin-bottom: 1.2rem;
+    }
+
+    .subscribe-form {
+      display: flex;
+      gap: 0;
+      max-width: 380px;
+      margin: 0 auto;
+    }
+
+    .subscribe-input {
+      flex: 1;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.85rem;
+      font-weight: 300;
+      padding: 0.7rem 1rem;
+      border: 1px solid var(--rule);
+      border-right: none;
+      background: white;
+      color: var(--ink);
+      outline: none;
+    }
+
+    .subscribe-input:focus {
+      border-color: var(--ink-light);
+    }
+
+    .subscribe-btn {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.62rem;
+      font-weight: 400;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      padding: 0.7rem 1.2rem;
+      background: var(--ink);
+      color: var(--paper);
+      border: 1px solid var(--ink);
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    .subscribe-btn:hover {
+      background: var(--ink-light);
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      border-top: 1px solid var(--rule);
+      padding: 2rem;
+      text-align: center;
+    }
+
+    footer p {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.62rem;
+      font-weight: 300;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--ink-faint);
+    }
+
+    /* ── COMING SOON LANG ── */
+    .coming-soon {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.65rem;
+      color: var(--ink-faint);
+      font-style: italic;
+      letter-spacing: 0;
+      text-transform: none;
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 600px) {
+      .subscribe-form { flex-direction: column; }
+      .subscribe-input { border-right: 1px solid var(--rule); border-bottom: none; }
+      .lang-nav-inner { gap: 1.2rem; flex-wrap: wrap; }
+    }
+  
+    .article-pager {
+      max-width: 720px;
+      margin: 3rem auto 0;
+      padding: 2rem 2rem 0;
+      border-top: 1px solid var(--rule);
+      display: flex;
+      justify-content: space-between;
+      gap: 1.5rem;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.78rem;
+      color: var(--ink-light);
+    }
+    .pager-link { color: var(--ink-light); text-decoration: none; max-width: 46%; }
+    .pager-link:hover { color: var(--ink); }
+    .pager-next { text-align: right; margin-left: auto; }
+  </style>
+</head>
+<body>
+
+  <!-- MASTHEAD -->
+  <header class="masthead">
+    <div class="masthead-inner">
+      <a href="/fr/" style="text-decoration:none; color:inherit;">
+        <div class="publication-name">The Unplayed Note</div>
+      </a>
+      <div class="tagline">Ce que l'actualité ne sait pas d'elle-même</div>
+    </div>
+  </header>
+
+  <!-- LANGUAGE NAV -->
+  <nav class="lang-nav">
+    <div class="lang-nav-inner">
+      <a class="lang-btn" href="/en/the-wrong-day/">English</a>
+      <a class="lang-btn active" href="/fr/le-mauvais-jour/">Français</a>
+      <a class="lang-btn" href="/es/el-dia-equivocado/">Español</a>
+    </div>
+  </nav>
+
+  <div class="reader open" style="display:block;">
+    <a class="back-btn" href="/fr/">Tous les articles</a>
+    <div id="reader-content">
+      <div class="reader-ornament">
+<svg viewBox="0 0 680 130" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
+  <g stroke="var(--ink)" stroke-width="0.5" opacity="0.5">
+    <line x1="90" y1="52" x2="590" y2="52"/>
+    <line x1="90" y1="64" x2="590" y2="64"/>
+    <line x1="90" y1="76" x2="590" y2="76"/>
+    <line x1="90" y1="88" x2="590" y2="88"/>
+    <line x1="90" y1="100" x2="590" y2="100"/>
+  </g>
+  <g fill="var(--ink)">
+    <ellipse cx="150" cy="82" rx="6.5" ry="5" transform="rotate(-18 150 82)"/>
+    <line x1="156" y1="78" x2="156" y2="42" stroke="var(--ink)" stroke-width="1.2"/>
+    <ellipse cx="195" cy="70" rx="6.5" ry="5" transform="rotate(-18 195 70)"/>
+    <line x1="201" y1="66" x2="201" y2="34" stroke="var(--ink)" stroke-width="1.2"/>
+  </g>
+  <g stroke="var(--accent)" stroke-width="1.3" fill="none">
+    <line x1="322" y1="61" x2="358" y2="61"/>
+    <line x1="322" y1="69" x2="358" y2="69"/>
+  </g>
+  <g fill="var(--ink)">
+    <ellipse cx="470" cy="76" rx="6.5" ry="5" transform="rotate(-18 470 76)"/>
+    <line x1="476" y1="72" x2="476" y2="38" stroke="var(--ink)" stroke-width="1.2"/>
+    <ellipse cx="515" cy="94" rx="6.5" ry="5" transform="rotate(-18 515 94)"/>
+    <line x1="521" y1="90" x2="521" y2="58" stroke="var(--ink)" stroke-width="1.2"/>
+  </g>
+</svg></div>
+      <div class="reader-source">Le monde &nbsp;&middot;&nbsp; Times of Israel / Tarbiz · Juillet 2026</div>
+      <h1 class="reader-title">Le mauvais jour.</h1>
+      <p class="reader-subtitle">Une communauté près de la mer Morte utilisait un calendrier qu'elle savait erroné. Une étude publiée ce mois-ci explique ce qu'elle préservait réellement.</p>
+      <div class="reader-news-block">
+        <div class="news-source-line">Times of Israel / Tarbiz · Juillet 2026</div>
+      <p style="margin-bottom:0.8rem">Une étude publiée en juillet 2026 dans Tarbiz, une revue trimestrielle d'études juives, par le professeur Eshbal Ratzon de l'Université de Tel Aviv, propose une nouvelle lecture du conflit calendaire qui a défini — et finalement détruit — la communauté de Qumran. La secte, qui vivait près de la mer Morte depuis le milieu du IIe siècle avant notre ère jusqu'à ce que les forces romaines détruisent le site en 68 de notre ère, utilisait un calendrier de 364 jours plutôt que le calendrier lunaire observé à Jérusalem. Près de vingt des rouleaux récupérés à Qumran concernent les calendriers et l'astronomie — une proportion exceptionnelle qui atteste de l'importance des enjeux. Le calendrier de 364 jours, croyait la communauté, était le calendrier original reçu par Moïse au Sinaï, l'ordre établi par Dieu à la Création. Il était aussi, mathématiquement, erroné : il était inférieur à l'année solaire réelle d'un quart de jour par an, un écart qui aurait décalé les fêtes de la communauté de manière significative par rapport aux saisons en quelques décennies. La secte le savait. Parmi les textes récupérés à Qumran, l'un raconte comment un chef de la communauté a tenté d'observer Yom Kippour à une date entièrement différente de celle observée à Jérusalem — et a été menacé d'exil pour cela. La communauté a finalement abandonné le calendrier en pratique, l'adoptant à la place comme idéal théorique : parfait au moment de la Création, et peut-être à nouveau à la fin des temps. Dans l'intervalle, ils utilisaient le calendrier lunaire comme tout le monde.</p>
+      </div>
+      <div class="reader-body">
+      <p>Ce que la secte défendait n'était pas une affirmation astronomique. Elle savait que son calendrier dérivait. La question était de savoir à quoi sert un calendrier.</p>
+      <p>Le calendrier lunaire suit le ciel — mais pas automatiquement. Dans la tradition que la secte rejetait, le nouveau mois ne pouvait commencer qu'après que deux témoins avaient vu la nouvelle lune et témoigné devant un tribunal rabbinique. Le tribunal déclarait alors le mois. Dieu, en un sens, attendait. La sainteté de la fête ne descendait pas tant que des êtres humains n'avaient pas regardé, vu et parlé. Ce n'est pas un détail bureaucratique. C'est l'architecture de la chose : le temps sacré, dans cette conception, n'est pas donné d'en haut et reçu passivement d'en bas. Il est produit en partenariat. Les cieux fournissent la lune. Les témoins fournissent le témoignage. Le tribunal fournit la déclaration. La fête arrive quand les trois ont fait leur part.</p>
+      <p>Le calendrier de 364 jours refuse ce partenariat. Il compte à partir d'un point fixe — la Création — et n'exige rien de personne. Pas de témoins. Pas de tribunal. Pas de déclaration. Les fêtes tombent quand elles tombent, déterminées une fois pour toutes, au début, indépendamment de ce qu'un être humain voit ou dit. C'est un calendrier qui a déjà été complété. Le temps, dans cette vision, coule d'en haut et ne demande rien à ce qui est en bas.</p>
+      <p>Ce que la secte a gagné avec cela, c'était la pureté. Ce qu'elle a perdu, c'était ce que la tradition considérait comme essentiel : que la sainteté du temps est en partie une responsabilité humaine. Les rabbins enseignaient — et ce n'est pas une métaphore — que si le tribunal déclarait le nouveau mois le mauvais jour, par erreur ou même sous la contrainte, les fêtes observées sur cette base étaient néanmoins valides. L'erreur était réelle. La déclaration était plus réelle.</p>
+      <p>Il y a une histoire dans le Talmud où les sages débattent d'un point de loi, et une voix descend du ciel pour trancher la question — et l'un des sages se lève et dit : nous n'écoutons pas une voix du ciel. La Torah a été donnée au Sinaï. Elle n'est plus dans le ciel. Elle est ici, dans nos mains, à lire par nos yeux et à décider par nos tribunaux, même quand nous avons tort. Le texte rapporte que Dieu a ri et dit : mes enfants m'ont vaincu.</p>
+      <p>Le calendrier que la secte rejetait était construit sur exactement ce principe. Non pas une Torah qui descend complète et ne demande qu'obéissance. Une Torah qui a été donnée pour être portée — interprétée, déclarée, débattue, décidée par des bouches et des yeux et des tribunaux qui peuvent se tromper. Le calendrier lunaire avec ses témoins n'est pas une concession à la limitation humaine. C'est la forme que prend le partenariat. La lune est réelle. Les témoins sont nécessaires. La déclaration n'est pas un substitut au temps divin. C'est ainsi que le temps divin arrive dans un monde qui a été invité à le compléter.</p>
+      <p>La secte de Qumran ne pouvait pas accepter cela. Elle voulait un calendrier qui n'avait pas besoin d'elle — qui était vrai avant son arrivée et le resterait après sa disparition. Elle a eu ce qu'elle voulait. Son calendrier lui a survécu en tant que concept, préservé dans les rouleaux, attendant la fin des temps où l'ordre original revient et où le partenariat n'est plus nécessaire.</p>
+      <p>Deux hommes, le même matin. L'un jeûnant. L'autre non. Chacun certain que l'autre avait manqué le jour.</p>
+      <p>La tradition n'a pas choisi entre eux sur des bases astronomiques. Elle a choisi sur des bases entièrement différentes : qu'avoir raison seul n'est pas la même chose qu'avoir raison ensemble, et que la version de la vérité qui n'a besoin de personne d'autre pour la voir est, en fin de compte, une vérité dont le monde ne peut rien faire.</p>
+      <p>La secte voulait un calendrier parfait. La tradition voulait de la compagnie.</p>
+      </div>
+    </div>
+  </div>
+
+    <nav class="article-pager">
+      <a href="/fr/le-sable-la-su-en-premier/" class="pager-link pager-prev">&larr; Le sable l'a su en premier.</a>
+      <a href="/fr/ce-que-la-grotte-a-garde/" class="pager-link pager-next">Ce que la grotte a gardé. &rarr;</a>
+    </nav>
+
+  <div class="subscribe-footer" style="margin-top:3rem;">
+    <div class="subscribe-block">
+      <div class="subscribe-text">Recevoir chaque édition</div>
+      <a class="subscribe-btn" style="display:inline-block; text-decoration:none; padding:0.7rem 1.4rem;"
+         href="https://theunplayednote.substack.com/subscribe">S'abonner</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>The Unplayed Note &nbsp;&middot;&nbsp; An independent publication</p>
+  </footer>
+
+</body>
+</html>

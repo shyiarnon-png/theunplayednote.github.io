@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lo que guardó la cueva. — The Unplayed Note</title>
+  <meta name="description" content="En mayo de 2026, una canción compuesta por un niño en un gueto ucraniano fue interpretada por primera vez — en Shanghái. Había estado en la oscuridad durante ochenta años. No estaba esperando.">
+  <link rel="canonical" href="https://theunplayednote.com/es/lo-que-guardo-la-cueva/">
+  <link rel="alternate" hreflang="en" href="https://theunplayednote.com/en/what-the-cave-kept/">
+  <link rel="alternate" hreflang="fr" href="https://theunplayednote.com/fr/ce-que-la-grotte-a-garde/">
+  <link rel="alternate" hreflang="es" href="https://theunplayednote.com/es/lo-que-guardo-la-cueva/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+  <style>
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --ink: #1a1a18;
+      --ink-light: #4a4a44;
+      --ink-faint: #8a8a80;
+      --paper: #f7f5f0;
+      --paper-warm: #efecea;
+      --rule: #d4d0c8;
+      --accent: #8b6914;
+    }
+
+    html { font-size: 18px; scroll-behavior: smooth; }
+
+    body {
+      background: var(--paper);
+      color: var(--ink);
+      font-family: 'EB Garamond', Georgia, serif;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ── MASTHEAD ── */
+    .masthead {
+      border-bottom: 1px solid var(--ink);
+      padding: 2.5rem 0 1.8rem;
+      text-align: center;
+    }
+
+    .masthead-inner {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+
+    .publication-name {
+      font-family: 'EB Garamond', Georgia, serif;
+      font-size: clamp(1.9rem, 5vw, 2.8rem);
+      font-weight: 400;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--ink);
+      line-height: 1.1;
+    }
+
+    .tagline {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.72rem;
+      font-weight: 300;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--ink-faint);
+      margin-top: 0.6rem;
+    }
+
+    /* ── LANGUAGE NAV ── */
+    .lang-nav {
+      border-bottom: 1px solid var(--rule);
+      padding: 0.9rem 0;
+      text-align: center;
+    }
+
+    .lang-nav-inner {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 0 2rem;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    .lang-btn {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.68rem;
+      font-weight: 400;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--ink-faint);
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 0.2rem 0;
+      border-bottom: 1px solid transparent;
+      transition: color 0.2s, border-color 0.2s;
+    }
+
+    .lang-btn:hover,
+    .lang-btn.active {
+      color: var(--ink);
+      border-bottom-color: var(--ink);
+    }
+
+    /* ── ISSUE HEADER ── */
+    .issue-header {
+      max-width: 720px;
+      margin: 3.5rem auto 0;
+      padding: 0 2rem;
+      border-bottom: 1px solid var(--rule);
+      padding-bottom: 1.2rem;
+    }
+
+    .issue-label {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.65rem;
+      font-weight: 300;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--ink-faint);
+    }
+
+    .mission-statement {
+      font-family: 'EB Garamond', Georgia, serif;
+      font-style: italic;
+      font-size: 1rem;
+      line-height: 1.6;
+      color: var(--ink-light);
+      max-width: 480px;
+      margin: 0.9rem auto 0;
+    }
+
+    /* ── ARTICLE LIST ── */
+    .articles {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 0 2rem 6rem;
+    }
+
+    .article-entry {
+      border-bottom: 1px solid var(--rule);
+      padding: 2.8rem 0;
+      cursor: pointer;
+    }
+
+    .article-entry:last-child {
+      border-bottom: none;
+    }
+
+    .article-source {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.62rem;
+      font-weight: 300;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 0.8rem;
+    }
+
+    .article-title {
+      font-size: clamp(1.4rem, 3.5vw, 1.9rem);
+      font-weight: 400;
+      line-height: 1.25;
+      color: var(--ink);
+      margin-bottom: 0.6rem;
+    }
+
+    .article-subtitle {
+      font-size: 1rem;
+      font-style: italic;
+      color: var(--ink-light);
+      line-height: 1.5;
+      margin-bottom: 1.2rem;
+    }
+
+    .article-lede {
+      font-size: 0.95rem;
+      color: var(--ink-light);
+      line-height: 1.65;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    .read-more {
+      display: inline-block;
+      margin-top: 1rem;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.65rem;
+      font-weight: 400;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--ink-faint);
+      border-bottom: 1px solid var(--rule);
+      padding-bottom: 1px;
+      transition: color 0.2s, border-color 0.2s;
+    }
+
+    .article-entry:hover .read-more {
+      color: var(--ink);
+      border-color: var(--ink);
+    }
+
+    /* ── ARTICLE READER ── */
+    .reader {
+      display: none;
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 0 2rem 6rem;
+    }
+
+    .reader.open { display: block; }
+
+    .back-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.65rem;
+      font-weight: 400;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--ink-faint);
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 2.5rem 0 2rem;
+      transition: color 0.2s;
+    }
+
+    .back-btn:hover { color: var(--ink); }
+    .back-btn::before { content: '←'; font-family: serif; font-size: 1rem; letter-spacing: 0; }
+
+    .reader-ornament {
+      margin: 0 0 2.2rem;
+    }
+
+    .reader-ornament svg {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    .reader-source {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.62rem;
+      font-weight: 300;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 1rem;
+    }
+
+    .reader-title {
+      font-size: clamp(1.8rem, 5vw, 2.6rem);
+      font-weight: 400;
+      line-height: 1.2;
+      margin-bottom: 0.8rem;
+    }
+
+    .reader-subtitle {
+      font-size: 1.1rem;
+      font-style: italic;
+      color: var(--ink-light);
+      line-height: 1.55;
+      margin-bottom: 2.5rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid var(--rule);
+    }
+
+    .reader-news-block {
+      font-size: 0.88rem;
+      font-family: 'Inter', sans-serif;
+      font-weight: 300;
+      color: var(--ink-light);
+      line-height: 1.75;
+      margin-bottom: 2.5rem;
+      padding: 1.5rem 1.8rem;
+      background: var(--paper-warm);
+      border-left: 2px solid var(--rule);
+    }
+
+    .reader-news-block .news-source-line {
+      font-size: 0.62rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--ink-faint);
+      margin-bottom: 0.8rem;
+    }
+
+    .reader-body {
+      font-size: 1.05rem;
+      line-height: 1.85;
+      color: var(--ink);
+    }
+
+    .reader-body p {
+      margin-bottom: 1.5rem;
+    }
+
+    .reader-body p:last-child {
+      margin-bottom: 0;
+    }
+
+    /* ── SUBSCRIPTION FOOTER ── */
+    .subscribe-footer {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+
+    .subscribe-block {
+      border-top: 1px solid var(--ink);
+      padding: 2.5rem 0;
+      text-align: center;
+    }
+
+    .subscribe-text {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.7rem;
+      font-weight: 300;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--ink-faint);
+      margin-bottom: 1.2rem;
+    }
+
+    .subscribe-form {
+      display: flex;
+      gap: 0;
+      max-width: 380px;
+      margin: 0 auto;
+    }
+
+    .subscribe-input {
+      flex: 1;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.85rem;
+      font-weight: 300;
+      padding: 0.7rem 1rem;
+      border: 1px solid var(--rule);
+      border-right: none;
+      background: white;
+      color: var(--ink);
+      outline: none;
+    }
+
+    .subscribe-input:focus {
+      border-color: var(--ink-light);
+    }
+
+    .subscribe-btn {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.62rem;
+      font-weight: 400;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      padding: 0.7rem 1.2rem;
+      background: var(--ink);
+      color: var(--paper);
+      border: 1px solid var(--ink);
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    .subscribe-btn:hover {
+      background: var(--ink-light);
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      border-top: 1px solid var(--rule);
+      padding: 2rem;
+      text-align: center;
+    }
+
+    footer p {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.62rem;
+      font-weight: 300;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--ink-faint);
+    }
+
+    /* ── COMING SOON LANG ── */
+    .coming-soon {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.65rem;
+      color: var(--ink-faint);
+      font-style: italic;
+      letter-spacing: 0;
+      text-transform: none;
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 600px) {
+      .subscribe-form { flex-direction: column; }
+      .subscribe-input { border-right: 1px solid var(--rule); border-bottom: none; }
+      .lang-nav-inner { gap: 1.2rem; flex-wrap: wrap; }
+    }
+  
+    .article-pager {
+      max-width: 720px;
+      margin: 3rem auto 0;
+      padding: 2rem 2rem 0;
+      border-top: 1px solid var(--rule);
+      display: flex;
+      justify-content: space-between;
+      gap: 1.5rem;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.78rem;
+      color: var(--ink-light);
+    }
+    .pager-link { color: var(--ink-light); text-decoration: none; max-width: 46%; }
+    .pager-link:hover { color: var(--ink); }
+    .pager-next { text-align: right; margin-left: auto; }
+  </style>
+</head>
+<body>
+
+  <!-- MASTHEAD -->
+  <header class="masthead">
+    <div class="masthead-inner">
+      <a href="/es/" style="text-decoration:none; color:inherit;">
+        <div class="publication-name">The Unplayed Note</div>
+      </a>
+      <div class="tagline">Lo que las noticias no saben de sí mismas</div>
+    </div>
+  </header>
+
+  <!-- LANGUAGE NAV -->
+  <nav class="lang-nav">
+    <div class="lang-nav-inner">
+      <a class="lang-btn" href="/en/what-the-cave-kept/">English</a>
+      <a class="lang-btn" href="/fr/ce-que-la-grotte-a-garde/">Français</a>
+      <a class="lang-btn active" href="/es/lo-que-guardo-la-cueva/">Español</a>
+    </div>
+  </nav>
+
+  <div class="reader open" style="display:block;">
+    <a class="back-btn" href="/es/">Todos los artículos</a>
+    <div id="reader-content">
+      <div class="reader-ornament">
+<svg viewBox="0 0 680 130" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
+  <g stroke="var(--ink)" stroke-width="0.5" opacity="0.5">
+    <line x1="90" y1="52" x2="590" y2="52"/>
+    <line x1="90" y1="64" x2="590" y2="64"/>
+    <line x1="90" y1="76" x2="590" y2="76"/>
+    <line x1="90" y1="88" x2="590" y2="88"/>
+    <line x1="90" y1="100" x2="590" y2="100"/>
+  </g>
+  <g fill="var(--ink)">
+    <ellipse cx="150" cy="82" rx="6.5" ry="5" transform="rotate(-18 150 82)"/>
+    <line x1="156" y1="78" x2="156" y2="42" stroke="var(--ink)" stroke-width="1.2"/>
+    <ellipse cx="195" cy="70" rx="6.5" ry="5" transform="rotate(-18 195 70)"/>
+    <line x1="201" y1="66" x2="201" y2="34" stroke="var(--ink)" stroke-width="1.2"/>
+  </g>
+  <g stroke="var(--accent)" stroke-width="1.3" fill="none">
+    <line x1="322" y1="61" x2="358" y2="61"/>
+    <line x1="322" y1="69" x2="358" y2="69"/>
+  </g>
+  <g fill="var(--ink)">
+    <ellipse cx="470" cy="76" rx="6.5" ry="5" transform="rotate(-18 470 76)"/>
+    <line x1="476" y1="72" x2="476" y2="38" stroke="var(--ink)" stroke-width="1.2"/>
+    <ellipse cx="515" cy="94" rx="6.5" ry="5" transform="rotate(-18 515 94)"/>
+    <line x1="521" y1="90" x2="521" y2="58" stroke="var(--ink)" stroke-width="1.2"/>
+  </g>
+</svg></div>
+      <div class="reader-source">El mundo &nbsp;&middot;&nbsp; Jewish Telegraphic Agency · 17 de julio de 2026</div>
+      <h1 class="reader-title">Lo que guardó la cueva.</h1>
+      <p class="reader-subtitle">En mayo de 2026, una canción compuesta por un niño en un gueto ucraniano fue interpretada por primera vez — en Shanghái. Había estado en la oscuridad durante ochenta años. No estaba esperando.</p>
+      <div class="reader-news-block">
+        <div class="news-source-line">Jewish Telegraphic Agency · 17 de julio de 2026</div>
+      <p style="margin-bottom:0.8rem">En mayo de 2026, la etnomusicóloga Anna Shternshis y el músico Psoy Korolenko llevaron su segundo álbum, Yiddish Glory: The Silenced Songs of World War II, de gira por Asia — Seúl, Shanghái, Hong Kong y Pekín. Publicado en abril de 2026, se nutre de un archivo de 263 canciones recopiladas por Moisei Beregovsky, un etnomusicólogo judío soviético que grabó música en yidis de judíos de Ucrania justo después de su liberación de la ocupación rumana en 1944. Beregovsky fue arrestado en 1950 bajo cargos de nacionalismo judío, enviado al Gulag y liberado en 1956. Su archivo fue confiscado. Murió en 1961. La colección fue descubierta en el sótano de la Biblioteca Nacional de Ucrania en Kiev en los años noventa. Entre las canciones interpretadas en Shanghái había una compuesta por un niño en el gueto de Bershad sobre la muerte de su madre.</p>
+      </div>
+      <div class="reader-body">
+      <p>En las semanas posteriores a la liberación de los guetos ucranianos, en el invierno de 1944, un hombre iba de ciudad en ciudad con un cuaderno.</p>
+      <p>Se llamaba Moisei Beregovsky. Era etnomusicólogo, que es una palabra para alguien que cree que lo que la gente canta es tan real como lo que construye, escribe o deja atrás en piedra. Había pasado su vida recopilando canciones en yidis — miles de ellas, en mercados, patios y mesas de cocina de toda Ucrania soviética. Pero lo que buscaba ahora era diferente. Buscaba lo que había sido compuesto en el interior — en el interior de la ocupación, en el interior del hambre, en el interior de la oscuridad particular de Bershad y Tulchyn y los otros lugares donde los judíos habían sobrevivido por un margen demasiado delgado para medir. Encontró 263 canciones. Las escribió. Una de ellas había sido cantada por un niño sobre la muerte de su madre.</p>
+      <p>Sabía lo que tenía. Se puede ver, por el cuidado de las transcripciones, que sabía exactamente lo que tenía.</p>
+      <p>En 1950, Stalin lo hizo arrestar. El cargo era nacionalismo judío, que era el nombre que el régimen daba al acto de tomar en serio la vida judía. Sus cuadernos fueron confiscados. Fue enviado al Gulag. Regresó seis años después, pero no entero, y murió en 1961 sin saber qué había sido de lo que había reunido. Las cajas fueron colocadas en un sótano de la Biblioteca Nacional de Ucrania en Kiev. Permanecieron allí cuarenta años, en la oscuridad, sin etiquetar.</p>
+      <p>Existe una enseñanza según la cual la música es la pluma del alma. Una pluma escribe sobre pergamino. Pero en esta enseñanza, el pergamino es el alma misma — y lo que está escrito allí está escrito en un material diferente a la tinta, lo que significa que sobrevive de manera diferente a como sobrevive la tinta. Los cuadernos de Beregovsky podían ser encajonados y enterrados. Lo que el niño de Bershad había cantado en el alma de quienquiera que lo hubiera escuchado había sido escrito en algún lugar al que las cajas no pueden llegar.</p>
+      <p>Beregovsky no era un místico. Era un hombre con un cuaderno y un oído entrenado para escuchar lo que otros pasaban de largo. Pero estaba haciendo, sin el lenguaje para ello, lo que la enseñanza describe: encontraba las inscripciones. Las personas que grabó en 1944 habían sobrevivido cantando — no como consuelo, no como resistencia en el sentido político, sino porque cantar es lo que hace el alma cuando no tiene otro instrumento. Un niño que había visto morir a su madre y luego había hecho una canción sobre ello no estaba componiendo. Estaba inscribiendo. Escribía en el único material que tenía y que nadie podía quitarle.</p>
+      <p>Stalin tomó los cuadernos. No comprendía, o no creía, que el cuaderno no era la cosa. La inscripción estaba en otro lugar.</p>
+      <p>Las cajas fueron encontradas en los años noventa por bibliotecarios que no sabían lo que estaban abriendo. Anna Shternshis, etnomusicóloga, pasó años trabajando a través de lo que había dentro. En 2026, ella y el músico Psoy Korolenko publicaron Yiddish Glory: The Silenced Songs of World War II y lo llevaron de gira — a Seúl, a Shanghái, a Hong Kong, a Pekín.</p>
+      <p>En Shanghái, en mayo de 2026, la canción del niño sobre su madre fue interpretada por primera vez.</p>
+      <p>No la primera vez desde la guerra. La primera vez en cualquier lugar, nunca, fuera del gueto de Bershad donde un niño la había cantado en algún momento entre 1941 y 1944, y Beregovsky la había escrito.</p>
+      <p>La canción había estado en la oscuridad durante ochenta años. No estaba esperando.</p>
+      <p>El Rebe Rayatz quemaba sus propios manuscritos para seguir con vida. Su ayudante leía algunas páginas antes de arrojarlas a las llamas, y el Rebe se enojaba: ¿No te importa mi vida?</p>
+      <p>Stalin liberó las canciones de Beregovsky sin saberlo. El niño de Bershad ya había hecho lo que podía hacerse — había cantado, y al cantar había colocado algo fuera del alcance de lo que seguiría. Shanghái, en mayo de 2026, no era una recuperación. Era una nueva superficie para algo que nunca había dejado de moverse. El público que escuchó la canción la escuchó por primera vez. La canción misma estaba en otro lugar, haciendo lo que hacen las canciones cuando nadie escucha — subiendo, regresando, presente de la única manera en que las cosas escritas en ese material pueden estar presentes.</p>
+      <p>El niño no envió algo hacia adelante. Liberó algo hacia arriba.</p>
+      </div>
+    </div>
+  </div>
+
+    <nav class="article-pager">
+      <a href="/es/el-dia-equivocado/" class="pager-link pager-prev">&larr; El día equivocado.</a>
+      <a href="/es/el-suelo-dijo-dieciocho-grados/" class="pager-link pager-next">El suelo dijo dieciocho grados. &rarr;</a>
+    </nav>
+
+  <div class="subscribe-footer" style="margin-top:3rem;">
+    <div class="subscribe-block">
+      <div class="subscribe-text">Recibir cada edición</div>
+      <a class="subscribe-btn" style="display:inline-block; text-decoration:none; padding:0.7rem 1.4rem;"
+         href="https://theunplayednote.substack.com/subscribe">Suscribirse</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>The Unplayed Note &nbsp;&middot;&nbsp; An independent publication</p>
+  </footer>
+
+</body>
+</html>
