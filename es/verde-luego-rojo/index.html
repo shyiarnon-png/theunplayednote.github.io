@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Verde, luego rojo. — The Unplayed Note</title>
+  <meta name="description" content="Una célula de sostén que nunca dejó de serlo — hasta que la señal que le decía lo que era, se detuvo.">
+  <link rel="canonical" href="https://theunplayednote.com/es/verde-luego-rojo/">
+  <link rel="alternate" hreflang="en" href="https://theunplayednote.com/en/green-then-red/">
+  <link rel="alternate" hreflang="fr" href="https://theunplayednote.com/fr/vert-puis-rouge/">
+  <link rel="alternate" hreflang="es" href="https://theunplayednote.com/es/verde-luego-rojo/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+  <style>
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --ink: #1a1a18;
+      --ink-light: #4a4a44;
+      --ink-faint: #8a8a80;
+      --paper: #f7f5f0;
+      --paper-warm: #efecea;
+      --rule: #d4d0c8;
+      --accent: #8b6914;
+    }
+
+    html { font-size: 18px; scroll-behavior: smooth; }
+
+    body {
+      background: var(--paper);
+      color: var(--ink);
+      font-family: 'EB Garamond', Georgia, serif;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ── MASTHEAD ── */
+    .masthead {
+      border-bottom: 1px solid var(--ink);
+      padding: 2.5rem 0 1.8rem;
+      text-align: center;
+    }
+
+    .masthead-inner {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+
+    .publication-name {
+      font-family: 'EB Garamond', Georgia, serif;
+      font-size: clamp(1.9rem, 5vw, 2.8rem);
+      font-weight: 400;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--ink);
+      line-height: 1.1;
+    }
+
+    .tagline {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.72rem;
+      font-weight: 300;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--ink-faint);
+      margin-top: 0.6rem;
+    }
+
+    /* ── LANGUAGE NAV ── */
+    .lang-nav {
+      border-bottom: 1px solid var(--rule);
+      padding: 0.9rem 0;
+      text-align: center;
+    }
+
+    .lang-nav-inner {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 0 2rem;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    .lang-btn {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.68rem;
+      font-weight: 400;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--ink-faint);
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 0.2rem 0;
+      border-bottom: 1px solid transparent;
+      transition: color 0.2s, border-color 0.2s;
+    }
+
+    .lang-btn:hover,
+    .lang-btn.active {
+      color: var(--ink);
+      border-bottom-color: var(--ink);
+    }
+
+    /* ── ISSUE HEADER ── */
+    .issue-header {
+      max-width: 720px;
+      margin: 3.5rem auto 0;
+      padding: 0 2rem;
+      border-bottom: 1px solid var(--rule);
+      padding-bottom: 1.2rem;
+    }
+
+    .issue-label {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.65rem;
+      font-weight: 300;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--ink-faint);
+    }
+
+    .mission-statement {
+      font-family: 'EB Garamond', Georgia, serif;
+      font-style: italic;
+      font-size: 1rem;
+      line-height: 1.6;
+      color: var(--ink-light);
+      max-width: 480px;
+      margin: 0.9rem auto 0;
+    }
+
+    /* ── ARTICLE LIST ── */
+    .articles {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 0 2rem 6rem;
+    }
+
+    .article-entry {
+      border-bottom: 1px solid var(--rule);
+      padding: 2.8rem 0;
+      cursor: pointer;
+    }
+
+    .article-entry:last-child {
+      border-bottom: none;
+    }
+
+    .article-source {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.62rem;
+      font-weight: 300;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 0.8rem;
+    }
+
+    .article-title {
+      font-size: clamp(1.4rem, 3.5vw, 1.9rem);
+      font-weight: 400;
+      line-height: 1.25;
+      color: var(--ink);
+      margin-bottom: 0.6rem;
+    }
+
+    .article-subtitle {
+      font-size: 1rem;
+      font-style: italic;
+      color: var(--ink-light);
+      line-height: 1.5;
+      margin-bottom: 1.2rem;
+    }
+
+    .article-lede {
+      font-size: 0.95rem;
+      color: var(--ink-light);
+      line-height: 1.65;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    .read-more {
+      display: inline-block;
+      margin-top: 1rem;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.65rem;
+      font-weight: 400;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--ink-faint);
+      border-bottom: 1px solid var(--rule);
+      padding-bottom: 1px;
+      transition: color 0.2s, border-color 0.2s;
+    }
+
+    .article-entry:hover .read-more {
+      color: var(--ink);
+      border-color: var(--ink);
+    }
+
+    /* ── ARTICLE READER ── */
+    .reader {
+      display: none;
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 0 2rem 6rem;
+    }
+
+    .reader.open { display: block; }
+
+    .back-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.65rem;
+      font-weight: 400;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--ink-faint);
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 2.5rem 0 2rem;
+      transition: color 0.2s;
+    }
+
+    .back-btn:hover { color: var(--ink); }
+    .back-btn::before { content: '←'; font-family: serif; font-size: 1rem; letter-spacing: 0; }
+
+    .reader-ornament {
+      margin: 0 0 2.2rem;
+    }
+
+    .reader-ornament svg {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    .reader-source {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.62rem;
+      font-weight: 300;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 1rem;
+    }
+
+    .reader-title {
+      font-size: clamp(1.8rem, 5vw, 2.6rem);
+      font-weight: 400;
+      line-height: 1.2;
+      margin-bottom: 0.8rem;
+    }
+
+    .reader-subtitle {
+      font-size: 1.1rem;
+      font-style: italic;
+      color: var(--ink-light);
+      line-height: 1.55;
+      margin-bottom: 2.5rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid var(--rule);
+    }
+
+    .reader-news-block {
+      font-size: 0.88rem;
+      font-family: 'Inter', sans-serif;
+      font-weight: 300;
+      color: var(--ink-light);
+      line-height: 1.75;
+      margin-bottom: 2.5rem;
+      padding: 1.5rem 1.8rem;
+      background: var(--paper-warm);
+      border-left: 2px solid var(--rule);
+    }
+
+    .reader-news-block .news-source-line {
+      font-size: 0.62rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--ink-faint);
+      margin-bottom: 0.8rem;
+    }
+
+    .reader-body {
+      font-size: 1.05rem;
+      line-height: 1.85;
+      color: var(--ink);
+    }
+
+    .reader-body p {
+      margin-bottom: 1.5rem;
+    }
+
+    .reader-body p:last-child {
+      margin-bottom: 0;
+    }
+
+    /* ── SUBSCRIPTION FOOTER ── */
+    .subscribe-footer {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+
+    .subscribe-block {
+      border-top: 1px solid var(--ink);
+      padding: 2.5rem 0;
+      text-align: center;
+    }
+
+    .subscribe-text {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.7rem;
+      font-weight: 300;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--ink-faint);
+      margin-bottom: 1.2rem;
+    }
+
+    .subscribe-form {
+      display: flex;
+      gap: 0;
+      max-width: 380px;
+      margin: 0 auto;
+    }
+
+    .subscribe-input {
+      flex: 1;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.85rem;
+      font-weight: 300;
+      padding: 0.7rem 1rem;
+      border: 1px solid var(--rule);
+      border-right: none;
+      background: white;
+      color: var(--ink);
+      outline: none;
+    }
+
+    .subscribe-input:focus {
+      border-color: var(--ink-light);
+    }
+
+    .subscribe-btn {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.62rem;
+      font-weight: 400;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      padding: 0.7rem 1.2rem;
+      background: var(--ink);
+      color: var(--paper);
+      border: 1px solid var(--ink);
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    .subscribe-btn:hover {
+      background: var(--ink-light);
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      border-top: 1px solid var(--rule);
+      padding: 2rem;
+      text-align: center;
+    }
+
+    footer p {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.62rem;
+      font-weight: 300;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--ink-faint);
+    }
+
+    /* ── COMING SOON LANG ── */
+    .coming-soon {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.65rem;
+      color: var(--ink-faint);
+      font-style: italic;
+      letter-spacing: 0;
+      text-transform: none;
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 600px) {
+      .subscribe-form { flex-direction: column; }
+      .subscribe-input { border-right: 1px solid var(--rule); border-bottom: none; }
+      .lang-nav-inner { gap: 1.2rem; flex-wrap: wrap; }
+    }
+  
+    .article-pager {
+      max-width: 720px;
+      margin: 3rem auto 0;
+      padding: 2rem 2rem 0;
+      border-top: 1px solid var(--rule);
+      display: flex;
+      justify-content: space-between;
+      gap: 1.5rem;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.78rem;
+      color: var(--ink-light);
+    }
+    .pager-link { color: var(--ink-light); text-decoration: none; max-width: 46%; }
+    .pager-link:hover { color: var(--ink); }
+    .pager-next { text-align: right; margin-left: auto; }
+  </style>
+</head>
+<body>
+
+  <!-- MASTHEAD -->
+  <header class="masthead">
+    <div class="masthead-inner">
+      <a href="/es/" style="text-decoration:none; color:inherit;">
+        <div class="publication-name">The Unplayed Note</div>
+      </a>
+      <div class="tagline">Lo que las noticias no saben de sí mismas</div>
+    </div>
+  </header>
+
+  <!-- LANGUAGE NAV -->
+  <nav class="lang-nav">
+    <div class="lang-nav-inner">
+      <a class="lang-btn" href="/en/green-then-red/">English</a>
+      <a class="lang-btn" href="/fr/vert-puis-rouge/">Français</a>
+      <a class="lang-btn active" href="/es/verde-luego-rojo/">Español</a>
+    </div>
+  </nav>
+
+  <div class="reader open" style="display:block;">
+    <a class="back-btn" href="/es/">Todos los artículos</a>
+    <div id="reader-content">
+      <div class="reader-ornament">
+<svg viewBox="0 0 680 130" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
+  <g stroke="var(--ink)" stroke-width="0.5" opacity="0.5">
+    <line x1="90" y1="52" x2="590" y2="52"/>
+    <line x1="90" y1="64" x2="590" y2="64"/>
+    <line x1="90" y1="76" x2="590" y2="76"/>
+    <line x1="90" y1="88" x2="590" y2="88"/>
+    <line x1="90" y1="100" x2="590" y2="100"/>
+  </g>
+  <g fill="var(--ink)">
+    <ellipse cx="150" cy="82" rx="6.5" ry="5" transform="rotate(-18 150 82)"/>
+    <line x1="156" y1="78" x2="156" y2="42" stroke="var(--ink)" stroke-width="1.2"/>
+    <ellipse cx="195" cy="70" rx="6.5" ry="5" transform="rotate(-18 195 70)"/>
+    <line x1="201" y1="66" x2="201" y2="34" stroke="var(--ink)" stroke-width="1.2"/>
+  </g>
+  <g stroke="var(--accent)" stroke-width="1.3" fill="none">
+    <line x1="322" y1="61" x2="358" y2="61"/>
+    <line x1="322" y1="69" x2="358" y2="69"/>
+  </g>
+  <g fill="var(--ink)">
+    <ellipse cx="470" cy="76" rx="6.5" ry="5" transform="rotate(-18 470 76)"/>
+    <line x1="476" y1="72" x2="476" y2="38" stroke="var(--ink)" stroke-width="1.2"/>
+    <ellipse cx="515" cy="94" rx="6.5" ry="5" transform="rotate(-18 515 94)"/>
+    <line x1="521" y1="90" x2="521" y2="58" stroke="var(--ink)" stroke-width="1.2"/>
+  </g>
+</svg></div>
+      <div class="reader-source">El mundo &nbsp;&middot;&nbsp; Jerusalem Post / Science Advances · 11 de julio de 2026</div>
+      <h1 class="reader-title">Verde, luego rojo.</h1>
+      <p class="reader-subtitle">Una célula de sostén que nunca dejó de serlo — hasta que la señal que le decía lo que era, se detuvo.</p>
+      <div class="reader-news-block">
+        <div class="news-source-line">Jerusalem Post (Judy Siegel-Itzkovich, 11 de julio de 2026) / Science Advances, 17 de junio de 2026</div>
+      <p style="margin-bottom:0.8rem">Publicado el 17 de junio de 2026 en Science Advances, un estudio liderado por las Profesoras Karen Avraham y David Sprinzak de la Universidad de Tel Aviv, con la investigadora principal Lama Khalaily, identificó una subpoblación pequeña y distinta de células de sostén en la cóclea — células de Deiters transdiferenciantes — capaces de convertirse en células ciliadas sensoriales del sonido, una capacidad ausente en las demás células de sostén. Los humanos nacen con aproximadamente 15.000 células ciliadas por oído; una vez dañadas por el ruido, la edad o un trauma, no se regeneran en los mamíferos. Los investigadores desencadenaron la conversión bloqueando la señalización Notch, una vía que corre de forma continua entre las células cocleares, y documentaron la transformación mediante imágenes de tejido vivo por primera vez.</p>
+      </div>
+      <div class="reader-body">
+      <p>Una célula de Deiters mantiene erguida a una célula ciliada. Ese es su trabajo, y lo cumple por completo — anclando, amortiguando, alimentando a la célula sensorial que está a su lado y que es la que realmente capta la vibración y la convierte en señal. No hay nada provisional en este arreglo. La célula de sostén no espera a que llegue algo mejor. Es plenamente lo que la cóclea necesita que sea, durante todo el tiempo que la cóclea lo necesite.</p>
+      <p>Lo que la mantiene así es una vía llamada Notch, que corre de manera continua, de célula a célula, diciéndole a la célula lo que es. Un tejido donde cada célula sostuviera su forma sin firmeza, lista para convertirse en otra cosa a la primera oportunidad, no sería una cóclea funcional. Sería ruido.</p>
+      <p>Durante años, el campo intentó forzar la conversión directamente — empujando a las células de sostén hacia un destino de célula ciliada con genes activados desde afuera, obligándolas a convertirse en algo para lo cual todavía no estaban construidas. Los resultados fueron inconsistentes, parciales, células que parecían ciliadas sin comportarse como tales. Nadie había pasado mucho tiempo observando lo que hacía una célula de sostén mientras seguía siendo una célula de sostén, porque todos ya miraban más allá, hacia la transformación que esperaban producir.</p>
+      <p>Bajo el microscopio, antes de que todo esto comenzara, estas células de Deiters en particular se veían exactamente igual que cualquier otra célula de Deiters a su lado — la misma forma, el mismo tono de verde, sosteniendo de la misma manera a la misma célula ciliada. Nada en ellas las distinguía. Hizo falta una secuenciación célula por célula para descubrir que un pequeño número portaba un segundo conjunto de instrucciones que las demás no tenían, instrucciones que no hacían nada, esperando una señal que, en un oído sano y funcional, nunca llega. Entre las miles de células de Deiters de una sola cóclea, solo este puñado raro la porta. Las demás sostienen su forma durante toda una vida, pase lo que pase a su alrededor, y nada de lo que sigue cambia eso.</p>
+      <p>El equipo de Avraham dejó de forzar y empezó a observar. Bloquear Notch retiró el andamiaje que mantenía a este pequeño puñado de células en su forma presente. Desestabilizadas, liberadas de lo que las sostenía ahí, comenzaron a convertirse en otra cosa por sus propios medios. La imagen lo captó en vivo, por primera vez: el verde volviéndose rojo, una identidad cediendo paso a otra, en un tejido que nadie había observado tan de cerca antes.</p>
+      <p>Es un número pequeño de células, en una señal que casi nunca se interrumpe. Cada una de las demás células de Deiters en ese mismo oído, en ese mismo momento, siguió haciendo exactamente lo que siempre había hecho — sostuvo su célula ciliada erguida, no pidió nada, no cambió nada, y esto también quedó registrado por la imagen, cuadro tras cuadro de verde que simplemente seguía siendo verde.</p>
+      <p>El equipo de Avraham ha pasado años mapeando la genética de la pérdida auditiva hereditaria, y su trabajo ahora provee un diagnóstico genético para aproximadamente seis de cada diez israelíes que la portan. Todavía no existe tratamiento. Cualquier tratamiento futuro probablemente implicaría a un cirujano inyectando algo en el oído interno de una persona a quien todavía no se le puede decir cuándo. Lo que Avraham recibe, mientras tanto, son cartas de padres que acaban de recibir un informe genético, preguntando, con las palabras que cada uno encuentra para esto, si queda algo a lo cual aferrarse.</p>
+      </div>
+    </div>
+  </div>
+
+    <nav class="article-pager">
+      <a href="/es/lo-que-el-fuego-sello/" class="pager-link pager-prev">&larr; Lo que el fuego selló.</a>
+      <a href="/es/trece-toneladas-y-luego-nada/" class="pager-link pager-next">Trece toneladas, y luego nada. &rarr;</a>
+    </nav>
+
+  <div class="subscribe-footer" style="margin-top:3rem;">
+    <div class="subscribe-block">
+      <div class="subscribe-text">Recibir cada edición</div>
+      <a class="subscribe-btn" style="display:inline-block; text-decoration:none; padding:0.7rem 1.4rem;"
+         href="https://theunplayednote.substack.com/subscribe">Suscribirse</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>The Unplayed Note &nbsp;&middot;&nbsp; An independent publication</p>
+  </footer>
+
+</body>
+</html>

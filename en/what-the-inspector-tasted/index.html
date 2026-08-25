@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>What the inspector tasted. — The Unplayed Note</title>
+  <meta name="description" content="The world's first kosher Michelin star was awarded in a Miami shopping center. The inspectors described the food as deeply rooted. They didn't know her name.">
+  <link rel="canonical" href="https://theunplayednote.com/en/what-the-inspector-tasted/">
+  <link rel="alternate" hreflang="en" href="https://theunplayednote.com/en/what-the-inspector-tasted/">
+  <link rel="alternate" hreflang="fr" href="https://theunplayednote.com/fr/ce-que-linspecteur-a-goute/">
+  <link rel="alternate" hreflang="es" href="https://theunplayednote.com/es/lo-que-probo-el-inspector/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+  <style>
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --ink: #1a1a18;
+      --ink-light: #4a4a44;
+      --ink-faint: #8a8a80;
+      --paper: #f7f5f0;
+      --paper-warm: #efecea;
+      --rule: #d4d0c8;
+      --accent: #8b6914;
+    }
+
+    html { font-size: 18px; scroll-behavior: smooth; }
+
+    body {
+      background: var(--paper);
+      color: var(--ink);
+      font-family: 'EB Garamond', Georgia, serif;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ── MASTHEAD ── */
+    .masthead {
+      border-bottom: 1px solid var(--ink);
+      padding: 2.5rem 0 1.8rem;
+      text-align: center;
+    }
+
+    .masthead-inner {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+
+    .publication-name {
+      font-family: 'EB Garamond', Georgia, serif;
+      font-size: clamp(1.9rem, 5vw, 2.8rem);
+      font-weight: 400;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--ink);
+      line-height: 1.1;
+    }
+
+    .tagline {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.72rem;
+      font-weight: 300;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--ink-faint);
+      margin-top: 0.6rem;
+    }
+
+    /* ── LANGUAGE NAV ── */
+    .lang-nav {
+      border-bottom: 1px solid var(--rule);
+      padding: 0.9rem 0;
+      text-align: center;
+    }
+
+    .lang-nav-inner {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 0 2rem;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    .lang-btn {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.68rem;
+      font-weight: 400;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--ink-faint);
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 0.2rem 0;
+      border-bottom: 1px solid transparent;
+      transition: color 0.2s, border-color 0.2s;
+    }
+
+    .lang-btn:hover,
+    .lang-btn.active {
+      color: var(--ink);
+      border-bottom-color: var(--ink);
+    }
+
+    /* ── ISSUE HEADER ── */
+    .issue-header {
+      max-width: 720px;
+      margin: 3.5rem auto 0;
+      padding: 0 2rem;
+      border-bottom: 1px solid var(--rule);
+      padding-bottom: 1.2rem;
+    }
+
+    .issue-label {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.65rem;
+      font-weight: 300;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--ink-faint);
+    }
+
+    .mission-statement {
+      font-family: 'EB Garamond', Georgia, serif;
+      font-style: italic;
+      font-size: 1rem;
+      line-height: 1.6;
+      color: var(--ink-light);
+      max-width: 480px;
+      margin: 0.9rem auto 0;
+    }
+
+    /* ── ARTICLE LIST ── */
+    .articles {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 0 2rem 6rem;
+    }
+
+    .article-entry {
+      border-bottom: 1px solid var(--rule);
+      padding: 2.8rem 0;
+      cursor: pointer;
+    }
+
+    .article-entry:last-child {
+      border-bottom: none;
+    }
+
+    .article-source {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.62rem;
+      font-weight: 300;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 0.8rem;
+    }
+
+    .article-title {
+      font-size: clamp(1.4rem, 3.5vw, 1.9rem);
+      font-weight: 400;
+      line-height: 1.25;
+      color: var(--ink);
+      margin-bottom: 0.6rem;
+    }
+
+    .article-subtitle {
+      font-size: 1rem;
+      font-style: italic;
+      color: var(--ink-light);
+      line-height: 1.5;
+      margin-bottom: 1.2rem;
+    }
+
+    .article-lede {
+      font-size: 0.95rem;
+      color: var(--ink-light);
+      line-height: 1.65;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    .read-more {
+      display: inline-block;
+      margin-top: 1rem;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.65rem;
+      font-weight: 400;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--ink-faint);
+      border-bottom: 1px solid var(--rule);
+      padding-bottom: 1px;
+      transition: color 0.2s, border-color 0.2s;
+    }
+
+    .article-entry:hover .read-more {
+      color: var(--ink);
+      border-color: var(--ink);
+    }
+
+    /* ── ARTICLE READER ── */
+    .reader {
+      display: none;
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 0 2rem 6rem;
+    }
+
+    .reader.open { display: block; }
+
+    .back-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.65rem;
+      font-weight: 400;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--ink-faint);
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 2.5rem 0 2rem;
+      transition: color 0.2s;
+    }
+
+    .back-btn:hover { color: var(--ink); }
+    .back-btn::before { content: '←'; font-family: serif; font-size: 1rem; letter-spacing: 0; }
+
+    .reader-ornament {
+      margin: 0 0 2.2rem;
+    }
+
+    .reader-ornament svg {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    .reader-source {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.62rem;
+      font-weight: 300;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 1rem;
+    }
+
+    .reader-title {
+      font-size: clamp(1.8rem, 5vw, 2.6rem);
+      font-weight: 400;
+      line-height: 1.2;
+      margin-bottom: 0.8rem;
+    }
+
+    .reader-subtitle {
+      font-size: 1.1rem;
+      font-style: italic;
+      color: var(--ink-light);
+      line-height: 1.55;
+      margin-bottom: 2.5rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid var(--rule);
+    }
+
+    .reader-news-block {
+      font-size: 0.88rem;
+      font-family: 'Inter', sans-serif;
+      font-weight: 300;
+      color: var(--ink-light);
+      line-height: 1.75;
+      margin-bottom: 2.5rem;
+      padding: 1.5rem 1.8rem;
+      background: var(--paper-warm);
+      border-left: 2px solid var(--rule);
+    }
+
+    .reader-news-block .news-source-line {
+      font-size: 0.62rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--ink-faint);
+      margin-bottom: 0.8rem;
+    }
+
+    .reader-body {
+      font-size: 1.05rem;
+      line-height: 1.85;
+      color: var(--ink);
+    }
+
+    .reader-body p {
+      margin-bottom: 1.5rem;
+    }
+
+    .reader-body p:last-child {
+      margin-bottom: 0;
+    }
+
+    /* ── SUBSCRIPTION FOOTER ── */
+    .subscribe-footer {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+
+    .subscribe-block {
+      border-top: 1px solid var(--ink);
+      padding: 2.5rem 0;
+      text-align: center;
+    }
+
+    .subscribe-text {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.7rem;
+      font-weight: 300;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--ink-faint);
+      margin-bottom: 1.2rem;
+    }
+
+    .subscribe-form {
+      display: flex;
+      gap: 0;
+      max-width: 380px;
+      margin: 0 auto;
+    }
+
+    .subscribe-input {
+      flex: 1;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.85rem;
+      font-weight: 300;
+      padding: 0.7rem 1rem;
+      border: 1px solid var(--rule);
+      border-right: none;
+      background: white;
+      color: var(--ink);
+      outline: none;
+    }
+
+    .subscribe-input:focus {
+      border-color: var(--ink-light);
+    }
+
+    .subscribe-btn {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.62rem;
+      font-weight: 400;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      padding: 0.7rem 1.2rem;
+      background: var(--ink);
+      color: var(--paper);
+      border: 1px solid var(--ink);
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    .subscribe-btn:hover {
+      background: var(--ink-light);
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      border-top: 1px solid var(--rule);
+      padding: 2rem;
+      text-align: center;
+    }
+
+    footer p {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.62rem;
+      font-weight: 300;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--ink-faint);
+    }
+
+    /* ── COMING SOON LANG ── */
+    .coming-soon {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.65rem;
+      color: var(--ink-faint);
+      font-style: italic;
+      letter-spacing: 0;
+      text-transform: none;
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 600px) {
+      .subscribe-form { flex-direction: column; }
+      .subscribe-input { border-right: 1px solid var(--rule); border-bottom: none; }
+      .lang-nav-inner { gap: 1.2rem; flex-wrap: wrap; }
+    }
+  
+    .article-pager {
+      max-width: 720px;
+      margin: 3rem auto 0;
+      padding: 2rem 2rem 0;
+      border-top: 1px solid var(--rule);
+      display: flex;
+      justify-content: space-between;
+      gap: 1.5rem;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.78rem;
+      color: var(--ink-light);
+    }
+    .pager-link { color: var(--ink-light); text-decoration: none; max-width: 46%; }
+    .pager-link:hover { color: var(--ink); }
+    .pager-next { text-align: right; margin-left: auto; }
+  </style>
+</head>
+<body>
+
+  <!-- MASTHEAD -->
+  <header class="masthead">
+    <div class="masthead-inner">
+      <a href="/en/" style="text-decoration:none; color:inherit;">
+        <div class="publication-name">The Unplayed Note</div>
+      </a>
+      <div class="tagline">What the news doesn't know about itself</div>
+    </div>
+  </header>
+
+  <!-- LANGUAGE NAV -->
+  <nav class="lang-nav">
+    <div class="lang-nav-inner">
+      <a class="lang-btn active" href="/en/what-the-inspector-tasted/">English</a>
+      <a class="lang-btn" href="/fr/ce-que-linspecteur-a-goute/">Français</a>
+      <a class="lang-btn" href="/es/lo-que-probo-el-inspector/">Español</a>
+    </div>
+  </nav>
+
+  <div class="reader open" style="display:block;">
+    <a class="back-btn" href="/en/">All articles</a>
+    <div id="reader-content">
+      <div class="reader-ornament">
+<svg viewBox="0 0 680 130" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
+  <g stroke="var(--ink)" stroke-width="0.5" opacity="0.5">
+    <line x1="90" y1="52" x2="590" y2="52"/>
+    <line x1="90" y1="64" x2="590" y2="64"/>
+    <line x1="90" y1="76" x2="590" y2="76"/>
+    <line x1="90" y1="88" x2="590" y2="88"/>
+    <line x1="90" y1="100" x2="590" y2="100"/>
+  </g>
+  <g fill="var(--ink)">
+    <ellipse cx="150" cy="82" rx="6.5" ry="5" transform="rotate(-18 150 82)"/>
+    <line x1="156" y1="78" x2="156" y2="42" stroke="var(--ink)" stroke-width="1.2"/>
+    <ellipse cx="195" cy="70" rx="6.5" ry="5" transform="rotate(-18 195 70)"/>
+    <line x1="201" y1="66" x2="201" y2="34" stroke="var(--ink)" stroke-width="1.2"/>
+  </g>
+  <g stroke="var(--accent)" stroke-width="1.3" fill="none">
+    <line x1="322" y1="61" x2="358" y2="61"/>
+    <line x1="322" y1="69" x2="358" y2="69"/>
+  </g>
+  <g fill="var(--ink)">
+    <ellipse cx="470" cy="76" rx="6.5" ry="5" transform="rotate(-18 470 76)"/>
+    <line x1="476" y1="72" x2="476" y2="38" stroke="var(--ink)" stroke-width="1.2"/>
+    <ellipse cx="515" cy="94" rx="6.5" ry="5" transform="rotate(-18 515 94)"/>
+    <line x1="521" y1="90" x2="521" y2="58" stroke="var(--ink)" stroke-width="1.2"/>
+  </g>
+</svg></div>
+      <div class="reader-source">Jewish World &nbsp;&middot;&nbsp; Times of Israel / JTA · May 28, 2026</div>
+      <h1 class="reader-title">What the inspector tasted.</h1>
+      <p class="reader-subtitle">The world's first kosher Michelin star was awarded in a Miami shopping center. The inspectors described the food as deeply rooted. They didn't know her name.</p>
+      <div class="reader-news-block">
+        <div class="news-source-line">Times of Israel / JTA · May 28, 2026</div>
+      <p style="margin-bottom:0.8rem">Raz Shabtai started working in kitchens at thirteen. A dishwasher, in a Jerusalem restaurant. He worked every position available over the next three decades — line cook, waiter, pizzeria, private chef — before crossing an ocean and opening a restaurant in a shopping center in North Miami.</p>
+      <p style="margin-bottom:0.8rem">He named it after his grandmother. She was born in Jerusalem. "She taught me how to cook," he said. "She taught me how to be a person, how to be a human."</p>
+      <p style="margin-bottom:0.8rem">Mutra opened fifteen months ago. Last Thursday, it became the first kosher restaurant in the world to receive a Michelin star. As confetti fell around him, Shabtai broke down in tears. The Michelin inspectors, who always eat anonymously, described the food as deeply rooted in Middle Eastern tradition.</p>
+      <p style="margin-bottom:0.8rem">They did not mention the grandmother. They didn't know about her.</p>
+      <p style="margin-bottom:0.8rem">"I missed home," Shabtai said. "I decided to open this restaurant here. It was my selfish need."</p>
+      </div>
+      <div class="reader-body">
+      <p>In Hebrew, the word for taste and the word for meaning are the same word.</p>
+      <p>Ta'am — טַעַם. What something tastes like and what it means are, at the deepest level, inseparable. You cannot fully receive a flavour without receiving what it carries. The Alter Rebbe writes in the Tanya that this is exactly why Torah is called food: the soul is built from what it absorbs with ta'am — with that interior contact between the one who receives and what is being received. Without it, the form passes through. The substance doesn't reach.</p>
+      <p>The Zohar says the manna in the desert carried every taste simultaneously. But each person found only the ta'am their soul was capable of receiving at that precise moment. Not the same for everyone. Not chosen by anyone. The flavour arrived according to what the soul, at that moment, was ready to hold.</p>
+      <p>A grandmother in Jerusalem cooked. A boy watched and absorbed — not a recipe, something prior to recipe. A knowledge that doesn't live in the mind first. It lives in the hands, in the timing, in the particular way a person stands at a stove when they have been shown how to stand there by someone who was shown before them, and before them, and before them.</p>
+      <p>Shabtai carried it across an ocean because he missed home. He didn't know what he was carrying. He thought he was bringing his grandmother's cooking to Miami. He was bringing something she had also received — in a chain of transmission so long and so quiet that no one standing inside it can see where it begins.</p>
+      <p>The Michelin inspectors arrived anonymously, ate, and reached for the only word available to them: deeply rooted. They were right. They tasted something real. They had no instrument to measure how real, or how far back the root goes.</p>
+      <p>They tasted ta'am. They tasted what each of them, at that precise moment, was capable of receiving.</p>
+      </div>
+    </div>
+  </div>
+
+    <nav class="article-pager">
+      <a href="/en/the-cherry-got-there-first/" class="pager-link pager-prev">&larr; The cherry got there first.</a>
+      <a href="/en/the-statistic-nobody-is-reading/" class="pager-link pager-next">The statistic nobody is reading. &rarr;</a>
+    </nav>
+
+  <div class="subscribe-footer" style="margin-top:3rem;">
+    <div class="subscribe-block">
+      <div class="subscribe-text">Receive each edition</div>
+      <a class="subscribe-btn" style="display:inline-block; text-decoration:none; padding:0.7rem 1.4rem;"
+         href="https://theunplayednote.substack.com/subscribe">Subscribe</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>The Unplayed Note &nbsp;&middot;&nbsp; An independent publication</p>
+  </footer>
+
+</body>
+</html>
