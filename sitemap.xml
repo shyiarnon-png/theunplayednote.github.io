@@ -95,6 +95,12 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://theunplayednote.com/es/trece-toneladas-y-luego-nada/"/>
   </url>
   <url>
+    <loc>https://theunplayednote.com/en/what-israel-built-without-weight/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://theunplayednote.com/en/what-israel-built-without-weight/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://theunplayednote.com/fr/ce-quisrael-a-construit-sans-poids/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://theunplayednote.com/es/lo-que-israel-construyo-sin-peso/"/>
+  </url>
+  <url>
     <loc>https://theunplayednote.com/fr/une-benediction-a-ete-frappee-elle-a-tenu/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://theunplayednote.com/en/a-blessing-was-struck-it-held/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://theunplayednote.com/fr/une-benediction-a-ete-frappee-elle-a-tenu/"/>
@@ -185,6 +191,12 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://theunplayednote.com/es/trece-toneladas-y-luego-nada/"/>
   </url>
   <url>
+    <loc>https://theunplayednote.com/fr/ce-quisrael-a-construit-sans-poids/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://theunplayednote.com/en/what-israel-built-without-weight/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://theunplayednote.com/fr/ce-quisrael-a-construit-sans-poids/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://theunplayednote.com/es/lo-que-israel-construyo-sin-peso/"/>
+  </url>
+  <url>
     <loc>https://theunplayednote.com/es/una-bendicion-fue-golpeada-resistio/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://theunplayednote.com/en/a-blessing-was-struck-it-held/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://theunplayednote.com/fr/une-benediction-a-ete-frappee-elle-a-tenu/"/>
@@ -273,5 +285,11 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://theunplayednote.com/en/thirteen-tons-and-then-none/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://theunplayednote.com/fr/treize-tonnes-puis-plus-rien/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://theunplayednote.com/es/trece-toneladas-y-luego-nada/"/>
+  </url>
+  <url>
+    <loc>https://theunplayednote.com/es/lo-que-israel-construyo-sin-peso/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://theunplayednote.com/en/what-israel-built-without-weight/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://theunplayednote.com/fr/ce-quisrael-a-construit-sans-poids/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://theunplayednote.com/es/lo-que-israel-construyo-sin-peso/"/>
   </url>
 </urlset>
