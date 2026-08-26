@@ -138,7 +138,7 @@ def write_page(path, source, block, dry_run):
     return True
 
 
-def common_head(title, desc, url, lang, alternates):
+def common_head(title, desc, url, lang, alternates, og_type):
     """Tags shared by the home page and every article page."""
     lines = [
         f'  <meta name="author" content="{NAME}">',
@@ -146,6 +146,12 @@ def common_head(title, desc, url, lang, alternates):
         '  <meta name="theme-color" content="#f7f5f0">',
         f'  <link rel="alternate" type="application/rss+xml" title="{NAME}" href="{SUBSTACK}/feed">',
         '',
+        '  <link rel="icon" href="/favicon.ico" sizes="any">',
+        '  <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32.png">',
+        '  <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16.png">',
+        '  <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">',
+        '',
+        f'  <meta property="og:type" content="{og_type}">',
         f'  <meta property="og:site_name" content="{NAME}">',
         f'  <meta property="og:title" content="{title}">',
         f'  <meta property="og:description" content="{desc}">',
@@ -172,8 +178,7 @@ def common_head(title, desc, url, lang, alternates):
 
 def build_article_block(page):
     title, desc = page["title"], page["desc"]
-    lines = common_head(title, desc, page["url"], page["lang"], page["alternates"])
-    lines[5:5] = ['  <meta property="og:type" content="article">']
+    lines = common_head(title, desc, page["url"], page["lang"], page["alternates"], "article")
 
     article = [
         '',
@@ -211,8 +216,7 @@ def build_article_block(page):
 
 
 def build_home_block(title, desc):
-    lines = common_head(title, desc, SITE + "/", "en", ["fr", "es"])
-    lines[5:5] = ['  <meta property="og:type" content="website">']
+    lines = common_head(title, desc, SITE + "/", "en", ["fr", "es"], "website")
     # The home page ships no canonical of its own; the article pages already have one.
     lines[0:0] = [
         f'  <link rel="canonical" href="{SITE}/">',
