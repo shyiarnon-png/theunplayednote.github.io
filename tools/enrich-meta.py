@@ -44,6 +44,34 @@ def text_of(pattern, source, group=1):
     return re.sub(r"\s+", " ", m.group(group)).strip() if m else None
 
 
+def paragraphs_in(source, start_class, stop_before=None):
+    """Plain-text <p> contents of one block, in document order."""
+    pattern = r'class="' + start_class + r'".*?'
+    pattern += r"(?=" + stop_before + r")" if stop_before else r"</div>"
+    block = re.search(pattern, source, re.S)
+    if not block:
+        return []
+    out = []
+    for m in re.finditer(r"<p[^>]*>(.*?)</p>", block.group(0), re.S):
+        txt = html.unescape(re.sub(r"<[^>]+>", "", m.group(1)))
+        txt = re.sub(r"\s+", " ", txt).strip()
+        if txt:
+            out.append(txt)
+    return out
+
+
+def article_body(source):
+    """The prose an extractor should see: the news excerpt then the essay.
+
+    xscout's `_extract_from_html` tries trafilatura, then schema.org
+    `articleBody`, then paragraph density. trafilatura handles this template
+    today, but articleBody is the documented fallback and costs one field.
+    """
+    news = paragraphs_in(source, "reader-news-block", r'<div class="reader-body"')
+    body = paragraphs_in(source, "reader-body")
+    return "\n\n".join(news + body)
+
+
 def parse_en_date(source_line):
     """'Times of Israel / JTA - May 28, 2026' -> ('2026-05-28', True).
 
@@ -163,6 +191,9 @@ def build_article_block(page):
         ld["datePublished"] = page["date"]
     if page["citation"]:
         ld["citation"] = html.unescape(page["citation"])
+    if page["body"]:
+        ld["articleBody"] = page["body"]
+        ld["wordCount"] = len(page["body"].split())
     return "\n".join(lines + ["", jsonld(ld)])
 
 
@@ -225,7 +256,8 @@ def collect(path):
 
     return {
         "path": path, "lang": lang, "title": title, "desc": desc, "tag": tag,
-        "citation": citation, "url": canonical or f"{SITE}/{lang}/{path.split(os.sep)[-2]}/",
+        "citation": citation, "body": article_body(source),
+        "url": canonical or f"{SITE}/{lang}/{path.split(os.sep)[-2]}/",
         "en_url": hreflangs.get("en"),
         "alternates": [l for l in LANGS if l != lang and l in hreflangs],
     }
