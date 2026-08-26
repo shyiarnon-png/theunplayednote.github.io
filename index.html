@@ -5,6 +5,88 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Unplayed Note</title>
   <meta name="description" content="What the news doesn't know about itself.">
+  <!-- rich-meta:start -->
+  <link rel="canonical" href="https://theunplayednote.com/">
+  <link rel="alternate" hreflang="x-default" href="https://theunplayednote.com/">
+  <meta name="author" content="The Unplayed Note">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+  <meta name="theme-color" content="#f7f5f0">
+  <link rel="alternate" type="application/rss+xml" title="The Unplayed Note" href="https://theunplayednote.substack.com/feed">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="The Unplayed Note">
+  <meta property="og:title" content="The Unplayed Note">
+  <meta property="og:description" content="What the news doesn't know about itself.">
+  <meta property="og:url" content="https://theunplayednote.com/">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="fr_FR">
+  <meta property="og:locale:alternate" content="es_ES">
+  <meta property="og:image" content="https://theunplayednote.com/og/the-unplayed-note.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="The Unplayed Note">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="The Unplayed Note">
+  <meta name="twitter:description" content="What the news doesn't know about itself.">
+  <meta name="twitter:image" content="https://theunplayednote.com/og/the-unplayed-note.png">
+  <meta name="twitter:image:alt" content="The Unplayed Note">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://theunplayednote.com/#website",
+        "url": "https://theunplayednote.com/",
+        "name": "The Unplayed Note",
+        "description": "What the news doesn't know about itself.",
+        "inLanguage": [
+          "en",
+          "fr",
+          "es"
+        ],
+        "publisher": {
+          "@id": "https://theunplayednote.com/#organization"
+        }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://theunplayednote.com/#organization",
+        "name": "The Unplayed Note",
+        "url": "https://theunplayednote.com/",
+        "description": "An independent publication.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://theunplayednote.com/og/the-unplayed-note.png",
+          "width": 1200,
+          "height": 630
+        },
+        "sameAs": [
+          "https://theunplayednote.substack.com"
+        ]
+      },
+      {
+        "@type": "Blog",
+        "@id": "https://theunplayednote.com/#blog",
+        "url": "https://theunplayednote.com/",
+        "name": "The Unplayed Note",
+        "description": "What the news doesn't know about itself.",
+        "inLanguage": [
+          "en",
+          "fr",
+          "es"
+        ],
+        "publisher": {
+          "@id": "https://theunplayednote.com/#organization"
+        }
+      }
+    ]
+  }
+  </script>
+  <!-- rich-meta:end -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@300;400&display=swap" rel="stylesheet">
@@ -417,10 +499,10 @@
   <!-- LANGUAGE NAV -->
   <nav class="lang-nav">
     <div class="lang-nav-inner">
-      <button class="lang-btn active" onclick="setLang('en')">English</button>
-      <button class="lang-btn" onclick="setLang('fr')">Français</button>
-      <button class="lang-btn" onclick="setLang('es')">Español</button>
-      <button class="lang-btn" onclick="setLang('he')">עברית <span class="coming-soon">(בקרוב)</span></button>
+      <button class="lang-btn active" data-lang="en" onclick="setLang('en')">English</button>
+      <button class="lang-btn" data-lang="fr" onclick="setLang('fr')">Français</button>
+      <button class="lang-btn" data-lang="es" onclick="setLang('es')">Español</button>
+      <button class="lang-btn" data-lang="he" onclick="setLang('he')">עברית <span class="coming-soon">(בקרוב)</span></button>
     </div>
   </nav>
 
@@ -1968,16 +2050,96 @@ const headerOrnament = `
   </g>
 </svg>`;
 
-let currentLang = 'en';
+const SITE_URL = 'https://theunplayednote.com';
+const SITE_NAME = 'The Unplayed Note';
+const OG_IMAGE = SITE_URL + '/og/the-unplayed-note.png';
 
-function setLang(lang) {
-  if (lang === 'he') {
-    alert('Hebrew edition coming soon. Subscribe to receive it.');
-    return;
+let currentLang = 'en';
+let currentIndex = null;   // index of the open article, or null on the list view
+let suppressHashChange = false;
+
+// slug -> index, per language. Lets a hash name the piece instead of its position.
+const slugIndex = Object.fromEntries(
+  Object.entries(articleSlugs).map(([lang, slugs]) =>
+    [lang, Object.fromEntries(slugs.map((slug, i) => [slug, i]))])
+);
+
+function slugFor(lang, index) {
+  const slugs = articleSlugs[lang] || articleSlugs['en'];
+  return slugs[index];
+}
+
+function articleUrl(lang, index) {
+  return `${SITE_URL}/${lang}/${slugFor(lang, index)}/`;
+}
+
+/** Set a <meta> by name= or property=, creating it if the page has none. */
+function setMeta(key, value) {
+  const attr = key.startsWith('og:') || key.startsWith('article:') ? 'property' : 'name';
+  let tag = document.head.querySelector(`meta[${attr}="${key}"]`);
+  if (!tag) {
+    tag = document.createElement('meta');
+    tag.setAttribute(attr, key);
+    document.head.appendChild(tag);
   }
+  tag.setAttribute('content', value);
+}
+
+function setCanonical(url) {
+  let tag = document.head.querySelector('link[rel="canonical"]');
+  if (!tag) {
+    tag = document.createElement('link');
+    tag.rel = 'canonical';
+    document.head.appendChild(tag);
+  }
+  tag.href = url;
+}
+
+/**
+ * Point the head at whatever is on screen. Social crawlers do not run JS, so
+ * the static page at /{lang}/{slug}/ remains the shareable URL; this keeps the
+ * tab title, the canonical, and any in-page share affordance honest.
+ */
+function updateHeadMeta(index) {
+  const ui = uiStrings[currentLang] || uiStrings['en'];
+  const onArticle = index !== null && index !== undefined;
+  const a = onArticle ? (articles[currentLang] || articles['en'])[index] : null;
+
+  const title = a ? `${a.title} — ${SITE_NAME}` : SITE_NAME;
+  const desc = a ? a.subtitle : ui.mission;
+  const url = a ? articleUrl(currentLang, index) : SITE_URL + '/';
+
+  document.title = title;
+  setCanonical(url);
+  setMeta('description', desc);
+  setMeta('og:type', a ? 'article' : 'website');
+  setMeta('og:title', a ? a.title : SITE_NAME);
+  setMeta('og:description', desc);
+  setMeta('og:url', url);
+  setMeta('og:image', OG_IMAGE);
+  setMeta('twitter:card', 'summary_large_image');
+  setMeta('twitter:title', a ? a.title : SITE_NAME);
+  setMeta('twitter:description', desc);
+  setMeta('twitter:image', OG_IMAGE);
+}
+
+/** Write the hash without re-entering the hashchange handler. */
+function setHash(value, push) {
+  const next = value ? '#' + value : window.location.pathname + window.location.search;
+  if (value && window.location.hash === '#' + value) return;
+  suppressHashChange = true;
+  // Opening a piece pushes, so Back returns to the list; everything else
+  // (legacy-hash rewrites, language swaps, closing) replaces in place.
+  if (push) history.pushState(null, '', next);
+  else history.replaceState(null, '', next);
+  setTimeout(() => { suppressHashChange = false; }, 0);
+}
+
+/** Swap every fixed string on the page into `lang`. */
+function applyLangChrome(lang) {
   currentLang = lang;
-  document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
-  event.target.closest('.lang-btn').classList.add('active');
+  document.querySelectorAll('.lang-btn').forEach(btn =>
+    btn.classList.toggle('active', btn.dataset.lang === lang));
 
   const ui = uiStrings[lang] || uiStrings['en'];
   document.querySelector('.tagline').textContent = ui.tagline;
@@ -1987,7 +2149,21 @@ function setLang(lang) {
   document.querySelector('.subscribe-input').placeholder = ui.subscribePlaceholder;
   document.documentElement.setAttribute('lang', lang);
   document.documentElement.setAttribute('dir', lang === 'he' ? 'rtl' : 'ltr');
+}
+
+function setLang(lang) {
+  if (lang === 'he') {
+    alert('Hebrew edition coming soon. Subscribe to receive it.');
+    return;
+  }
+  const openIndex = currentIndex;
+  applyLangChrome(lang);
   renderList();
+
+  // Reading a piece and switching language keeps you on that piece, and moves
+  // the hash to the slug that edition actually uses.
+  if (openIndex !== null) openArticle(openIndex, { push: false });
+  else updateHeadMeta(null);
 }
 
 function renderList() {
@@ -2017,16 +2193,19 @@ function handleArticleClick(event, index) {
   // For a normal left-click with JS active, keep the existing smooth in-page reader.
   if (event.metaKey || event.ctrlKey || event.shiftKey || event.button !== 0) return true;
   event.preventDefault();
-  openArticle(index);
+  openArticle(index, { push: true });
   return false;
 }
 
-function openArticle(index) {
+function openArticle(index, opts) {
   const data = articles[currentLang] || articles['en'];
   const ui = uiStrings[currentLang] || uiStrings['en'];
   const a = data[index];
+  if (!a) return;
 
-  window.location.hash = `${currentLang}/${index}`;
+  currentIndex = index;
+  setHash(`${currentLang}/${slugFor(currentLang, index)}`, opts && opts.push);
+  updateHeadMeta(index);
 
   const bodyHTML = a.body.map(p => `<p>${p}</p>`).join('');
 
@@ -2051,13 +2230,16 @@ function openArticle(index) {
     </div>
   `;
 
-  document.querySelector('.back-btn').textContent = '← ' + ui.backBtn;
+  document.querySelector('.back-btn').textContent = ui.backBtn;   // .back-btn::before draws the arrow
   document.getElementById('list-view').style.display = 'none';
   document.getElementById('reader-view').classList.add('open');
   window.scrollTo(0, 0);
 }
 
 function closeReader() {
+  currentIndex = null;
+  setHash('');
+  updateHeadMeta(null);
   document.getElementById('reader-view').classList.remove('open');
   document.getElementById('list-view').style.display = 'block';
   window.scrollTo(0, 0);
@@ -2069,21 +2251,59 @@ function handleSubscribe(e) {
   window.location.href = `https://theunplayednote.substack.com/subscribe?email=${encodeURIComponent(email)}`;
 }
 
-function parseHashAndOpen() {
-  const hash = window.location.hash.slice(1); // ex: "en/8"
-  if (!hash) return;
-  const [lang, idxStr] = hash.split('/');
-  if (lang === 'he') { window.location.hash = ''; return; }
-  const idx = parseInt(idxStr, 10);
-  if (articles[lang] && !isNaN(idx) && articles[lang][idx]) {
-    currentLang = lang;
-    renderList();
-    openArticle(idx);
+/**
+ * Resolve the article a hash refers to. Slugs are per-language but positions
+ * line up across editions, so a slug from any edition resolves, and the
+ * language prefix decides which edition is shown.
+ */
+function resolveHash(hash) {
+  const [lang, ...rest] = hash.split('/');
+  const ref = decodeURIComponent(rest.join('/')).replace(/\/+$/, '');
+  if (!ref || !articles[lang]) return null;
+
+  const bySlug = slugIndex[lang] && slugIndex[lang][ref];
+  if (bySlug !== undefined) return { lang, index: bySlug, canonical: true };
+
+  for (const other of Object.keys(slugIndex)) {
+    const index = slugIndex[other][ref];
+    if (index !== undefined && articles[lang][index]) {
+      return { lang, index, canonical: false };
+    }
   }
+
+  // Legacy links of the form #en/15, still out in the wild.
+  const index = parseInt(ref, 10);
+  if (!isNaN(index) && articles[lang][index]) return { lang, index, canonical: false };
+
+  return null;
 }
+
+function parseHashAndOpen() {
+  const hash = window.location.hash.slice(1); // ex: "en/what-israel-built-without-weight"
+  if (!hash) {
+    if (currentIndex !== null) closeReader();
+    return;
+  }
+  if (hash.split('/')[0] === 'he') { setHash(''); return; }
+
+  const hit = resolveHash(hash);
+  if (!hit) { setHash(''); return; }
+
+  if (hit.lang !== currentLang) applyLangChrome(hit.lang);
+  renderList();
+  // Rewrites a legacy or foreign-edition hash into the slug form for this edition.
+  openArticle(hit.index, { push: false });
+}
+
+// Back and forward should move between the list and the piece.
+window.addEventListener('hashchange', () => {
+  if (suppressHashChange) return;
+  parseHashAndOpen();
+});
 
 // Init
 renderList();
+updateHeadMeta(null);
 parseHashAndOpen();
 </script>
 <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "6f4ad3eb27b94b4e92f2f1d16346bb41"}'></script><!-- End Cloudflare Web Analytics -->
