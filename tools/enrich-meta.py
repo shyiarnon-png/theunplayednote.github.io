@@ -8,8 +8,16 @@ so re-running after adding new articles rewrites rather than duplicates.
   python3 tools/enrich-meta.py --dry-run # preview
 
 Existing <title> and <meta name="description"> are treated as the source of
-truth and are never rewritten. Publication dates are read from the English
-edition's source line and reused for the fr/es translations of the same piece.
+truth and are never rewritten.
+
+Publication dates come from tools/published.json, keyed by the English slug
+and shared with that piece's fr/es translations. When a piece is missing from
+the registry the date is inherited from the news line it cites, which is the
+original article's date rather than this one's. Every piece must end up with
+a date: the script refuses to write if any page has none.
+
+Adding a piece: add its English slug and publication date to
+tools/published.json, then re-run.
 """
 
 import argparse
@@ -37,6 +45,11 @@ MONTHS = {m: i for i, m in enumerate(
      "august", "september", "october", "november", "december"], 1)}
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+PUBLISHED = os.path.join(ROOT, "tools", "published.json")
+
+
+def slug_of(url):
+    return url.rstrip("/").rsplit("/", 1)[-1] if url else None
 
 
 def text_of(pattern, source, group=1):
@@ -271,17 +284,31 @@ def main():
 
     pages = [collect(p) for p in sorted(glob.glob(os.path.join("*", "*", "index.html")))]
 
-    # English edition carries the datable source line; translations inherit it.
-    dates = {}
+    with open(PUBLISHED, encoding="utf-8") as fh:
+        published = json.load(fh)
+
+    # The English edition carries the datable news line; translations inherit
+    # whatever their English original resolved to.
+    fallback = {page["url"]: parse_en_date(page["citation"])
+                for page in pages if page["lang"] == "en"}
+
+    undated = []
     for page in pages:
-        if page["lang"] == "en":
-            dates[page["url"]] = parse_en_date(page["citation"])
+        en_url = page["en_url"] or page["url"]
+        recorded = published.get(slug_of(en_url))
+        page["date"], page["date_full"] = (
+            (recorded, True) if recorded else fallback.get(en_url, (None, False)))
+        if not page["date"]:
+            undated.append(page["path"])
+        elif not recorded:
+            print(f"  note: {page['path']} falls back to the news line date "
+                  f"({page['date']}); add {slug_of(en_url)} to published.json",
+                  file=sys.stderr)
+    if undated:
+        raise SystemExit("no date for:\n  " + "\n  ".join(undated))
 
     changed = []
     for page in pages:
-        page["date"], page["date_full"] = dates.get(page["en_url"] or page["url"], (None, False))
-        if not page["date"]:
-            print(f"  note: no date for {page['path']}", file=sys.stderr)
         if write_page(page["path"], read_page(page["path"]),
                       build_article_block(page), args.dry_run):
             changed.append(page["path"])
