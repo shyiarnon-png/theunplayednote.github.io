@@ -33,8 +33,8 @@ NAME = "The Unplayed Note"
 SUBSTACK = "https://theunplayednote.substack.com"
 OG_IMAGE = f"{SITE}/og/the-unplayed-note.png"
 
-OG_LOCALE = {"en": "en_US", "fr": "fr_FR", "es": "es_ES"}
-LANGS = ("en", "fr", "es")
+OG_LOCALE = {"en": "en_US", "fr": "fr_FR", "es": "es_ES", "he": "he_IL"}
+LANGS = ("en", "fr", "es", "he")
 
 START = "  <!-- rich-meta:start -->"
 END = "  <!-- rich-meta:end -->"

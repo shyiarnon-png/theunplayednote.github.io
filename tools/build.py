@@ -133,7 +133,10 @@ def render_head(meta_block, piece, lang):
     ed = piece["editions"][lang]
     lines = [
         f'  <title>{body(ed["title"])} — {NAME}</title>',
-        f'  <meta name="description" content="{attr(ed["subtitle"])}">',
+        # The same text as og:description and the JSON-LD. Three
+        # descriptions of one page that disagree is worse than one that is
+        # short.
+        f'  <meta name="description" content="{attr(meta_description(ed["subtitle"]))}">',
         '  <!-- rich-meta:start -->',
         meta_block,
         '  <!-- rich-meta:end -->',
@@ -145,6 +148,92 @@ def render_head(meta_block, piece, lang):
             lines.append(f'  <link rel="alternate" hreflang="{other}" '
                          f'href="{url_for(other, alt["slug"])}">')
     return "\n".join(lines)
+
+
+# Google renders roughly 155 to 160 characters of a description before it
+# truncates, and a description cut mid-word by the search engine reads worse
+# than one the site cut deliberately. Subtitles here run to 233 characters.
+DESC_LIMIT = 160
+
+# Sentence end followed by a space. Hebrew uses the same full stop.
+SENTENCE_END = re.compile(r"(?<=[.!?])\s+")
+
+
+def meta_description(subtitle):
+    """A description that fits, built from whole sentences where it can.
+
+    The subtitle stays intact on the page. This only governs the meta tag.
+    Preferring whole sentences matters because these subtitles are aphoristic
+    and a cut one loses the turn it was built around.
+    """
+    text = " ".join(subtitle.split())
+    if len(text) <= DESC_LIMIT:
+        return text
+
+    kept = ""
+    for sentence in SENTENCE_END.split(text):
+        candidate = (kept + " " + sentence).strip()
+        if len(candidate) > DESC_LIMIT:
+            break
+        kept = candidate
+    if kept:
+        return kept
+
+    # One sentence, too long by itself. Cut on a word and say so with an
+    # ellipsis rather than pretending it ended.
+    cut = text[:DESC_LIMIT - 1]
+    space = cut.rfind(" ")
+    if space > DESC_LIMIT * 0.6:
+        cut = cut[:space]
+    return cut.rstrip(" ,;:") + "\u2026"
+
+
+def render_sitemap(pieces):
+    """The sitemap, generated rather than maintained.
+
+    It is accurate today because it has been kept by hand. That stops being
+    true the first time a piece is published by something other than a human
+    editing this file, which is exactly what the portal does.
+
+    lastmod is the piece's published date. The site has no separate revision
+    date, and inventing one that moves on every rebuild would train crawlers
+    to ignore the field.
+    """
+    lines = ['<?xml version="1.0" encoding="UTF-8"?>',
+             '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"',
+             '        xmlns:xhtml="http://www.w3.org/1999/xhtml">',
+             '  <url>', f'    <loc>{SITE}/</loc>', '  </url>']
+
+    for piece in pieces:
+        published = [l for l in LANGS if piece["editions"].get(l, {}).get("slug")]
+        for lang in published:
+            lines.append('  <url>')
+            lines.append(f'    <loc>{url_for(lang, piece["editions"][lang]["slug"])}</loc>')
+            for other in published:
+                href = url_for(other, piece["editions"][other]["slug"])
+                lines.append(f'    <xhtml:link rel="alternate" hreflang="{other}" '
+                             f'href="{href}"/>')
+            lines.append(f'    <lastmod>{piece["published"]}</lastmod>')
+            lines.append('  </url>')
+
+    lines.append('</urlset>')
+    return "\n".join(lines) + "\n"
+
+
+def render_robots():
+    """robots.txt, generated so it cannot fall out of step with the sitemap.
+
+    Everything is allowed. og/ holds the share card images, which are meant
+    to be fetched by scrapers rather than indexed as pages, so they are
+    disallowed for the general crawler and nothing else is.
+    """
+    return (
+        "User-agent: *\n"
+        "Allow: /\n"
+        "Disallow: /og/\n"
+        "\n"
+        f"Sitemap: {SITE}/sitemap.xml\n"
+    )
 
 
 def render_page(template, pieces, piece, lang, ui, meta_block):
@@ -199,7 +288,7 @@ def main():
             page = {
                 "lang": lang,
                 "title": ed["title"],
-                "desc": ed["subtitle"],
+                "desc": meta_description(ed["subtitle"]),
                 "tag": ed["tag"],
                 "citation": ed["source"],
                 "url": url_for(lang, ed["slug"]),
@@ -227,6 +316,23 @@ def main():
                 os.makedirs(os.path.dirname(path), exist_ok=True)
                 with open(path, "w", encoding="utf-8") as fh:
                     fh.write(out)
+
+    for rel, text in (("sitemap.xml", render_sitemap(pieces)),
+                      ("robots.txt", render_robots())):
+        path = os.path.join(ROOT, rel)
+        existing = None
+        if os.path.exists(path):
+            with open(path, encoding="utf-8") as fh:
+                existing = fh.read()
+        if existing is None:
+            missing.append(rel)
+        elif existing == text:
+            same.append(rel)
+        else:
+            changed.append((rel, existing, text))
+        if not args.check:
+            with open(path, "w", encoding="utf-8") as fh:
+                fh.write(text)
 
     print(f"identical {len(same)}   differs {len(changed)}   new {len(missing)}")
     for rel, old, new in changed[:5]:
