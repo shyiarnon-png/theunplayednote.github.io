@@ -1,0 +1,97 @@
+{
+  "order": 4,
+  "published": "2026-05-25",
+  "editions": {
+    "en": {
+      "slug": "the-statistic-nobody-is-reading",
+      "title": "The statistic nobody is reading.",
+      "subtitle": "Jerusalem ranked last in quality of life among Israeli cities. The data is accurate. The conclusion may not be.",
+      "lede": "Jerusalem ranked last among major Israeli cities in the 2025 Central Bureau of Statistics quality-of-life index. The methodology was rigorous: income, employment, housing costs, infrastructure, access to services.",
+      "source": "Times of Israel · May 2026",
+      "tag": "Jewish World",
+      "news": {
+        "source": "Times of Israel · May 2026",
+        "text": "Jerusalem ranked last among major Israeli cities in the 2025 Central Bureau of Statistics quality-of-life index. The methodology was rigorous: income, employment, housing costs, infrastructure, access to services. On each metric, Jerusalem underperformed. The city placed below Beer Sheva. Below Ashdod. Below every coastal city measured.\n\nThe findings were reported matter-of-factly. The data is not disputed."
+      },
+      "body": [
+        "The question the statistic cannot ask is: quality of what kind of life?",
+        "Every index is a set of choices. You choose what to count. You choose what counts as good. The CBS index counted income, employment, housing costs, infrastructure, access to services — the variables that measure a city's capacity to deliver the goods a modern economy promises. On those terms, Jerusalem underperforms. This is accurate.",
+        "But there is a prior question: whose definition of the good is built into the index?",
+        "The Hebrew word tov — usually translated as good — carries in the tradition a weight that the English word barely holds. It is not the good that satisfies a preference. It is not the good that scores well on a metric. It is the good that precedes the question of what you want, because it is the layer of reality out of which wanting itself emerges. The Kabbalists teach that tov is the first disclosure of Divinity into the world — not a moral judgment but an ontological fact. Not 'this is better than that' but 'this is real.'",
+        "Jerusalem is the city that gave tov its most concentrated address in human history. It is the place where the weight of that word has been carried the longest, across the most ruptures, at the highest cost. It is not cheap to live there. Not financially. Not existentially. Everything costs more in Jerusalem — the arguments, the silences, the competing claims, the sheer density of meaning pressing on every corner and every stone.",
+        "The index measured what it knows how to measure. It found a city that is expensive, underemployed, and poorly served by its infrastructure. It is right.",
+        "It did not find — because it had no instrument for this — a city that has been choosing, for three thousand years, to borrow from the future in order to remain at the centre of something it cannot fully name. A city that keeps accepting costs that no rational actor would accept, because the thing it is protecting is not on any index.",
+        "The statisticians ranked Jerusalem last. The people who live there, and stay, and keep choosing it against all reasonable alternatives, are holding a different accounting.",
+        "The discrepancy between those two numbers is not a problem to solve. It is a description of what tov actually costs."
+      ]
+    },
+    "fr": {
+      "slug": "la-statistique-que-personne-ne-lit",
+      "title": "La statistique que personne ne lit.",
+      "subtitle": "Jérusalem classée dernière en qualité de vie parmi les villes israéliennes. Les données sont exactes. La conclusion ne l'est peut-être pas.",
+      "lede": "Jérusalem s'est classée dernière parmi les grandes villes israéliennes dans l'indice de qualité de vie 2025 du Bureau central des statistiques. La méthodologie était rigoureuse : revenus, emploi, coût du logement, infrastructures, accès aux services.",
+      "source": "Times of Israel · Mai 2026",
+      "tag": "Monde juif",
+      "news": {
+        "source": "Times of Israel · Mai 2026",
+        "text": "Jérusalem s'est classée dernière parmi les grandes villes israéliennes dans l'indice de qualité de vie 2025 du Bureau central des statistiques. La méthodologie était rigoureuse : revenus, emploi, coût du logement, infrastructures, accès aux services. Sur chaque indicateur, Jérusalem a sous-performé. La ville s'est classée en dessous de Beer Sheva. En dessous d'Ashdod. En dessous de chaque ville côtière mesurée.\n\nLes résultats ont été rapportés factuellement. Les données ne sont pas contestées."
+      },
+      "body": [
+        "La question que la statistique ne peut pas poser est : qualité de quelle sorte de vie ?",
+        "Tout indice est un ensemble de choix. On choisit quoi compter. On choisit ce qui compte comme bien. L'indice du BCS a comptabilisé les revenus, l'emploi, le coût du logement, les infrastructures, l'accès aux services — les variables qui mesurent la capacité d'une ville à livrer les biens que l'économie moderne promet. Sur ces critères, Jérusalem sous-performe. C'est exact.",
+        "Mais il y a une question préalable : quelle définition du bien est intégrée dans l'indice ?",
+        "Le mot hébreu tov — généralement traduit par bien — porte dans la tradition un poids que le mot français contient à peine. Ce n'est pas le bien qui satisfait une préférence. Ce n'est pas le bien qui obtient un bon score sur un indicateur. C'est le bien qui précède la question de ce que vous voulez, parce qu'il est la couche de réalité dont le vouloir lui-même émerge. Les kabbalistes enseignent que tov est la première révélation de la Divinité dans le monde — non pas un jugement moral mais un fait ontologique. Non pas 'ceci est mieux que cela' mais 'ceci est réel.'",
+        "Jérusalem est la ville qui a donné à tov son adresse la plus concentrée dans l'histoire humaine. C'est l'endroit où le poids de ce mot a été porté le plus longtemps, à travers le plus de ruptures, au coût le plus élevé. Il n'est pas bon marché d'y vivre. Pas financièrement. Pas existentiellement. Tout coûte plus cher à Jérusalem — les débats, les silences, les revendications concurrentes, la densité pure de sens qui presse sur chaque coin et chaque pierre.",
+        "L'indice a mesuré ce qu'il sait mesurer. Il a trouvé une ville chère, sous-employée et mal desservie par ses infrastructures. Il a raison.",
+        "Il n'a pas trouvé — parce qu'il n'avait aucun instrument pour cela — une ville qui choisit, depuis trois mille ans, d'emprunter sur l'avenir pour rester au centre de quelque chose qu'elle ne peut pas entièrement nommer. Une ville qui continue d'accepter des coûts qu'aucun acteur rationnel n'accepterait, parce que ce qu'elle protège ne figure sur aucun indice.",
+        "Les statisticiens ont classé Jérusalem dernière. Les gens qui y vivent, y restent, et continuent de la choisir contre toutes les alternatives raisonnables, tiennent une comptabilité différente.",
+        "L'écart entre ces deux chiffres n'est pas un problème à résoudre. C'est une description de ce que tov coûte réellement."
+      ]
+    },
+    "es": {
+      "slug": "la-estadistica-que-nadie-lee",
+      "title": "La estadística que nadie lee.",
+      "subtitle": "Jerusalén clasificada última en calidad de vida entre las ciudades israelíes. Los datos son precisos. La conclusión quizás no.",
+      "lede": "Jerusalén se clasificó última entre las principales ciudades israelíes en el índice de calidad de vida 2025 de la Oficina Central de Estadísticas. La metodología fue rigurosa: ingresos, empleo, costos de vivienda, infraestructura, acceso a servicios.",
+      "source": "Times of Israel · Mayo 2026",
+      "tag": "Mundo judío",
+      "news": {
+        "source": "Times of Israel · Mayo 2026",
+        "text": "Jerusalén se clasificó última entre las principales ciudades israelíes en el índice de calidad de vida 2025 de la Oficina Central de Estadísticas. La metodología fue rigurosa: ingresos, empleo, costos de vivienda, infraestructura, acceso a servicios. En cada indicador, Jerusalén tuvo un rendimiento inferior. La ciudad se ubicó por debajo de Beer Sheva. Por debajo de Ashdod. Por debajo de cada ciudad costera medida.\n\nLos hallazgos fueron reportados con objetividad. Los datos no están en disputa."
+      },
+      "body": [
+        "La pregunta que la estadística no puede hacer es: ¿calidad de qué tipo de vida?",
+        "Todo índice es un conjunto de elecciones. Se elige qué contar. Se elige qué cuenta como bueno. El índice de la OCS contó ingresos, empleo, costos de vivienda, infraestructura, acceso a servicios — las variables que miden la capacidad de una ciudad para entregar los bienes que la economía moderna promete. En esos términos, Jerusalén tiene un rendimiento inferior. Esto es preciso.",
+        "Pero hay una pregunta previa: ¿qué definición de lo bueno está integrada en el índice?",
+        "La palabra hebrea tov — generalmente traducida como bueno — lleva en la tradición un peso que la palabra española apenas contiene. No es lo bueno que satisface una preferencia. No es lo bueno que puntúa bien en un indicador. Es lo bueno que precede a la pregunta de qué quieres, porque es la capa de realidad de la que emerge el querer mismo. Los cabalistas enseñan que tov es la primera revelación de la Divinidad en el mundo — no un juicio moral sino un hecho ontológico. No 'esto es mejor que aquello' sino 'esto es real.'",
+        "Jerusalén es la ciudad que le dio a tov su dirección más concentrada en la historia humana. Es el lugar donde el peso de esa palabra ha sido llevado más tiempo, a través de las más rupturas, al más alto costo. No es barato vivir allí. No financieramente. No existencialmente. Todo cuesta más en Jerusalén — los argumentos, los silencios, las reclamaciones en competencia, la pura densidad de significado que presiona en cada esquina y cada piedra.",
+        "El índice midió lo que sabe medir. Encontró una ciudad cara, con desempleo y mal atendida por su infraestructura. Tiene razón.",
+        "No encontró — porque no tenía instrumento para esto — una ciudad que ha estado eligiendo, durante tres mil años, pedir prestado del futuro para permanecer en el centro de algo que no puede nombrar completamente. Una ciudad que sigue aceptando costos que ningún actor racional aceptaría, porque lo que protege no está en ningún índice.",
+        "Los estadísticos clasificaron a Jerusalén última. Las personas que viven allí, se quedan, y siguen eligiéndola contra todas las alternativas razonables, llevan una contabilidad diferente.",
+        "La discrepancia entre esos dos números no es un problema a resolver. Es una descripción de lo que tov realmente cuesta."
+      ]
+    },
+    "he": {
+      "title": "הסטטיסטיקה שאיש אינו קורא.",
+      "subtitle": "ירושלים דורגה אחרונה באיכות החיים בין הערים בישראל. הנתונים מדויקים. המסקנה אולי לא.",
+      "lede": "ירושלים דורגה אחרונה בין הערים הגדולות בישראל במדד איכות החיים של הלשכה המרכזית לסטטיסטיקה לשנת 2025. המתודולוגיה הייתה קפדנית: הכנסה, תעסוקה, עלויות דיור, תשתיות, נגישות לשירותים.",
+      "source": "Times of Israel · מאי 2026",
+      "tag": "עולם יהודי",
+      "news": {
+        "source": "Times of Israel · מאי 2026",
+        "text": "ירושלים דורגה אחרונה בין הערים הגדולות בישראל במדד איכות החיים של הלשכה המרכזית לסטטיסטיקה לשנת 2025. המתודולוגיה הייתה קפדנית: הכנסה, תעסוקה, עלויות דיור, תשתיות, נגישות לשירותים. בכל מדד, ירושלים נחלה ביצועים חלשים. העיר דורגה מתחת לבאר שבע. מתחת לאשדוד. מתחת לכל עיר חוף שנמדדה.\n\nהממצאים דווחו בענייניות. הנתונים אינם שנויים במחלוקת."
+      },
+      "body": [
+        "השאלה שהסטטיסטיקה אינה יכולה לשאול היא: איכות של איזה מין חיים?",
+        "כל מדד הוא אוסף של בחירות. בוחרים מה סופרים. בוחרים מה נחשב טוב. מדד הלמ\"ס ספר הכנסה, תעסוקה, עלויות דיור, תשתיות, נגישות לשירותים — המשתנים המודדים את יכולתה של עיר לספק את הטובין שכלכלה מודרנית מבטיחה. לפי הקריטריונים האלה, ירושלים נחלת ביצועים חלשים. זה מדויק.",
+        "אך יש שאלה שקודמת לה: של מי ההגדרה לטוב הבנויה בתוך המדד?",
+        "המילה העברית 'טוב' — המתורגמת בדרך כלל כ-good — נושאת במסורת משקל שהמילה האנגלית בקושי מכילה. זה לא הטוב שמספק העדפה. זה לא הטוב שמקבל ציון גבוה במדד. זה הטוב שקודם לשאלה מה אתה רוצה, כי הוא השכבה של המציאות שממנה עולה הרצון עצמו. המקובלים מלמדים שהטוב הוא הגילוי הראשון של האלוהות בעולם — לא שיפוט מוסרי אלא עובדה אונטולוגית. לא 'זה טוב מזה' אלא 'זה אמיתי'.",
+        "ירושלים היא העיר שנתנה ל'טוב' את הכתובת המרוכזת ביותר בהיסטוריה האנושית. זה המקום שבו משקל המילה הזו נישא הכי הרבה זמן, דרך הכי הרבה קרעים, במחיר הכי גבוה. לא זול לגור שם. לא כלכלית. לא קיומית. הכול עולה יותר בירושלים — הוויכוחים, השתיקות, התביעות המתחרות, הצפיפות הפשוטה של משמעות הלוחצת על כל פינה וכל אבן.",
+        "המדד מדד את מה שהוא יודע למדוד. הוא מצא עיר יקרה, מובטלת חלקית, ומשורתת בעליבות על ידי תשתיותיה. הוא צודק.",
+        "הוא לא מצא — כי לא היה לו מכשיר בשביל זה — עיר שבוחרת, שלושת אלפים שנה, ללוות מהעתיד כדי להישאר במרכזו של משהו שהיא לא יכולה לקרוא לו בשם במלואו. עיר שממשיכה לקבל עלויות שאף שחקן רציונלי לא היה מקבל, כי מה שהיא מגינה עליו לא נמצא באף מדד.",
+        "הסטטיסטיקאים דירגו את ירושלים אחרונה. האנשים שחיים שם, ונשארים, וממשיכים לבחור בה נגד כל חלופה סבירה, מנהלים חשבון שונה.",
+        "הפער בין שני המספרים האלה אינו בעיה לפתרון. הוא תיאור של מה ש'טוב' באמת עולה."
+      ]
+    }
+  }
+}

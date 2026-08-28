@@ -1,0 +1,42 @@
+{
+  "en": {
+    "issueLabel": "Issue № 1 · 2026",
+    "readMore": "Read",
+    "backBtn": "All articles",
+    "subscribeText": "Receive each edition",
+    "subscribePlaceholder": "your@email.com",
+    "tagline": "What the news doesn't know about itself",
+    "subscribeBtn": "Subscribe",
+    "mission": "One story from the news at a time — read again, for the layer underneath it. The news reports what happened. This is what it didn't know it was also saying."
+  },
+  "fr": {
+    "issueLabel": "Numéro № 1 · 2026",
+    "readMore": "Lire",
+    "backBtn": "Tous les articles",
+    "subscribeText": "Recevoir chaque édition",
+    "subscribePlaceholder": "votre@email.com",
+    "tagline": "Ce que l'actualité ne sait pas d'elle-même",
+    "subscribeBtn": "S'abonner",
+    "mission": "Une actualité à la fois — relue pour la couche qui se trouve en dessous. L'actualité rapporte ce qui s'est passé. Voici ce qu'elle disait sans le savoir."
+  },
+  "es": {
+    "issueLabel": "Número № 1 · 2026",
+    "readMore": "Leer",
+    "backBtn": "Todos los artículos",
+    "subscribeText": "Recibir cada edición",
+    "subscribePlaceholder": "tu@email.com",
+    "tagline": "Lo que las noticias no saben de sí mismas",
+    "subscribeBtn": "Suscribirse",
+    "mission": "Una noticia a la vez — releída por la capa que hay debajo. La noticia informa lo que sucedió. Esto es lo que decía sin saberlo."
+  },
+  "he": {
+    "issueLabel": "גיליון № 1 · 2026",
+    "readMore": "קרא",
+    "backBtn": "כל המאמרים",
+    "subscribeText": "קבל כל גיליון",
+    "subscribePlaceholder": "האימייל שלך",
+    "tagline": "מה שהחדשות אינן יודעות על עצמן",
+    "subscribeBtn": "הרשמה",
+    "mission": "מדי שבוע, ידיעה אחת מהחדשות — נקראת שוב, בשביל השכבה שמתחתיה. החדשות מדווחות מה קרה. זה מה שהן אמרו בלי לדעת."
+  }
+}
