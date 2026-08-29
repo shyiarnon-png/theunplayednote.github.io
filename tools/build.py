@@ -188,6 +188,108 @@ def meta_description(subtitle):
     return cut.rstrip(" ,;:") + "\u2026"
 
 
+def lede(ed):
+    """The one-paragraph standfirst the home page lists a piece by.
+
+    Every edition carries one, but it is a summary of the news excerpt, so a
+    piece written without one still has an honest answer available.
+    """
+    if ed.get("lede"):
+        return ed["lede"]
+    paras = paragraphs(ed.get("news", {}).get("text", ""))
+    return paras[0] if paras else ""
+
+
+def js(value):
+    """A Python value as a JavaScript literal, safe inside a <script> block.
+
+    JSON is a subset of JavaScript with two exceptions that matter here.
+    A literal </script> anywhere inside a string ends the block early, so the
+    slash is escaped; and U+2028 and U+2029 are line terminators to a JS
+    parser though JSON leaves them raw, so they are escaped too. Both forms
+    are read back as the original characters.
+    """
+    text = json.dumps(value, ensure_ascii=False, indent=2)
+    return (text.replace("</", "<\\/")
+                .replace("\u2028", "\\u2028").replace("\u2029", "\\u2029"))
+
+
+# The home page is one file that carries the whole corpus three times over:
+# the English list a visitor sees before any script runs, the per-language
+# article data its reader view works from, and the slug table its hashes
+# resolve against. All three were maintained by hand, which meant a piece
+# published by anything other than a person editing this file was live at its
+# own address and absent from the front page. These three regions are now
+# written from content/ like everything else; the rest of the file is left
+# exactly as it is.
+REGIONS = {
+    "list":     ("    <!-- build:list -->\n",  "\n    <!-- /build:list -->"),
+    "articles": ("/* build:articles */\n",     "\n/* /build:articles */"),
+    "slugs":    ("/* build:slugs */\n",        "\n/* /build:slugs */"),
+}
+
+
+def splice(text, name, replacement):
+    open_tag, close_tag = REGIONS[name]
+    start = text.find(open_tag)
+    end = text.find(close_tag, start + len(open_tag)) if start >= 0 else -1
+    if start < 0 or end < 0:
+        # Losing a marker would otherwise show up as an index.html that
+        # quietly stops being updated, which is the exact failure this
+        # replaced.
+        raise SystemExit(
+            f"index.html has no {name} region. It needs the marker pair "
+            f"{open_tag.strip()} ... {close_tag.strip()} around the block "
+            f"build.py writes.")
+    return text[:start + len(open_tag)] + replacement + text[end:]
+
+
+def render_home(current, pieces, ui):
+    """index.html with its three generated regions rewritten.
+
+    Editions are positional: articles[lang][i] and articleSlugs[lang][i] are
+    the same piece, so an edition a piece does not have is a null rather than
+    a gap, and the page skips it. A language appears in articleSlugs only once
+    something in it has a published page, which keeps Hebrew, drafted but not
+    yet published, out of the slug table exactly as before.
+    """
+    entries = []
+    for i, piece in enumerate(pieces):
+        ed = piece["editions"].get("en")
+        if not ed or not ed.get("slug"):
+            continue
+        entries.append(
+            f'    <a class="article-entry" href="/en/{ed["slug"]}/"'
+            f' onclick="return handleArticleClick(event, {i})">\n'
+            f'      <div class="article-source">{body(ed["tag"])}'
+            f' &nbsp;&middot;&nbsp; {body(ed["source"])}</div>\n'
+            f'      <h2 class="article-title">{body(ed["title"])}</h2>\n'
+            f'      <p class="article-subtitle">{body(ed["subtitle"])}</p>\n'
+            f'      <p class="article-lede">{body(lede(ed))}</p>\n'
+            f'      <span class="read-more">{body(ui["en"]["readMore"])}</span>\n'
+            f'    </a>')
+    # Newest first, the way the page has always read.
+    entries.reverse()
+
+    fields = ("source", "tag", "title", "subtitle", "lede", "news", "body")
+    articles, slugs = {}, {}
+    for lang in LANGS:
+        eds = [p["editions"].get(lang) or None for p in pieces]
+        if not any(eds):
+            continue
+        articles[lang] = [
+            {f: (lede(ed) if f == "lede" else ed[f]) for f in fields}
+            if ed else None
+            for ed in eds
+        ]
+        if any(ed and ed.get("slug") for ed in eds):
+            slugs[lang] = [ed.get("slug") if ed else None for ed in eds]
+
+    out = splice(current, "list", "\n".join(entries))
+    out = splice(out, "articles", f"const articles = {js(articles)};")
+    return splice(out, "slugs", f"const articleSlugs = {js(slugs)};")
+
+
 def render_sitemap(pieces):
     """The sitemap, generated rather than maintained.
 
@@ -317,7 +419,14 @@ def main():
                 with open(path, "w", encoding="utf-8") as fh:
                     fh.write(out)
 
-    for rel, text in (("sitemap.xml", render_sitemap(pieces)),
+    # The home page is edited in place rather than rendered from a template:
+    # it is a hand-built page with three generated regions inside it, so what
+    # is on disk is the input as well as the output.
+    with open(os.path.join(ROOT, "index.html"), encoding="utf-8") as fh:
+        home = fh.read()
+
+    for rel, text in (("index.html", render_home(home, pieces, ui)),
+                      ("sitemap.xml", render_sitemap(pieces)),
                       ("robots.txt", render_robots())):
         path = os.path.join(ROOT, rel)
         existing = None
