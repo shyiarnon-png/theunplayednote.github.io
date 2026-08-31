@@ -520,6 +520,13 @@
 
     <div class="articles" id="article-list">
     <!-- build:list -->
+    <a class="article-entry" href="/en/no-photograph-survives/" onclick="return handleArticleClick(event, 16)">
+      <div class="article-source">Jewish World &nbsp;&middot;&nbsp; Jewish Chronicle (Michele Goldsmith, August 28, 2026) / RSPB official history</div>
+      <h2 class="article-title">No photograph survives</h2>
+      <p class="article-subtitle">A woman who changed a law by writing the same sentence hundreds of times, then left almost nothing behind to prove she had.</p>
+      <p class="article-lede">In February 1889, Emily Williamson founded the Society for the Protection of Birds in Manchester, campaigning against the plume trade that killed millions of wild birds each year…</p>
+      <span class="read-more">Read</span>
+    </a>
     <a class="article-entry" href="/en/what-israel-built-without-weight/" onclick="return handleArticleClick(event, 15)">
       <div class="article-source">Jewish World &nbsp;&middot;&nbsp; Israel Innovation Authority · 2026</div>
       <h2 class="article-title">What Israel built without weight.</h2>
@@ -1002,6 +1009,24 @@ const articles = {
         "At the same time, the people who used to sit in the rooms where that intelligence was written have started sitting somewhere else. Sixty-two percent of the employees at Israeli high-tech firms now work from inside Israel. In 2019 it was sixty-nine. Three and a half thousand researchers who used to work in Tel Aviv and Haifa labs work from elsewhere now, filing the same code from a different desk in a different country, the distance costing them nothing — a laptop closes in one city and opens in another, and the work inside it never notices the difference.",
         "DustPhotonics' chips are cut in a room built to hold its temperature within a fraction of a degree and its air cleaner than a hospital operating theater, filtered down to particles too small for a human eye to register, bolted to a fixed address that cannot be rented by the month or relocated to wherever the talent happens to be that year. The engineer who designs the layout those machines will cut can review the file from a laptop on a kitchen table anywhere a signal reaches — and increasingly does."
       ]
+    },
+    {
+      "source": "Jewish Chronicle (Michele Goldsmith, August 28, 2026) / RSPB official history",
+      "tag": "Jewish World",
+      "title": "No photograph survives",
+      "subtitle": "A woman who changed a law by writing the same sentence hundreds of times, then left almost nothing behind to prove she had.",
+      "lede": "In February 1889, Emily Williamson founded the Society for the Protection of Birds in Manchester, campaigning against the plume trade that killed millions of wild birds each year…",
+      "news": {
+        "source": "Jewish Chronicle (Michele Goldsmith, August 28, 2026) / RSPB official history",
+        "text": "In February 1889, Emily Williamson founded the Society for the Protection of Birds in Manchester, campaigning against the plume trade that killed millions of wild birds each year for the hat industry. When Williamson resigned in May 1891, eighteen-year-old Hannah Poland became honorary secretary and ran the campaign from her family’s home in Maida Vale for two years. She persuaded the Duchess of Portland, dresser to Queen Alexandra, to become the society’s president in June 1891 — a connection that later made possible the organization’s royal charter. Poland wrote hundreds of letters to British newspapers; only one survives, published in the Newcastle Chronicle in April 1891. In 1893 Etta Lemon succeeded her and led the organization for three decades. The Importation of Plumage (Prohibition) Act passed in 1921. The society, now the RSPB, has over a million members and 224 nature reserves. No photograph of Hannah Poland is known to exist, and a request for a commemorative plaque was turned down for lack of documented information."
+      },
+      "body": [
+        "The one surviving letter says almost nothing. An eighteen-year-old girl asks the readers of the Newcastle Chronicle to refrain from wearing the feathers of any bird not killed for food. No argument beyond the request itself, no name pressed forward, no claim on what would come of it. She sent this same sentence, or one close to it, to newspaper after newspaper across Britain, for two years, under a title — honorary secretary — that came with no salary and no promise that anyone would remember who had held it.",
+        "The one contact she made that mattered most wasn't with the public at all. She wrote to the Duchess of Portland, dresser to the Queen, and asked her to become president of a society that, at the time, met around a teapot in Manchester. The Duchess said yes. That single acceptance opened a door to the royal court that a thousand more letters from Hannah Poland never could have opened alone, and it was Poland who found the door and knocked.",
+        "Two years later she stepped back. Etta Lemon took the position and held it for thirty years, built the organization that exists today, became the name history attaches to the movement's founding. Poland married, kept a private life in north London, and was named the society's first honorary member in 1905 — a line in a minute book, not a title anyone building the movement's public story had much use for afterward.",
+        "No photograph of her has ever surfaced. When someone tried, decades later, to have a blue plaque placed for her, the request was refused for lack of documentation — nothing on paper old enough to prove she had been there at all.",
+        "What she left instead was a membership registry from November 1889, written out in her own hand, kept privately for decades until her son gave it to the RSPB after her death. And one letter, still sitting in a newspaper archive in Newcastle, asking for something that never once mentioned her name."
+      ]
     }
   ],
   "fr": [
@@ -1347,7 +1372,8 @@ const articles = {
         "Dans le même temps, les gens qui s'asseyaient autrefois dans les pièces où cette intelligence s'écrivait ont commencé à s'asseoir ailleurs. Soixante-deux pour cent des employés des entreprises high-tech israéliennes travaillent aujourd'hui depuis l'intérieur d'Israël. En 2019, ils étaient soixante-neuf. Trois mille cinq cents chercheurs qui travaillaient autrefois dans les laboratoires de Tel Aviv et de Haïfa travaillent désormais d'ailleurs, déposant le même code depuis un autre bureau dans un autre pays, la distance ne leur coûtant rien — un ordinateur portable se ferme dans une ville et s'ouvre dans une autre, et le travail à l'intérieur ne remarque jamais la différence.",
         "Les puces de DustPhotonics sont découpées dans une salle construite pour maintenir sa température à une fraction de degré près et son air plus propre qu'un bloc opératoire, filtré jusqu'à des particules trop petites pour l'œil humain, boulonnée à une adresse fixe qui ne peut ni se louer au mois ni se déplacer là où se trouve le talent cette année-là. L'ingénieur qui conçoit le plan que ces machines découperont peut relire le fichier depuis un ordinateur portable posé sur une table de cuisine, partout où un signal peut l'atteindre — et le fait de plus en plus souvent."
       ]
-    }
+    },
+    null
   ],
   "es": [
     {
@@ -1692,7 +1718,8 @@ const articles = {
         "Al mismo tiempo, las personas que antes se sentaban en las habitaciones donde se escribía esa inteligencia han empezado a sentarse en otro lugar. El sesenta y dos por ciento de los empleados de las empresas de alta tecnología israelíes trabaja hoy desde dentro de Israel. En 2019 era el sesenta y nueve. Tres mil quinientos investigadores que antes trabajaban en los laboratorios de Tel Aviv y Haifa ahora trabajan desde otro lugar, presentando el mismo código desde otro escritorio en otro país, sin que la distancia les cueste nada — una laptop se cierra en una ciudad y se abre en otra, y el trabajo dentro de ella nunca nota la diferencia.",
         "Los chips de DustPhotonics se cortan en una sala construida para mantener su temperatura dentro de una fracción de grado y su aire más limpio que un quirófano de hospital, filtrado hasta partículas demasiado pequeñas para que el ojo humano las registre, atornillada a una dirección fija que no puede alquilarse por mes ni trasladarse adonde esté el talento ese año. El ingeniero que diseña el plano que esas máquinas cortarán puede revisar el archivo desde una laptop en una mesa de cocina, en cualquier lugar donde llegue una señal — y cada vez lo hace más a menudo."
       ]
-    }
+    },
+    null
   ],
   "he": [
     {
@@ -1964,6 +1991,7 @@ const articles = {
     null,
     null,
     null,
+    null,
     null
   ]
 };
@@ -1994,7 +2022,8 @@ const articleSlugs = {
     "what-the-fire-sealed",
     "green-then-red",
     "thirteen-tons-and-then-none",
-    "what-israel-built-without-weight"
+    "what-israel-built-without-weight",
+    "no-photograph-survives"
   ],
   "fr": [
     "une-benediction-a-ete-frappee-elle-a-tenu",
@@ -2012,7 +2041,8 @@ const articleSlugs = {
     "ce-que-le-feu-a-scelle",
     "vert-puis-rouge",
     "treize-tonnes-puis-plus-rien",
-    "ce-quisrael-a-construit-sans-poids"
+    "ce-quisrael-a-construit-sans-poids",
+    null
   ],
   "es": [
     "una-bendicion-fue-golpeada-resistio",
@@ -2030,7 +2060,8 @@ const articleSlugs = {
     "lo-que-el-fuego-sello",
     "verde-luego-rojo",
     "trece-toneladas-y-luego-nada",
-    "lo-que-israel-construyo-sin-peso"
+    "lo-que-israel-construyo-sin-peso",
+    null
   ]
 };
 /* /build:slugs */
