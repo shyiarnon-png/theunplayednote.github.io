@@ -473,16 +473,6 @@
       color: var(--ink-faint);
     }
 
-    /* ── COMING SOON LANG ── */
-    .coming-soon {
-      font-family: 'Inter', sans-serif;
-      font-size: 0.65rem;
-      color: var(--ink-faint);
-      font-style: italic;
-      letter-spacing: 0;
-      text-transform: none;
-    }
-
     /* ── RESPONSIVE ── */
     @media (max-width: 600px) {
       .subscribe-form { flex-direction: column; }
@@ -507,7 +497,7 @@
       <button class="lang-btn active" data-lang="en" onclick="setLang('en')">English</button>
       <button class="lang-btn" data-lang="fr" onclick="setLang('fr')">Français</button>
       <button class="lang-btn" data-lang="es" onclick="setLang('es')">Español</button>
-      <button class="lang-btn" data-lang="he" onclick="setLang('he')">עברית <span class="coming-soon">(בקרוב)</span></button>
+      <button class="lang-btn" data-lang="he" onclick="setLang('he')">עברית</button>
     </div>
   </nav>
 
@@ -2185,8 +2175,17 @@ function slugFor(lang, index) {
   return slugs[index] || articleSlugs['en'][index];
 }
 
+function articlePath(lang, index) {
+  // A link has to name a page that exists. Most Hebrew editions are readable
+  // here without having a page of their own yet, and slugFor falls back to
+  // the English slug, which under /he/ is a URL nothing serves. So an edition
+  // with no page of its own links to, and is canonically, the English one.
+  const slug = (articleSlugs[lang] || [])[index];
+  return slug ? `/${lang}/${slug}/` : `/en/${articleSlugs['en'][index]}/`;
+}
+
 function articleUrl(lang, index) {
-  return `${SITE_URL}/${lang}/${slugFor(lang, index)}/`;
+  return SITE_URL + articlePath(lang, index);
 }
 
 /** Set a <meta> by name= or property=, creating it if the page has none. */
@@ -2268,10 +2267,6 @@ function applyLangChrome(lang) {
 }
 
 function setLang(lang) {
-  if (lang === 'he') {
-    alert('Hebrew edition coming soon. Subscribe to receive it.');
-    return;
-  }
   const openIndex = currentIndex;
   applyLangChrome(lang);
   renderList();
@@ -2294,7 +2289,7 @@ function renderList() {
     // publishes first, so a new piece sits alone on the English list until
     // its translations land.
     if (!a) return '';
-    const href = '/' + currentLang + '/' + slugFor(currentLang, idx) + '/';
+    const href = articlePath(currentLang, idx);
     return `
     <a class="article-entry" href="${href}" onclick="return handleArticleClick(event, ${idx})">
       <div class="article-source">${a.tag} &nbsp;·&nbsp; ${a.source}</div>
@@ -2403,7 +2398,6 @@ function parseHashAndOpen() {
     if (currentIndex !== null) closeReader();
     return;
   }
-  if (hash.split('/')[0] === 'he') { setHash(''); return; }
 
   const hit = resolveHash(hash);
   if (!hit) { setHash(''); return; }
