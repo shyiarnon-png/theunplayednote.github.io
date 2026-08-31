@@ -344,12 +344,21 @@
     <loc>https://theunplayednote.com/en/no-photograph-survives/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://theunplayednote.com/en/no-photograph-survives/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://theunplayednote.com/fr/aucune-photographie-ne-survit/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://theunplayednote.com/es/ninguna-fotografia-sobrevive/"/>
     <lastmod>2026-08-31</lastmod>
   </url>
   <url>
     <loc>https://theunplayednote.com/fr/aucune-photographie-ne-survit/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://theunplayednote.com/en/no-photograph-survives/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://theunplayednote.com/fr/aucune-photographie-ne-survit/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://theunplayednote.com/es/ninguna-fotografia-sobrevive/"/>
+    <lastmod>2026-08-31</lastmod>
+  </url>
+  <url>
+    <loc>https://theunplayednote.com/es/ninguna-fotografia-sobrevive/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://theunplayednote.com/en/no-photograph-survives/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://theunplayednote.com/fr/aucune-photographie-ne-survit/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://theunplayednote.com/es/ninguna-fotografia-sobrevive/"/>
     <lastmod>2026-08-31</lastmod>
   </url>
 </urlset>
