@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>The Unplayed Note</title>
+
+  <!--
+    A bridge, not a page. Cloudflare Web Analytics measures page loads on
+    this domain and has no custom events, so the only way to count a
+    subscribe click is to make it BE a page load on this domain. Every
+    Subscribe control on the site points here; this forwards to Substack.
+
+    Compare loads of /go/subscribe/ against total site loads and that is
+    the click-through rate. Deliberately one URL: splitting it into
+    /go/subscribe-home/, /go/subscribe-article/ and so on turns
+    Cloudflare's per-page list into a by-location breakdown later,
+    without redoing any of this.
+  -->
+  <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "6f4ad3eb27b94b4e92f2f1d16346bb41"}'></script>
+  <noscript>
+    <meta http-equiv="refresh" content="0; url=https://theunplayednote.substack.com/subscribe?utm_source=theunplayednote.com&amp;utm_medium=site">
+  </noscript>
+
+  <style>
+    body {
+      background: #f7f5f0;
+      color: #1a1a18;
+      font-family: 'EB Garamond', Georgia, serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+    p { font-size: 1rem; opacity: 0.55; }
+    a { color: inherit; }
+  </style>
+</head>
+<body>
+  <p>Taking you to the subscribe page&hellip;
+     <noscript><a href="https://theunplayednote.substack.com/subscribe">Continue</a></noscript></p>
+
+  <script>
+  (function () {
+    var DEST = 'https://theunplayednote.substack.com/subscribe';
+    var UTM = 'utm_source=theunplayednote.com&utm_medium=site';
+
+    // Carried through from the form on the home page so Substack still
+    // arrives with the address filled in. Without it the reader types it
+    // twice and most of them don't.
+    var email = null;
+    try { email = new URLSearchParams(location.search).get('email'); } catch (e) {}
+    var url = DEST + '?' + UTM + (email ? '&email=' + encodeURIComponent(email) : '');
+
+    // Wait for load before leaving. Measured, not assumed: redirecting
+    // immediately still got one report out even with beacon.min.js held
+    // back 900ms, so this is insurance rather than a fix for an observed
+    // loss — waiting yields both of Cloudflare's reports instead of one,
+    // and drops the count's dependence on that timing holding true on
+    // networks and devices I can't test. It costs a few hundred ms
+    // against a Substack page that takes seconds to paint.
+    //
+    // replace() rather than href: the bridge must not sit in history, or
+    // Back from Substack lands on it and forwards again.
+    function go() { location.replace(url); }
+    function armed() { setTimeout(go, 400); }
+    if (document.readyState === 'complete') armed();
+    else window.addEventListener('load', armed);
+  })();
+  </script>
+</body>
+</html>

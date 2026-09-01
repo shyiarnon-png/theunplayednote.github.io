@@ -2359,10 +2359,16 @@ function closeReader() {
   window.scrollTo(0, 0);
 }
 
+/**
+ * Hand off to Substack through /go/subscribe/ rather than straight out.
+ * Cloudflare Web Analytics counts page loads on this domain and has no
+ * events, so a bridge page on our own domain is the only way this click
+ * shows up as a number. The address rides along and Substack prefills it.
+ */
 function handleSubscribe(e) {
   e.preventDefault();
   const email = e.target.querySelector('input').value;
-  window.location.href = `https://theunplayednote.substack.com/subscribe?email=${encodeURIComponent(email)}`;
+  window.location.href = `/go/subscribe/?email=${encodeURIComponent(email)}`;
 }
 
 /**
