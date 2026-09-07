@@ -24,7 +24,7 @@
           "הפער בין שני המספרים האלה אינו בעיה לפתור. הוא תיאור של מה שטוב באמת עולה."
         ]
       },
-      "approved": false,
+      "approved": true,
       "provider": "xai",
       "findings": [
         {
@@ -32,7 +32,8 @@
           "message": "Paragraph 4 has Latin text (good), check how it renders right to left."
         }
       ],
-      "at": 1788810641
+      "at": 1788810641,
+      "approved_at": 1788817250
     }
   }
 }
