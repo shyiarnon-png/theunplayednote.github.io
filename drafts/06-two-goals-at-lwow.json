@@ -25,10 +25,11 @@
           "ההקשר היה המחנה. המשחק היה המשחק."
         ]
       },
-      "approved": false,
+      "approved": true,
       "provider": "xai",
       "findings": [],
-      "at": 1788810724
+      "at": 1788810724,
+      "approved_at": 1788817379
     }
   }
 }
