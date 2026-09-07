@@ -20,7 +20,7 @@
           "La preuve la plus claire de ce que cela rapporte vient de ceux qui n'en ont pas. Un petit nombre de personnes ont une mémoire autobiographique hautement supérieure : demandez-leur un jour précis quinze ou vingt ans en arrière, un mercredi ordinaire sans raison d'être retenu, et elles vous diront, en détail, ce qui s'est passé. Cela semble un avantage jusqu'à ce qu'elles décrivent de vivre avec. Les échecs ne s'estompent pas. Les gênes restent aussi vives au millième rappel qu'au premier. Plusieurs décrivent la condition comme épuisante, parce qu'aucune version du passé qui leur est disponible n'a été autorisée à s'adoucir."
         ]
       },
-      "approved": false,
+      "approved": true,
       "provider": "xai",
       "findings": [
         {
@@ -28,7 +28,8 @@
           "message": "News source no longer contains 'Science News, September 2026; Gabrielle Principe, The Conversation, May 2026.'."
         }
       ],
-      "at": 1788809219
+      "at": 1788809219,
+      "approved_at": 1788810359
     },
     "es": {
       "edition": {
