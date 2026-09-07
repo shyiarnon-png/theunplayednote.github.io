@@ -25,10 +25,11 @@
           "זה אינו פרט. זה הסיפור כולו."
         ]
       },
-      "approved": false,
+      "approved": true,
       "provider": "xai",
       "findings": [],
-      "at": 1788810569
+      "at": 1788810569,
+      "approved_at": 1788816478
     }
   }
 }
