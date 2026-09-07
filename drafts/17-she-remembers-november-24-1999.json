@@ -29,6 +29,36 @@
         }
       ],
       "at": 1788809219
+    },
+    "es": {
+      "edition": {
+        "slug": "ella-recuerda-el-24-de-noviembre-de-1999",
+        "title": "Ella recuerda el 24 de noviembre de 1999.",
+        "subtitle": "Algunas personas no olvidan casi nada. Resulta que no es la ventaja que parece.",
+        "lede": "La memoria no registra la experiencia — la reconstruye en el momento del recuerdo, ensamblada a partir de fragmentos filtrados por el conocimiento presente, el ánimo y los…",
+        "source": "Science News, septiembre de 2026; Gabrielle Principe, The Conversation, mayo de 2026.",
+        "tag": "Mundo judío",
+        "news": {
+          "source": "Science News, septiembre de 2026; Gabrielle Principe, The Conversation, mayo de 2026.",
+          "text": "La memoria no registra la experiencia — la reconstruye en el momento del recuerdo, ensamblada a partir de fragmentos filtrados por el conocimiento presente, el ánimo y los objetivos. Durante décadas, el olvido se trató como una avería pasiva de ese sistema: información que se desgasta con el tiempo. La investigación resumida en el reportaje de portada de Science News de septiembre de 2026, basada en el trabajo del neurólogo Scott A. Small de la Universidad de Columbia y de la investigadora de la memoria Gabrielle Principe del College of Charleston, halla en cambio que el olvido funciona con su propia maquinaria neurobiológica dedicada."
+        },
+        "body": [
+          "Pregúntele a alguien qué estaba haciendo un martes ordinario hace once años y casi nadie puede responder. Lo que produce en cambio, si se le insiste, es una reconstrucción hecha de lo que suele ocurrir los martes, rellenada con detalle plausible, ofrecida con más confianza de la que merece. La recuperación ensambla una versión del pasado que encaja con el momento en que se pide, que es también por qué el mismo recuerdo vuelve ligeramente distinto un año después.",
+          "Durante la mayor parte de la historia de la neurociencia, la suposición era que lo que no sobrevivía a esta reconstrucción simplemente se había desgastado — un fallo pasivo, la entropía actuando sobre un sistema frágil. Los hallazgos más recientes vuelcan eso. El olvido corre por su propio circuitería, sus propias vías moleculares dedicadas, activo y específico en lo que apunta. El sistema borra el detalle de grano fino y conserva lo que se generaliza.",
+          "Esto importa porque un detalle, una vez borrado, deja de competir. Un método aprendido bajo un conjunto de condiciones puede sentarse en el mismo territorio neural que un método aprendido bajo otras distintas, y los dos interferirán el uno con el otro a menos que algo haga sitio. El olvido activo debilita el tirón del patrón viejo lo bastante para que uno nuevo pueda formarse sin tener que superarlo cada vez que se necesita. Lo que vuelve después se reconstruye para encajar el caso presente — por lo general más útil de lo que habría sido el original.",
+          "El mismo mecanismo parece proteger algo menos mecánico que la habilidad. Las personas que menos se detienen en una humillación, un fracaso, un viejo agravio, no son necesariamente personas con memorias más débiles. Pueden simplemente tener un olvido activo más eficiente — la carga emocional despojada del detalle más rápido, de modo que el suceso deja de estar disponible a plena intensidad cada vez que algo se lo recuerda.",
+          "La evidencia más clara de lo que esto compra viene de las personas que no lo tienen. Un número pequeño de individuos tiene Memoria Autobiográfica Altamente Superior: pregúnteles por un día específico de hace quince o veinte años, un miércoles ordinario sin razón para ser recordado, y le dirán, en detalle, qué ocurrió. Suena como una ventaja hasta que describen vivir con ello. Los fracasos no se desvanecen. Las vergüenzas siguen tan nítidas en el milésimo recuerdo como en el primero. Varios describen la condición como agotadora, porque ninguna versión del pasado disponible para ellos ha podido suavizarse."
+        ]
+      },
+      "approved": false,
+      "provider": "xai",
+      "findings": [
+        {
+          "severity": "warning",
+          "message": "News source no longer contains 'Science News, September 2026; Gabrielle Principe, The Conversation, May 2026.'."
+        }
+      ],
+      "at": 1788809246
     }
   }
 }
