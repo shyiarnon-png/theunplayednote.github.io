@@ -20,7 +20,7 @@
           "La evidencia más clara de lo que esto compra viene de las personas que no lo tienen. Un número pequeño de individuos tiene Memoria Autobiográfica Altamente Superior: pregúnteles por un día específico de hace quince o veinte años, un miércoles ordinario sin razón para ser recordado, y le dirán, en detalle, qué ocurrió. Suena como una ventaja hasta que describen vivir con ello. Los fracasos no se desvanecen. Las vergüenzas siguen tan nítidas en el milésimo recuerdo como en el primero. Varios describen la condición como agotadora, porque ninguna versión del pasado disponible para ellos ha podido suavizarse."
         ]
       },
-      "approved": false,
+      "approved": true,
       "provider": "xai",
       "findings": [
         {
@@ -28,7 +28,8 @@
           "message": "News source no longer contains 'Science News, September 2026; Gabrielle Principe, The Conversation, May 2026.'."
         }
       ],
-      "at": 1788809246
+      "at": 1788809246,
+      "approved_at": 1788810385
     },
     "he": {
       "edition": {
