@@ -1,32 +1,5 @@
 {
   "languages": {
-    "en": {
-      "edition": {
-        "slug": "after-the-two-hundredth-touch",
-        "title": "After the two-hundredth touch",
-        "subtitle": "Two identical surfaces separate completely, and one keeps behaving like it remembers the other.",
-        "lede": "Nature published a study in February 2025 addressing a phenomenon unresolved since at least the sixth century before the common era: why two materials that touch and pull apart…",
-        "source": "Nature 638, 664–669 (2025); Nature, March 2026; Science News, September 2026.",
-        "tag": "The World",
-        "news": {
-          "source": "Nature 638, 664–669 (2025); Nature, March 2026; Science News, September 2026.",
-          "text": "Nature published a study in February 2025 addressing a phenomenon unresolved since at least the sixth century before the common era: why two materials that touch and pull apart develop opposite electric charge, and why two samples of the exact same material can charge in opposite directions from each other. Researchers at the Institute of Science and Technology Austria, led by Juan Carlos Sobarzo and Scott Waitukaitis, found that identical silicone samples charge unpredictably at first contact but settle into a consistent, repeatable pattern after roughly two hundred contacts — the direction fixed by which sample has been touched more. The physical change the team could detect afterward was a measurable smoothing of the finest surface irregularities, present on both samples."
-        },
-        "body": [
-          "For most of recorded history, static electricity has been the easiest kind of physics to produce and the hardest to explain. Rub amber against wool and a feather lifts toward it — a trick documented since the sixth century before the common era. Two and a half thousand years of watching it happen have not settled what actually happens.",
-          "The textbook account is that two different materials exchange charge on contact and go their separate ways carrying opposite signs. It gets stranger with a single material. Take two blocks cut from the same batch of silicone, touch them together the same way, and they can come away charged in opposite directions from each other, as if identical objects had somehow stopped being identical.",
-          "A team at the Institute of Science and Technology Austria ran into this directly while trying to eliminate variables. Working with blocks of polydimethylsiloxane, a clear silicone chosen because every sample should behave like every other sample, they got the same scattered, unrepeatable results labs had been getting for decades, until one researcher happened to reuse a set of blocks he'd already tested. This time the samples ordered themselves cleanly, high charge to low, on the first attempt.",
-          "It took a while to see why. The blocks that behaved consistently weren't new — they had already been touched, separated, and touched again, dozens of times over, for reasons that had nothing to do with the experiment. Once the team started tracking contact counts instead of treating each trial as independent, the randomness resolved into a pattern: after roughly two hundred touches, a block's charging behavior locks in, fixed relative to whatever it has touched more.",
-          "Between one touch and the next, nothing physical bridges the gap once the blocks are apart — nothing that stayed behind in the space where they'd met. What the team could detect afterward was a change in each surface on its own: the finest peaks worn down by contact, smoothed just enough to register on a standard surface-roughness scan. That smoothing sits on each block independently. It doesn't need the other block nearby to keep mattering.",
-          "The instrument capable of measuring a surface at that resolution, the atomic force microscope, has existed since 1986. For close to forty years it mapped roughness on machined metal, on coatings, on semiconductor wafers, on thousands of surfaces where a few nanometers of wear mattered to someone. Nobody pointed it at a block of silicone that had just come apart from another block of silicone and asked whether that wear might decide which way the next spark would go, until Sobarzo's team did, in 2025.",
-          "Two blocks that have touched two hundred times can be set down on opposite sides of a lab, never to meet again, and each will still carry, at a scale only a surface scan resolves, the fact of having met the other one that many times. Set either one against a third block it has never touched, and that fact decides which way the next spark will go."
-        ]
-      },
-      "approved": true,
-      "provider": "author",
-      "findings": [],
-      "at": 1788993862
-    },
     "fr": {
       "edition": {
         "slug": "apres-le-deux-centieme-contact",
