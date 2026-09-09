@@ -1,38 +1,5 @@
 {
   "languages": {
-    "fr": {
-      "edition": {
-        "slug": "apres-le-deux-centieme-contact",
-        "title": "Après le deux-centième contact.",
-        "subtitle": "Deux surfaces identiques se séparent complètement, et l'une continue de se comporter comme si elle se souvenait de l'autre.",
-        "lede": "Nature a publié en février 2025 une étude portant sur un phénomène non résolu depuis au moins le VIe siècle avant l'ère commune : pourquoi deux matériaux qui se touchent et se…",
-        "source": "Nature 638, 664–669 (2025); Nature, mars 2026; Science News, septembre 2026.",
-        "tag": "Le monde",
-        "news": {
-          "source": "Nature 638, 664–669 (2025); Nature, mars 2026; Science News, septembre 2026.",
-          "text": "Nature a publié en février 2025 une étude portant sur un phénomène non résolu depuis au moins le VIe siècle avant l'ère commune : pourquoi deux matériaux qui se touchent et se séparent développent des charges électriques opposées, et pourquoi deux échantillons du même matériau exact peuvent se charger dans des directions opposées l'un par rapport à l'autre. Des chercheurs de l'Institute of Science and Technology Austria, dirigés par Juan Carlos Sobarzo et Scott Waitukaitis, ont constaté que des échantillons de silicone identiques se chargent de façon imprévisible au premier contact, mais s'installent dans un schéma cohérent et reproductible après environ deux cents contacts — la direction étant fixée par l'échantillon qui a été touché le plus. Le changement physique que l'équipe a pu détecter ensuite était un lissage mesurable des plus fines irrégularités de surface, présent sur les deux échantillons."
-        },
-        "body": [
-          "Pendant la plus grande partie de l'histoire écrite, l'électricité statique a été le genre de physique le plus facile à produire et le plus difficile à expliquer. Frottez de l'ambre contre de la laine et une plume se soulève vers lui — un tour documenté depuis le VIe siècle avant l'ère commune. Deux mille cinq cents ans à le regarder se produire n'ont pas tranché ce qui se produit réellement.",
-          "Le récit des manuels est que deux matériaux différents échangent de la charge au contact et s'en vont chacun de son côté en portant des signes opposés. Cela devient plus étrange avec un seul matériau. Prenez deux blocs coupés dans le même lot de silicone, touchez-les ensemble de la même manière, et ils peuvent se séparer chargés dans des directions opposées l'un par rapport à l'autre, comme si des objets identiques avaient d'une façon ou d'une autre cessé d'être identiques.",
-          "Une équipe de l'Institute of Science and Technology Austria s'est heurtée à cela directement en tentant d'éliminer les variables. En travaillant avec des blocs de polydiméthylsiloxane, un silicone transparent choisi parce que chaque échantillon devrait se comporter comme tous les autres, ils ont obtenu les mêmes résultats dispersés, irreproductibles, que les laboratoires obtenaient depuis des décennies, jusqu'à ce qu'un chercheur réutilise par hasard un jeu de blocs qu'il avait déjà testés. Cette fois les échantillons se sont ordonnés nettement, de la charge haute à la charge basse, dès la première tentative.",
-          "Il a fallu un moment pour voir pourquoi. Les blocs qui se comportaient de façon cohérente n'étaient pas neufs — ils avaient déjà été touchés, séparés, et touchés à nouveau, des dizaines de fois, pour des raisons qui n'avaient rien à voir avec l'expérience. Une fois que l'équipe a commencé à suivre le nombre de contacts au lieu de traiter chaque essai comme indépendant, le hasard s'est résolu en un schéma : après environ deux cents contacts, le comportement de charge d'un bloc se verrouille, fixé par rapport à ce qu'il a le plus touché.",
-          "Entre un contact et le suivant, rien de physique ne comble l'écart une fois les blocs séparés — rien qui soit resté dans l'espace où ils s'étaient rencontrés. Ce que l'équipe a pu détecter ensuite était un changement sur chaque surface à elle seule : les plus fines crêtes usées par le contact, lissées juste assez pour s'enregistrer sur un scan standard de rugosité de surface. Ce lissage siège sur chaque bloc indépendamment. Il n'a pas besoin de l'autre bloc à proximité pour continuer à compter.",
-          "L'instrument capable de mesurer une surface à cette résolution, le microscope à force atomique, existe depuis 1986. Pendant près de quarante ans, il a cartographié la rugosité sur le métal usiné, sur les revêtements, sur les wafers de semi-conducteurs, sur des milliers de surfaces où quelques nanomètres d'usure importaient à quelqu'un. Personne ne l'a pointé vers un bloc de silicone qui venait de se séparer d'un autre bloc de silicone pour demander si cette usure pouvait décider dans quel sens irait la prochaine étincelle, jusqu'à ce que l'équipe de Sobarzo le fasse, en 2025.",
-          "Deux blocs qui se sont touchés deux cents fois peuvent être posés de part et d'autre d'un laboratoire, pour ne plus jamais se rencontrer, et chacun portera encore, à une échelle que seul un scan de surface résout, le fait d'avoir rencontré l'autre autant de fois. Placez l'un ou l'autre contre un troisième bloc qu'il n'a jamais touché, et ce fait décide dans quel sens ira la prochaine étincelle."
-        ]
-      },
-      "approved": true,
-      "provider": "xai",
-      "findings": [
-        {
-          "severity": "warning",
-          "message": "News source no longer contains 'Nature 638, 664–669 (2025); Nature, March 2026; Science News, September 2026.'."
-        }
-      ],
-      "at": 1788993906,
-      "approved_at": 1788993936
-    },
     "es": {
       "edition": {
         "slug": "despues-del-ducentesimo-toque",
