@@ -22,7 +22,7 @@
           "Deux blocs qui se sont touchés deux cents fois peuvent être posés de part et d'autre d'un laboratoire, pour ne plus jamais se rencontrer, et chacun portera encore, à une échelle que seul un scan de surface résout, le fait d'avoir rencontré l'autre autant de fois. Placez l'un ou l'autre contre un troisième bloc qu'il n'a jamais touché, et ce fait décide dans quel sens ira la prochaine étincelle."
         ]
       },
-      "approved": false,
+      "approved": true,
       "provider": "xai",
       "findings": [
         {
@@ -30,7 +30,8 @@
           "message": "News source no longer contains 'Nature 638, 664–669 (2025); Nature, March 2026; Science News, September 2026.'."
         }
       ],
-      "at": 1788993906
+      "at": 1788993906,
+      "approved_at": 1788993936
     }
   },
   "order": 18,
