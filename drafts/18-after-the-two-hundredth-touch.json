@@ -22,7 +22,7 @@
           "Dos bloques que se han tocado doscientas veces pueden dejarse en lados opuestos de un laboratorio, para no volver a encontrarse nunca, y cada uno seguirá portando, a una escala que solo resuelve un escaneo de superficie, el hecho de haber encontrado al otro tantas veces. Póngase cualquiera de ellos contra un tercer bloque que nunca ha tocado, y ese hecho decide hacia dónde irá la siguiente chispa."
         ]
       },
-      "approved": false,
+      "approved": true,
       "provider": "xai",
       "findings": [
         {
@@ -30,7 +30,8 @@
           "message": "News source no longer contains 'Nature 638, 664–669 (2025); Nature, March 2026; Science News, September 2026.'."
         }
       ],
-      "at": 1788993948
+      "at": 1788993948,
+      "approved_at": 1788993975
     }
   },
   "order": 18,
