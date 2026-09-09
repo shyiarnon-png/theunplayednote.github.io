@@ -510,6 +510,13 @@
 
     <div class="articles" id="article-list">
     <!-- build:list -->
+    <a class="article-entry" href="/en/after-the-two-hundredth-touch/" onclick="return handleArticleClick(event, 18)">
+      <div class="article-source">The World &nbsp;&middot;&nbsp; Nature 638, 664–669 (2025); Nature, March 2026; Science News, September 2026.</div>
+      <h2 class="article-title">After the two-hundredth touch</h2>
+      <p class="article-subtitle">Two identical surfaces separate completely, and one keeps behaving like it remembers the other.</p>
+      <p class="article-lede">Nature published a study in February 2025 addressing a phenomenon unresolved since at least the sixth century before the common era: why two materials that touch and pull apart…</p>
+      <span class="read-more">Read</span>
+    </a>
     <a class="article-entry" href="/en/she-remembers-november-24-1999/" onclick="return handleArticleClick(event, 17)">
       <div class="article-source">Jewish World &nbsp;&middot;&nbsp; Science News, September 2026; Gabrielle Principe, The Conversation, May 2026.</div>
       <h2 class="article-title">She remembers November 24, 1999</h2>
@@ -1042,6 +1049,26 @@ const articles = {
         "The same mechanism appears to protect something less mechanical than skill. People who dwell least on a humiliation, a failure, an old grievance, are not necessarily people with weaker memories. They may simply have more efficient active forgetting — the emotional charge stripped from the detail faster, so the event stops being available at full intensity every time something reminds them of it.",
         "The clearest evidence for what this buys comes from people who don't have it. A small number of individuals have Highly Superior Autobiographical Memory: ask them about a specific day fifteen or twenty years back, an ordinary Wednesday with no reason to be remembered, and they will tell you, in detail, what happened. It sounds like an advantage until they describe living with it. The failures don't fade. The embarrassments stay as sharp on the thousandth recall as on the first. Several describe the condition as exhausting, because no version of the past available to them has been allowed to soften."
       ]
+    },
+    {
+      "source": "Nature 638, 664–669 (2025); Nature, March 2026; Science News, September 2026.",
+      "tag": "The World",
+      "title": "After the two-hundredth touch",
+      "subtitle": "Two identical surfaces separate completely, and one keeps behaving like it remembers the other.",
+      "lede": "Nature published a study in February 2025 addressing a phenomenon unresolved since at least the sixth century before the common era: why two materials that touch and pull apart…",
+      "news": {
+        "source": "Nature 638, 664–669 (2025); Nature, March 2026; Science News, September 2026.",
+        "text": "Nature published a study in February 2025 addressing a phenomenon unresolved since at least the sixth century before the common era: why two materials that touch and pull apart develop opposite electric charge, and why two samples of the exact same material can charge in opposite directions from each other. Researchers at the Institute of Science and Technology Austria, led by Juan Carlos Sobarzo and Scott Waitukaitis, found that identical silicone samples charge unpredictably at first contact but settle into a consistent, repeatable pattern after roughly two hundred contacts — the direction fixed by which sample has been touched more. The physical change the team could detect afterward was a measurable smoothing of the finest surface irregularities, present on both samples."
+      },
+      "body": [
+        "For most of recorded history, static electricity has been the easiest kind of physics to produce and the hardest to explain. Rub amber against wool and a feather lifts toward it — a trick documented since the sixth century before the common era. Two and a half thousand years of watching it happen have not settled what actually happens.",
+        "The textbook account is that two different materials exchange charge on contact and go their separate ways carrying opposite signs. It gets stranger with a single material. Take two blocks cut from the same batch of silicone, touch them together the same way, and they can come away charged in opposite directions from each other, as if identical objects had somehow stopped being identical.",
+        "A team at the Institute of Science and Technology Austria ran into this directly while trying to eliminate variables. Working with blocks of polydimethylsiloxane, a clear silicone chosen because every sample should behave like every other sample, they got the same scattered, unrepeatable results labs had been getting for decades, until one researcher happened to reuse a set of blocks he'd already tested. This time the samples ordered themselves cleanly, high charge to low, on the first attempt.",
+        "It took a while to see why. The blocks that behaved consistently weren't new — they had already been touched, separated, and touched again, dozens of times over, for reasons that had nothing to do with the experiment. Once the team started tracking contact counts instead of treating each trial as independent, the randomness resolved into a pattern: after roughly two hundred touches, a block's charging behavior locks in, fixed relative to whatever it has touched more.",
+        "Between one touch and the next, nothing physical bridges the gap once the blocks are apart — nothing that stayed behind in the space where they'd met. What the team could detect afterward was a change in each surface on its own: the finest peaks worn down by contact, smoothed just enough to register on a standard surface-roughness scan. That smoothing sits on each block independently. It doesn't need the other block nearby to keep mattering.",
+        "The instrument capable of measuring a surface at that resolution, the atomic force microscope, has existed since 1986. For close to forty years it mapped roughness on machined metal, on coatings, on semiconductor wafers, on thousands of surfaces where a few nanometers of wear mattered to someone. Nobody pointed it at a block of silicone that had just come apart from another block of silicone and asked whether that wear might decide which way the next spark would go, until Sobarzo's team did, in 2025.",
+        "Two blocks that have touched two hundred times can be set down on opposite sides of a lab, never to meet again, and each will still carry, at a scale only a surface scan resolves, the fact of having met the other one that many times. Set either one against a third block it has never touched, and that fact decides which way the next spark will go."
+      ]
     }
   ],
   "fr": [
@@ -1423,7 +1450,8 @@ const articles = {
         "Le même mécanisme semble protéger quelque chose de moins mécanique qu'une compétence. Les gens qui s'attardent le moins sur une humiliation, un échec, un vieux grief, ne sont pas nécessairement des gens à la mémoire plus faible. Ils peuvent simplement avoir un oubli actif plus efficace — la charge émotionnelle arrachée au détail plus vite, de sorte que l'événement cesse d'être disponible à pleine intensité chaque fois que quelque chose le leur rappelle.",
         "La preuve la plus claire de ce que cela rapporte vient de ceux qui n'en ont pas. Un petit nombre de personnes ont une mémoire autobiographique hautement supérieure : demandez-leur un jour précis quinze ou vingt ans en arrière, un mercredi ordinaire sans raison d'être retenu, et elles vous diront, en détail, ce qui s'est passé. Cela semble un avantage jusqu'à ce qu'elles décrivent de vivre avec. Les échecs ne s'estompent pas. Les gênes restent aussi vives au millième rappel qu'au premier. Plusieurs décrivent la condition comme épuisante, parce qu'aucune version du passé qui leur est disponible n'a été autorisée à s'adoucir."
       ]
-    }
+    },
+    null
   ],
   "es": [
     {
@@ -1804,7 +1832,8 @@ const articles = {
         "El mismo mecanismo parece proteger algo menos mecánico que la habilidad. Las personas que menos se detienen en una humillación, un fracaso, un viejo agravio, no son necesariamente personas con memorias más débiles. Pueden simplemente tener un olvido activo más eficiente — la carga emocional despojada del detalle más rápido, de modo que el suceso deja de estar disponible a plena intensidad cada vez que algo se lo recuerda.",
         "La evidencia más clara de lo que esto compra viene de las personas que no lo tienen. Un número pequeño de individuos tiene Memoria Autobiográfica Altamente Superior: pregúnteles por un día específico de hace quince o veinte años, un miércoles ordinario sin razón para ser recordado, y le dirán, en detalle, qué ocurrió. Suena como una ventaja hasta que describen vivir con ello. Los fracasos no se desvanecen. Las vergüenzas siguen tan nítidas en el milésimo recuerdo como en el primero. Varios describen la condición como agotadora, porque ninguna versión del pasado disponible para ellos ha podido suavizarse."
       ]
-    }
+    },
+    null
   ],
   "he": [
     {
@@ -2112,7 +2141,8 @@ const articles = {
         "אותו מנגנון נראה כמגן על משהו מכני פחות ממיומנות. אנשים ששוהים הכי מעט על השפלה, כישלון, תרעומת ישנה, אינם בהכרח אנשים עם זיכרונות חלשים יותר. ייתכן שיש להם פשוט שכחה פעילה יעילה יותר — המטען הרגשי מוסר מהפרט מהר יותר, כך שהאירוע מפסיק להיות זמין בעוצמה מלאה בכל פעם שמשהו מזכיר להם אותו.",
         "הראיה הברורה ביותר למה שזה קונה מגיעה מאנשים שאין להם את זה. מספר קטן של אנשים יש להם זיכרון אוטוביוגרפי עילאי ביותר: שאלו אותם על יום ספציפי לפני חמש־עשרה או עשרים שנה, יום רביעי רגיל שאין סיבה לזכור אותו, והם יספרו לכם, בפירוט, מה קרה. זה נשמע כמו יתרון עד שהם מתארים את החיים עם זה. הכישלונות אינם דוהים. המבוכות נשארות חדות באלף השליפות כמו בראשונה. כמה מתארים את המצב כמתיש, כי אף גרסה של העבר הזמינה להם לא הורשתה להתרכך."
       ]
-    }
+    },
+    null
   ]
 };
 /* /build:articles */
@@ -2144,7 +2174,8 @@ const articleSlugs = {
     "thirteen-tons-and-then-none",
     "what-israel-built-without-weight",
     "no-photograph-survives",
-    "she-remembers-november-24-1999"
+    "she-remembers-november-24-1999",
+    "after-the-two-hundredth-touch"
   ],
   "fr": [
     "une-benediction-a-ete-frappee-elle-a-tenu",
@@ -2164,7 +2195,8 @@ const articleSlugs = {
     "treize-tonnes-puis-plus-rien",
     "ce-quisrael-a-construit-sans-poids",
     "aucune-photographie-ne-survit",
-    "elle-se-souvient-du-24-novembre-1999"
+    "elle-se-souvient-du-24-novembre-1999",
+    null
   ],
   "es": [
     "una-bendicion-fue-golpeada-resistio",
@@ -2184,7 +2216,8 @@ const articleSlugs = {
     "trece-toneladas-y-luego-nada",
     "lo-que-israel-construyo-sin-peso",
     "ninguna-fotografia-sobrevive",
-    "ella-recuerda-el-24-de-noviembre-de-1999"
+    "ella-recuerda-el-24-de-noviembre-de-1999",
+    null
   ],
   "he": [
     "a-blessing-was-struck-it-held",
@@ -2204,7 +2237,8 @@ const articleSlugs = {
     null,
     null,
     "no-photograph-survives",
-    "she-remembers-november-24-1999"
+    "she-remembers-november-24-1999",
+    null
   ]
 };
 /* /build:slugs */
