@@ -29,7 +29,7 @@
           "הילד לא שלח משהו קדימה. הוא שיחרר משהו כלפי מעלה."
         ]
       },
-      "approved": false,
+      "approved": true,
       "provider": "xai",
       "findings": [
         {
@@ -37,7 +37,8 @@
           "message": "Paragraph 8 has Latin text (Yiddish, Glory, The), check how it renders right to left."
         }
       ],
-      "at": 1788810849
+      "at": 1788810849,
+      "approved_at": 1789026454
     }
   }
 }
