@@ -25,10 +25,11 @@
           "הכת רצתה לוח מושלם. המסורת רצתה חברה."
         ]
       },
-      "approved": false,
+      "approved": true,
       "provider": "xai",
       "findings": [],
-      "at": 1788810805
+      "at": 1788810805,
+      "approved_at": 1789026393
     }
   }
 }
