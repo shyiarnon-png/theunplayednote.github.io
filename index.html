@@ -510,6 +510,13 @@
 
     <div class="articles" id="article-list">
     <!-- build:list -->
+    <a class="article-entry" href="/en/twenty-five-thousand-tries/" onclick="return handleArticleClick(event, 19)">
+      <div class="article-source">Jewish World &nbsp;&middot;&nbsp; Weizmann Institute of Science; NobelPrize.org; Nature obituary, September 2026; Times of Israel, August 31, 2026.</div>
+      <h2 class="article-title">Twenty-five thousand tries</h2>
+      <p class="article-subtitle">A scientist spent two decades failing at something colleagues had already decided was impossible.</p>
+      <p class="article-lede">Ada Yonath, the Israeli crystallographer awarded a share of the 2009 Nobel Prize in Chemistry, died on August 31, 2026, at 87, the Weizmann Institute of Science announced. Yonath…</p>
+      <span class="read-more">Read</span>
+    </a>
     <a class="article-entry" href="/en/after-the-two-hundredth-touch/" onclick="return handleArticleClick(event, 18)">
       <div class="article-source">The World &nbsp;&middot;&nbsp; Nature 638, 664–669 (2025); Nature, March 2026; Science News, September 2026.</div>
       <h2 class="article-title">After the two-hundredth touch</h2>
@@ -1069,6 +1076,25 @@ const articles = {
         "The instrument capable of measuring a surface at that resolution, the atomic force microscope, has existed since 1986. For close to forty years it mapped roughness on machined metal, on coatings, on semiconductor wafers, on thousands of surfaces where a few nanometers of wear mattered to someone. Nobody pointed it at a block of silicone that had just come apart from another block of silicone and asked whether that wear might decide which way the next spark would go, until Sobarzo's team did, in 2025.",
         "Two blocks that have touched two hundred times can be set down on opposite sides of a lab, never to meet again, and each will still carry, at a scale only a surface scan resolves, the fact of having met the other one that many times. Set either one against a third block it has never touched, and that fact decides which way the next spark will go."
       ]
+    },
+    {
+      "source": "Weizmann Institute of Science; NobelPrize.org; Nature obituary, September 2026; Times of Israel, August 31, 2026.",
+      "tag": "Jewish World",
+      "title": "Twenty-five thousand tries",
+      "subtitle": "A scientist spent two decades failing at something colleagues had already decided was impossible.",
+      "lede": "Ada Yonath, the Israeli crystallographer awarded a share of the 2009 Nobel Prize in Chemistry, died on August 31, 2026, at 87, the Weizmann Institute of Science announced. Yonath…",
+      "news": {
+        "source": "Weizmann Institute of Science; NobelPrize.org; Nature obituary, September 2026; Times of Israel, August 31, 2026.",
+        "text": "Ada Yonath, the Israeli crystallographer awarded a share of the 2009 Nobel Prize in Chemistry, died on August 31, 2026, at 87, the Weizmann Institute of Science announced. Yonath had spent decades attempting to map the three-dimensional structure of the ribosome — the molecular machine inside every living cell that reads genetic instructions and builds proteins — a target many scientists in the 1970s considered too large and unstable to ever crystallize. She and her collaborators made an estimated 25,000 attempts before producing usable ribosome crystals in 1980, and it took twenty more years of refinement before her teams solved the complete structure of both ribosomal subunits in 2000. She shared the Nobel Prize in Chemistry with Venkatraman Ramakrishnan and Thomas Steitz."
+      },
+      "body": [
+        "She was born in Jerusalem in 1939, in the Geula neighborhood, to a family with almost no income. Her father died while she was still a child. The family moved to Tel Aviv, and Yonath, not yet twelve, started giving other students math lessons so she could afford her own tuition.",
+        "Decades later, as an adult recovering from a concussion after a bicycle accident, she read an article about polar bears. Just before hibernation, their ribosomes arrange themselves into a dense, stable configuration that survives months of dormancy. If a polar bear's cells could hold a ribosome together under that kind of stress, she reasoned, there had to be a way to do it in a lab — and she went looking for organisms built to survive extremes on their own terms: bacteria pulled from the Dead Sea, from hot springs, from environments that punish anything fragile.",
+        "What followed was not a short experiment. Colleagues called her a dreamer, and not as a compliment. She and her team ran the crystallization attempt again, and again, and again — 25,000 times by one count — before anything usable came out the other end, in 1980. A result that took most of a decade to reach was, by every measure available at the time, still just a beginning.",
+        "It took twenty more years past that first success to solve the complete structure of both halves of the ribosome, published in 2000. She kept refining past the first success, and kept refining past the second. Understanding how antibiotics interact with the bacterial ribosome — and how bacteria evolve resistance to them — came out of the same line of work, decades of it, aimed the entire time at a target most of the field had already filed under impossible.",
+        "The Nobel Prize came in 2009, split three ways, for a structure that had taken the better part of thirty years to see clearly.",
+        "At the end of her life, she was still holding a harder question: how the first proteins were built, before there was anything like a ribosome to build them. She called it the next Everest. She did not get to climb it."
+      ]
     }
   ],
   "fr": [
@@ -1470,7 +1496,8 @@ const articles = {
         "L'instrument capable de mesurer une surface à cette résolution, le microscope à force atomique, existe depuis 1986. Pendant près de quarante ans, il a cartographié la rugosité sur le métal usiné, sur les revêtements, sur les wafers de semi-conducteurs, sur des milliers de surfaces où quelques nanomètres d'usure importaient à quelqu'un. Personne ne l'a pointé vers un bloc de silicone qui venait de se séparer d'un autre bloc de silicone pour demander si cette usure pouvait décider dans quel sens irait la prochaine étincelle, jusqu'à ce que l'équipe de Sobarzo le fasse, en 2025.",
         "Deux blocs qui se sont touchés deux cents fois peuvent être posés de part et d'autre d'un laboratoire, pour ne plus jamais se rencontrer, et chacun portera encore, à une échelle que seul un scan de surface résout, le fait d'avoir rencontré l'autre autant de fois. Placez l'un ou l'autre contre un troisième bloc qu'il n'a jamais touché, et ce fait décide dans quel sens ira la prochaine étincelle."
       ]
-    }
+    },
+    null
   ],
   "es": [
     {
@@ -1871,7 +1898,8 @@ const articles = {
         "El instrumento capaz de medir una superficie a esa resolución, el microscopio de fuerza atómica, existe desde 1986. Durante casi cuarenta años cartografió la rugosidad en metal mecanizado, en recubrimientos, en obleas de semiconductores, en miles de superficies donde unos pocos nanómetros de desgaste importaban a alguien. Nadie lo apuntó a un bloque de silicona que acababa de separarse de otro bloque de silicona y preguntó si ese desgaste podría decidir hacia dónde iría la siguiente chispa, hasta que el equipo de Sobarzo lo hizo, en 2025.",
         "Dos bloques que se han tocado doscientas veces pueden dejarse en lados opuestos de un laboratorio, para no volver a encontrarse nunca, y cada uno seguirá portando, a una escala que solo resuelve un escaneo de superficie, el hecho de haber encontrado al otro tantas veces. Póngase cualquiera de ellos contra un tercer bloque que nunca ha tocado, y ese hecho decide hacia dónde irá la siguiente chispa."
       ]
-    }
+    },
+    null
   ],
   "he": [
     {
@@ -2199,7 +2227,8 @@ const articles = {
         "המכשיר המסוגל למדוד משטח ברזולוציה הזו, מיקרוסקופ כוח אטומי, קיים מאז 1986. כמעט ארבעים שנה הוא מיפה חספוס על מתכת מעובדת, על ציפויים, על פרוסות מוליכים למחצה, על אלפי משטחים שבהם כמה ננומטרים של שחיקה היו חשובים למישהו. אף אחד לא כיוון אותו אל בלוק סיליקון שזה עתה נפרד מבלוק סיליקון אחר ושאל אם השחיקה הזו עשויה להחליט לאן ילך הניצוץ הבא, עד שצוותו של סובארסו עשה זאת, ב-2025.",
         "שני בלוקים שנגעו מאתיים פעמים יכולים להיות מונחים בצדדים נגדיים של מעבדה, לעולם לא להיפגש שוב, וכל אחד עדיין יישא, בקנה מידה שרק סריקת משטח פותרת, את העובדה שנפגש עם האחר כל כך הרבה פעמים. הציבו אחד מהם מול בלוק שלישי שמעולם לא נגע בו, והעובדה הזו מחליטה לאן ילך הניצוץ הבא."
       ]
-    }
+    },
+    null
   ]
 };
 /* /build:articles */
@@ -2232,7 +2261,8 @@ const articleSlugs = {
     "what-israel-built-without-weight",
     "no-photograph-survives",
     "she-remembers-november-24-1999",
-    "after-the-two-hundredth-touch"
+    "after-the-two-hundredth-touch",
+    "twenty-five-thousand-tries"
   ],
   "fr": [
     "une-benediction-a-ete-frappee-elle-a-tenu",
@@ -2253,7 +2283,8 @@ const articleSlugs = {
     "ce-quisrael-a-construit-sans-poids",
     "aucune-photographie-ne-survit",
     "elle-se-souvient-du-24-novembre-1999",
-    "apres-le-deux-centieme-contact"
+    "apres-le-deux-centieme-contact",
+    null
   ],
   "es": [
     "una-bendicion-fue-golpeada-resistio",
@@ -2274,7 +2305,8 @@ const articleSlugs = {
     "lo-que-israel-construyo-sin-peso",
     "ninguna-fotografia-sobrevive",
     "ella-recuerda-el-24-de-noviembre-de-1999",
-    "despues-del-ducentesimo-toque"
+    "despues-del-ducentesimo-toque",
+    null
   ],
   "he": [
     "a-blessing-was-struck-it-held",
@@ -2295,7 +2327,8 @@ const articleSlugs = {
     null,
     "no-photograph-survives",
     "she-remembers-november-24-1999",
-    "after-the-two-hundredth-touch"
+    "after-the-two-hundredth-touch",
+    null
   ]
 };
 /* /build:slugs */
