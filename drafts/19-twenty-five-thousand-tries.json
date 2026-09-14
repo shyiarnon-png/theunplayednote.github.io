@@ -1,0 +1,32 @@
+{
+  "languages": {
+    "en": {
+      "edition": {
+        "slug": "twenty-five-thousand-tries",
+        "title": "Twenty-five thousand tries",
+        "subtitle": "A scientist spent two decades failing at something colleagues had already decided was impossible.",
+        "lede": "Ada Yonath, the Israeli crystallographer awarded a share of the 2009 Nobel Prize in Chemistry, died on August 31, 2026, at 87, the Weizmann Institute of Science announced. Yonath…",
+        "source": "Weizmann Institute of Science; NobelPrize.org; Nature obituary, September 2026; Times of Israel, August 31, 2026.",
+        "tag": "Jewish World",
+        "news": {
+          "source": "Weizmann Institute of Science; NobelPrize.org; Nature obituary, September 2026; Times of Israel, August 31, 2026.",
+          "text": "Ada Yonath, the Israeli crystallographer awarded a share of the 2009 Nobel Prize in Chemistry, died on August 31, 2026, at 87, the Weizmann Institute of Science announced. Yonath had spent decades attempting to map the three-dimensional structure of the ribosome — the molecular machine inside every living cell that reads genetic instructions and builds proteins — a target many scientists in the 1970s considered too large and unstable to ever crystallize. She and her collaborators made an estimated 25,000 attempts before producing usable ribosome crystals in 1980, and it took twenty more years of refinement before her teams solved the complete structure of both ribosomal subunits in 2000. She shared the Nobel Prize in Chemistry with Venkatraman Ramakrishnan and Thomas Steitz."
+        },
+        "body": [
+          "She was born in Jerusalem in 1939, in the Geula neighborhood, to a family with almost no income. Her father died while she was still a child. The family moved to Tel Aviv, and Yonath, not yet twelve, started giving other students math lessons so she could afford her own tuition.",
+          "Decades later, as an adult recovering from a concussion after a bicycle accident, she read an article about polar bears. Just before hibernation, their ribosomes arrange themselves into a dense, stable configuration that survives months of dormancy. If a polar bear's cells could hold a ribosome together under that kind of stress, she reasoned, there had to be a way to do it in a lab — and she went looking for organisms built to survive extremes on their own terms: bacteria pulled from the Dead Sea, from hot springs, from environments that punish anything fragile.",
+          "What followed was not a short experiment. Colleagues called her a dreamer, and not as a compliment. She and her team ran the crystallization attempt again, and again, and again — 25,000 times by one count — before anything usable came out the other end, in 1980. A result that took most of a decade to reach was, by every measure available at the time, still just a beginning.",
+          "It took twenty more years past that first success to solve the complete structure of both halves of the ribosome, published in 2000. She kept refining past the first success, and kept refining past the second. Understanding how antibiotics interact with the bacterial ribosome — and how bacteria evolve resistance to them — came out of the same line of work, decades of it, aimed the entire time at a target most of the field had already filed under impossible.",
+          "The Nobel Prize came in 2009, split three ways, for a structure that had taken the better part of thirty years to see clearly.",
+          "At the end of her life, she was still holding a harder question: how the first proteins were built, before there was anything like a ribosome to build them. She called it the next Everest. She did not get to climb it."
+        ]
+      },
+      "approved": true,
+      "provider": "author",
+      "findings": [],
+      "at": 1789371758
+    }
+  },
+  "order": 19,
+  "published": "2026-09-14"
+}
