@@ -21,7 +21,7 @@
           "À la fin de sa vie, elle tenait encore une question plus dure : comment les premières protéines ont été construites, avant qu'il n'y eût rien qui ressemblât à un ribosome pour les construire. Elle l'appelait le prochain Everest. Elle n'a pas pu le gravir."
         ]
       },
-      "approved": false,
+      "approved": true,
       "provider": "xai",
       "findings": [
         {
@@ -29,7 +29,8 @@
           "message": "News source no longer contains 'Weizmann Institute of Science; NobelPrize.org; Nature obituary, September 2026; Times of Israel, August 31, 2026.'."
         }
       ],
-      "at": 1789371820
+      "at": 1789371820,
+      "approved_at": 1789372225
     }
   },
   "order": 19,
