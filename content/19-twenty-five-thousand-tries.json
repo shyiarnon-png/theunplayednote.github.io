@@ -21,6 +21,26 @@
         "The Nobel Prize came in 2009, split three ways, for a structure that had taken the better part of thirty years to see clearly.",
         "At the end of her life, she was still holding a harder question: how the first proteins were built, before there was anything like a ribosome to build them. She called it the next Everest. She did not get to climb it."
       ]
+    },
+    "es": {
+      "slug": "veinticinco-mil-intentos",
+      "title": "Veinticinco mil intentos.",
+      "subtitle": "Una científica pasó dos décadas fracasando en algo que sus colegas ya habían decidido que era imposible.",
+      "lede": "Ada Yonath, la cristalógrafa israelí galardonada con una parte del Premio Nobel de Química de 2009, murió el 31 de agosto de 2026, a los 87 años, anunció el Weizmann Institute of…",
+      "source": "Weizmann Institute of Science; NobelPrize.org; Nature obituary, septiembre de 2026; Times of Israel, 31 de agosto de 2026.",
+      "tag": "Mundo judío",
+      "news": {
+        "source": "Weizmann Institute of Science; NobelPrize.org; Nature obituary, septiembre de 2026; Times of Israel, 31 de agosto de 2026.",
+        "text": "Ada Yonath, la cristalógrafa israelí galardonada con una parte del Premio Nobel de Química de 2009, murió el 31 de agosto de 2026, a los 87 años, anunció el Weizmann Institute of Science. Yonath había pasado décadas intentando mapear la estructura tridimensional del ribosoma — la máquina molecular dentro de cada célula viva que lee las instrucciones genéticas y construye proteínas — un objetivo que muchos científicos en los años setenta consideraban demasiado grande e inestable para cristalizar jamás. Ella y sus colaboradores hicieron un estimado de 25.000 intentos antes de producir cristales de ribosoma utilizables en 1980, y se necesitaron veinte años más de refinamiento antes de que sus equipos resolvieran la estructura completa de ambas subunidades ribosómicas en 2000. Compartió el Premio Nobel de Química con Venkatraman Ramakrishnan y Thomas Steitz."
+      },
+      "body": [
+        "Nació en Jerusalén en 1939, en el barrio de Geula, en una familia casi sin ingresos. Su padre murió mientras ella era todavía una niña. La familia se mudó a Tel Aviv, y Yonath, que aún no tenía doce años, empezó a dar clases de matemáticas a otros estudiantes para poder pagar su propia matrícula.",
+        "Décadas después, ya adulta y recuperándose de una conmoción cerebral tras un accidente de bicicleta, leyó un artículo sobre osos polares. Justo antes de la hibernación, sus ribosomas se disponen en una configuración densa y estable que sobrevive meses de latencia. Si las células de un oso polar podían mantener unido un ribosoma bajo ese tipo de estrés, razonó, tenía que haber un modo de hacerlo en un laboratorio — y se puso a buscar organismos construidos para sobrevivir extremos en sus propios términos: bacterias extraídas del mar Muerto, de fuentes termales, de entornos que castigan cualquier cosa frágil.",
+        "Lo que siguió no fue un experimento breve. Los colegas la llamaban soñadora, y no como un cumplido. Ella y su equipo repitieron el intento de cristalización otra vez, y otra vez, y otra vez — 25.000 veces según un recuento — antes de que saliera algo utilizable al otro lado, en 1980. Un resultado que tardó la mayor parte de una década en alcanzarse era, por todas las medidas disponibles en aquel momento, todavía solo un comienzo.",
+        "Se necesitaron veinte años más más allá de aquel primer éxito para resolver la estructura completa de ambas mitades del ribosoma, publicada en 2000. Siguió refinando más allá del primer éxito, y siguió refinando más allá del segundo. Comprender cómo interactúan los antibióticos con el ribosoma bacteriano — y cómo las bacterias evolucionan resistencia a ellos — salió de la misma línea de trabajo, décadas de ella, dirigida todo el tiempo a un objetivo que la mayor parte del campo ya había archivado bajo imposible.",
+        "El Premio Nobel llegó en 2009, dividido en tres, por una estructura que había tardado la mayor parte de treinta años en verse con claridad.",
+        "Al final de su vida, seguía sosteniendo una pregunta más dura: cómo se construyeron las primeras proteínas, antes de que hubiera nada parecido a un ribosoma para construirlas. Lo llamó el siguiente Everest. No llegó a subirlo."
+      ]
     }
   }
 }
