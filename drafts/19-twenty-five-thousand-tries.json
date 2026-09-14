@@ -84,7 +84,7 @@
           "בסוף חייה היא עדיין החזיקה שאלה קשה יותר: איך נבנו החלבונים הראשונים, לפני שהיה משהו כמו ריבוזום שיבנה אותם. היא קראה לזה האוורסט הבא. היא לא זכתה לטפס עליו."
         ]
       },
-      "approved": false,
+      "approved": true,
       "provider": "xai",
       "findings": [
         {
@@ -92,7 +92,8 @@
           "message": "News source no longer contains 'Weizmann Institute of Science; NobelPrize.org; Nature obituary, September 2026; Times of Israel, August 31, 2026.'."
         }
       ],
-      "at": 1789371893
+      "at": 1789371893,
+      "approved_at": 1789372180
     }
   },
   "order": 19,
