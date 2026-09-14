@@ -52,7 +52,7 @@
           "Al final de su vida, seguía sosteniendo una pregunta más dura: cómo se construyeron las primeras proteínas, antes de que hubiera nada parecido a un ribosoma para construirlas. Lo llamó el siguiente Everest. No llegó a subirlo."
         ]
       },
-      "approved": false,
+      "approved": true,
       "provider": "xai",
       "findings": [
         {
@@ -60,7 +60,8 @@
           "message": "News source no longer contains 'Weizmann Institute of Science; NobelPrize.org; Nature obituary, September 2026; Times of Israel, August 31, 2026.'."
         }
       ],
-      "at": 1789371848
+      "at": 1789371848,
+      "approved_at": 1789372178
     },
     "he": {
       "edition": {
