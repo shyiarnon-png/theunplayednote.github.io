@@ -561,12 +561,21 @@
     <loc>https://theunplayednote.com/en/twenty-five-thousand-tries/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://theunplayednote.com/en/twenty-five-thousand-tries/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://theunplayednote.com/es/veinticinco-mil-intentos/"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://theunplayednote.com/he/twenty-five-thousand-tries/"/>
     <lastmod>2026-09-14</lastmod>
   </url>
   <url>
     <loc>https://theunplayednote.com/es/veinticinco-mil-intentos/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://theunplayednote.com/en/twenty-five-thousand-tries/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://theunplayednote.com/es/veinticinco-mil-intentos/"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://theunplayednote.com/he/twenty-five-thousand-tries/"/>
+    <lastmod>2026-09-14</lastmod>
+  </url>
+  <url>
+    <loc>https://theunplayednote.com/he/twenty-five-thousand-tries/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://theunplayednote.com/en/twenty-five-thousand-tries/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://theunplayednote.com/es/veinticinco-mil-intentos/"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://theunplayednote.com/he/twenty-five-thousand-tries/"/>
     <lastmod>2026-09-14</lastmod>
   </url>
 </urlset>
