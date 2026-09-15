@@ -61,6 +61,26 @@
         "Le nom retenu ensuite remonte à l'étoile qu'il orbite. Bételgeuse vient de l'arabe pour « la main du géant ». Son compagnon a été nommé Siwarha — son bracelet.",
         "Les modèles actuels placent une fusion des deux étoiles autour de dix mille ans d'ici, une fois que les couches extérieures de Bételgeuse atteindront l'orbite où Siwarha se tient maintenant — bien avant la supernova attendue, selon les estimations présentes, des dizaines de milliers d'années plus loin encore."
       ]
+    },
+    "es": {
+      "slug": "dos-noches-en-diciembre-un-siglo-tarde",
+      "title": "Dos noches en diciembre, un siglo tarde.",
+      "subtitle": "Un instrumento construido para encontrar cosas demasiado pequeñas para ver fue apuntado, durante dos noches, a una de las estrellas más brillantes del cielo.",
+      "lede": "El 28 de julio de 2026, el Observatorio Europeo Austral anunció que un equipo dirigido por el astrónomo Miguel Montargès había obtenido la imagen más nítida hasta ahora de una…",
+      "source": "ESO Press Release eso2611, 28 de julio de 2026; Montargès et al., Astronomy & Astrophysics 711, L12 (2026).",
+      "tag": "Mundo judío",
+      "news": {
+        "source": "ESO Press Release eso2611, 28 de julio de 2026; Montargès et al., Astronomy & Astrophysics 711, L12 (2026).",
+        "text": "El 28 de julio de 2026, el Observatorio Europeo Austral anunció que un equipo dirigido por el astrónomo Miguel Montargès había obtenido la imagen más nítida hasta ahora de una estrella compañera que orbita Betelgeuse, la supergigante roja de la constelación de Orión. Los astrónomos habían sospechado de tal compañera durante aproximadamente un siglo, a partir de cambios irregulares en el brillo de Betelgeuse, pero las búsquedas anteriores no habían logrado detectarla. Usando el instrumento SPHERE del Very Large Telescope de ESO en Chile, el equipo observó Betelgeuse durante dos noches en diciembre de 2024, y luego pasó varios meses procesando los datos antes de confirmar la detección. El objeto, llamado provisionalmente Betelgeuse B y al que más tarde se le dio el nombre formal Siwarha, resultó tener entre dos y tres veces la masa del Sol — aproximadamente el doble o el triple de lo que se había predicho. Se espera la confirmación final a finales de 2027, cuando los astrónomos observen la compañera en el lado lejano de su órbita."
+      },
+      "body": [
+        "Betelgeuse ha sido observada desde antes de que nadie llevara registros escritos de observarla — un punto rojizo que marca el hombro de Orión, lo bastante brillante para verse sin ayuda en cualquier noche despejada. Durante tanto tiempo como alguien la ha seguido con cuidado, ha parpadeado según un horario que nadie podía explicar del todo: un pulso rápido de unos 400 días, y debajo de eso, uno más lento, cercano a cinco años y medio, que no coincidía con nada de la estrella misma. Durante aproximadamente un siglo, algunos astrónomos sospecharon que el segundo ritmo pertenecía a algo enteramente distinto — una compañera, demasiado débil para verse de forma directa, que tiraba de Betelgeuse desde cerca.",
+        "Dos estudios publicados en 2024 calcularon cuándo esa compañera, si existía, se situaría a su mayor distancia aparente de Betelgeuse vista desde la Tierra — diciembre de ese año, la única ventana en que una imagen directa podría realmente funcionar. Un equipo dirigido por Montargès apuntó el instrumento SPHERE del Very Large Telescope a Betelgeuse en esas noches. SPHERE no fue construido para esto; fue diseñado para tapar el resplandor de una estrella lo bastante bien como para captar algo cercano a ella y enormemente más tenue, un planeta, por lo general, no otra estrella. El equipo pasó meses procesando lo que había registrado antes de confiar en lo que estaba mirando.",
+        "Un siglo de búsqueda había tratado a la compañera como algo que se escondía por ser pequeña — lo bastante débil para permanecer perdida en el resplandor de Betelgeuse sin importar dónde se situara en su órbita. Lo que de hecho la había estado escondiendo era la alineación. Solo cuando su posición se apartó lo bastante de Betelgeuse, vista desde la Tierra, su tamaño real tuvo algún lugar donde mostrarse.",
+        "Montargès había esperado que la compañera, si estaba ahí, se situara justo en el borde de lo que el instrumento podía detectar — la estimación anterior la situaba aproximadamente en la masa del Sol mismo, pequeña y tenue lo bastante para permanecer perdida de forma plausible. Las imágenes procesadas mostraron algo entre dos y tres veces más pesado que el Sol, más brillante de lo que cualquier modelo había permitido. La geometría por fin se había alineado, y no quedaba nada modesto en lo que pasó.",
+        "El nombre que se acordó después se remonta a la estrella que orbita. Betelgeuse viene del árabe para «la mano del gigante». Su compañera fue nombrada Siwarha — su pulsera.",
+        "Los modelos actuales sitúan una fusión de las dos estrellas dentro de unos diez mil años, una vez que las capas exteriores de Betelgeuse alcancen la órbita donde Siwarha se sienta ahora — mucho antes de la supernova que se espera, según las estimaciones actuales, decenas de miles de años más adelante todavía."
+      ]
     }
   }
 }
