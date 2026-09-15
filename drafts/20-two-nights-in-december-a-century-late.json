@@ -21,7 +21,7 @@
           "Los modelos actuales sitúan una fusión de las dos estrellas dentro de unos diez mil años, una vez que las capas exteriores de Betelgeuse alcancen la órbita donde Siwarha se sienta ahora — mucho antes de la supernova que se espera, según las estimaciones actuales, decenas de miles de años más adelante todavía."
         ]
       },
-      "approved": false,
+      "approved": true,
       "provider": "xai",
       "findings": [
         {
@@ -29,7 +29,8 @@
           "message": "News source no longer contains 'ESO Press Release eso2611, July 28, 2026; Montargès et al., Astronomy & Astrophysics 711, L12 (2026).'."
         }
       ],
-      "at": 1789456481
+      "at": 1789456481,
+      "approved_at": 1789456605
     }
   }
 }
