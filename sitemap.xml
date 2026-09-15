@@ -647,12 +647,21 @@
   <url>
     <loc>https://theunplayednote.com/en/two-nights-in-december-a-century-late/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://theunplayednote.com/en/two-nights-in-december-a-century-late/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://theunplayednote.com/fr/deux-nuits-en-decembre-un-siecle-trop-tard/"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://theunplayednote.com/he/two-nights-in-december-a-century-late/"/>
+    <lastmod>2026-09-15</lastmod>
+  </url>
+  <url>
+    <loc>https://theunplayednote.com/fr/deux-nuits-en-decembre-un-siecle-trop-tard/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://theunplayednote.com/en/two-nights-in-december-a-century-late/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://theunplayednote.com/fr/deux-nuits-en-decembre-un-siecle-trop-tard/"/>
     <xhtml:link rel="alternate" hreflang="he" href="https://theunplayednote.com/he/two-nights-in-december-a-century-late/"/>
     <lastmod>2026-09-15</lastmod>
   </url>
   <url>
     <loc>https://theunplayednote.com/he/two-nights-in-december-a-century-late/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://theunplayednote.com/en/two-nights-in-december-a-century-late/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://theunplayednote.com/fr/deux-nuits-en-decembre-un-siecle-trop-tard/"/>
     <xhtml:link rel="alternate" hreflang="he" href="https://theunplayednote.com/he/two-nights-in-december-a-century-late/"/>
     <lastmod>2026-09-15</lastmod>
   </url>
