@@ -510,6 +510,13 @@
 
     <div class="articles" id="article-list">
     <!-- build:list -->
+    <a class="article-entry" href="/en/two-nights-in-december-a-century-late/" onclick="return handleArticleClick(event, 20)">
+      <div class="article-source">Jewish World &nbsp;&middot;&nbsp; ESO Press Release eso2611, July 28, 2026; Montargès et al., Astronomy &amp; Astrophysics 711, L12 (2026).</div>
+      <h2 class="article-title">Two nights in December, a century late.</h2>
+      <p class="article-subtitle">An instrument built to find things too small to see was pointed, for two nights, at one of the brightest stars in the sky.</p>
+      <p class="article-lede">On July 28, 2026, the European Southern Observatory announced that a team led by astronomer Miguel Montargès had obtained the clearest image yet of a companion star orbiting…</p>
+      <span class="read-more">Read</span>
+    </a>
     <a class="article-entry" href="/en/twenty-five-thousand-tries/" onclick="return handleArticleClick(event, 19)">
       <div class="article-source">Jewish World &nbsp;&middot;&nbsp; Weizmann Institute of Science; NobelPrize.org; Nature obituary, September 2026; Times of Israel, August 31, 2026.</div>
       <h2 class="article-title">Twenty-five thousand tries</h2>
@@ -1095,6 +1102,25 @@ const articles = {
         "The Nobel Prize came in 2009, split three ways, for a structure that had taken the better part of thirty years to see clearly.",
         "At the end of her life, she was still holding a harder question: how the first proteins were built, before there was anything like a ribosome to build them. She called it the next Everest. She did not get to climb it."
       ]
+    },
+    {
+      "source": "ESO Press Release eso2611, July 28, 2026; Montargès et al., Astronomy & Astrophysics 711, L12 (2026).",
+      "tag": "Jewish World",
+      "title": "Two nights in December, a century late.",
+      "subtitle": "An instrument built to find things too small to see was pointed, for two nights, at one of the brightest stars in the sky.",
+      "lede": "On July 28, 2026, the European Southern Observatory announced that a team led by astronomer Miguel Montargès had obtained the clearest image yet of a companion star orbiting…",
+      "news": {
+        "source": "ESO Press Release eso2611, July 28, 2026; Montargès et al., Astronomy & Astrophysics 711, L12 (2026).",
+        "text": "On July 28, 2026, the European Southern Observatory announced that a team led by astronomer Miguel Montargès had obtained the clearest image yet of a companion star orbiting Betelgeuse, the red supergiant in the constellation Orion. Astronomers had suspected such a companion for roughly a century, based on irregular changes in Betelgeuse's brightness, but earlier searches had failed to detect it. Using the SPHERE instrument on ESO's Very Large Telescope in Chile, the team observed Betelgeuse for two nights in December 2024, then spent several months processing the data before confirming the detection. The object, provisionally named Betelgeuse B and later given the formal name Siwarha, was found to have two to three times the mass of the Sun — roughly double or triple what had been predicted. Final confirmation is expected in late 2027, when astronomers observe the companion on the far side of its orbit."
+      },
+      "body": [
+        "Betelgeuse has been watched since before anyone kept written records of watching it — a reddish point marking the shoulder of Orion, bright enough to see without help on any clear night. For as long as anyone has tracked it carefully, it has flickered on a schedule nobody could fully explain: a fast pulse of about 400 days, and underneath that, a slower one, closer to five and a half years, that didn't match anything about the star itself. For roughly a century, some astronomers suspected the second rhythm belonged to something else entirely — a companion, too faint to see directly, tugging at Betelgeuse from close in.",
+        "Two studies published in 2024 calculated when that companion, if it existed, would sit at its greatest apparent distance from Betelgeuse as seen from Earth — December of that year, the one window when a direct image might actually work. A team led by Montargès pointed the Very Large Telescope's SPHERE instrument at Betelgeuse on those nights. SPHERE wasn't built for this; it was designed to blot out a star's glare well enough to catch something close to it and enormously dimmer, a planet, typically, not another star. The team spent months processing what they'd recorded before they trusted what they were looking at.",
+        "A century of searching had treated the companion as something hiding by being small — faint enough to stay lost in Betelgeuse's glare no matter where it sat in its orbit. What it had actually been hiding by was alignment. Only when its position swung far enough from Betelgeuse, as seen from Earth, did its real size have anywhere left to show itself.",
+        "Montargès had expected the companion, if it was there, to sit right at the edge of what the instrument could detect — the earlier estimate put it at roughly the Sun's own mass, small and dim enough to plausibly stay lost. The processed images showed something two to three times heavier than the Sun, brighter than any model had allowed for. The geometry had finally lined up, and there was nothing modest left about what came through.",
+        "The name settled on afterward reaches back to the star it orbits. Betelgeuse comes from the Arabic for \"the hand of the giant.\" Its companion was named Siwarha — her bracelet.",
+        "Current models put a merger of the two stars around ten thousand years from now, once Betelgeuse's outer layers reach the orbit where Siwarha now sits — long before the supernova that is expected, on present estimates, tens of thousands of years further out still."
+      ]
     }
   ],
   "fr": [
@@ -1515,7 +1541,8 @@ const articles = {
         "Le prix Nobel est venu en 2009, partagé en trois, pour une structure qu'il avait fallu la plus grande partie de trente ans pour voir clairement.",
         "À la fin de sa vie, elle tenait encore une question plus dure : comment les premières protéines ont été construites, avant qu'il n'y eût rien qui ressemblât à un ribosome pour les construire. Elle l'appelait le prochain Everest. Elle n'a pas pu le gravir."
       ]
-    }
+    },
+    null
   ],
   "es": [
     {
@@ -1935,7 +1962,8 @@ const articles = {
         "El Premio Nobel llegó en 2009, dividido en tres, por una estructura que había tardado la mayor parte de treinta años en verse con claridad.",
         "Al final de su vida, seguía sosteniendo una pregunta más dura: cómo se construyeron las primeras proteínas, antes de que hubiera nada parecido a un ribosoma para construirlas. Lo llamó el siguiente Everest. No llegó a subirlo."
       ]
-    }
+    },
+    null
   ],
   "he": [
     {
@@ -2355,7 +2383,8 @@ const articles = {
         "פרס נובל בא ב-2009, חולק לשלושה, על מבנה שלקח את רוב שלושים השנים לראות בבירור.",
         "בסוף חייה היא עדיין החזיקה שאלה קשה יותר: איך נבנו החלבונים הראשונים, לפני שהיה משהו כמו ריבוזום שיבנה אותם. היא קראה לזה האוורסט הבא. היא לא זכתה לטפס עליו."
       ]
-    }
+    },
+    null
   ]
 };
 /* /build:articles */
@@ -2389,7 +2418,8 @@ const articleSlugs = {
     "no-photograph-survives",
     "she-remembers-november-24-1999",
     "after-the-two-hundredth-touch",
-    "twenty-five-thousand-tries"
+    "twenty-five-thousand-tries",
+    "two-nights-in-december-a-century-late"
   ],
   "fr": [
     "une-benediction-a-ete-frappee-elle-a-tenu",
@@ -2411,7 +2441,8 @@ const articleSlugs = {
     "aucune-photographie-ne-survit",
     "elle-se-souvient-du-24-novembre-1999",
     "apres-le-deux-centieme-contact",
-    "vingt-cinq-mille-essais"
+    "vingt-cinq-mille-essais",
+    null
   ],
   "es": [
     "una-bendicion-fue-golpeada-resistio",
@@ -2433,7 +2464,8 @@ const articleSlugs = {
     "ninguna-fotografia-sobrevive",
     "ella-recuerda-el-24-de-noviembre-de-1999",
     "despues-del-ducentesimo-toque",
-    "veinticinco-mil-intentos"
+    "veinticinco-mil-intentos",
+    null
   ],
   "he": [
     "a-blessing-was-struck-it-held",
@@ -2455,7 +2487,8 @@ const articleSlugs = {
     "no-photograph-survives",
     "she-remembers-november-24-1999",
     "after-the-two-hundredth-touch",
-    "twenty-five-thousand-tries"
+    "twenty-five-thousand-tries",
+    null
   ]
 };
 /* /build:slugs */
