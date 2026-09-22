@@ -1,36 +1,5 @@
 {
   "languages": {
-    "es": {
-      "edition": {
-        "slug": "no-sabia-que-la-palabra-ya-existia",
-        "title": "No sabía que la palabra ya existía.",
-        "subtitle": "Una regla de laboratorio en un departamento de gerontología de California sigue aterrizando, por accidente, en la misma lengua.",
-        "lede": "Pinchas Cohen, decano de la USC Leonard Davis School of Gerontology y pionero en el estudio de los péptidos derivados de las mitocondrias, tiene una regla de nomenclatura para su…",
-        "source": "Times of Israel, Jewish Telegraphic Agency, Forward, abril de 2026.",
-        "tag": "Mundo judío",
-        "news": {
-          "source": "Times of Israel, Jewish Telegraphic Agency, Forward, abril de 2026.",
-          "text": "Pinchas Cohen, decano de la USC Leonard Davis School of Gerontology y pionero en el estudio de los péptidos derivados de las mitocondrias, tiene una regla de nomenclatura para su laboratorio: no nombra él mismo los descubrimientos. Los estudiantes y los posdoctorales proponen nombres; Cohen retiene el poder de veto. En la última década, ese proceso ha producido una serie de nombres de péptidos que son acrónimos científicos legítimos y, leídos en voz alta, palabras yidis: SHLP (Small Humanin-Like Peptide, pronunciado «schlep»), SHMOOSE (Small Human Mitochondrial ORF Over SErine tRNA) y MENTSH, que Cohen usó después para nombrar una empresa que fundó. Unos doce han sido publicados; unos cuantos más, entre ellos uno llamado NOSH y otro llamado PUTZ, aún no se habían publicado en el momento de este reportaje."
-        },
-        "body": [
-          "Un nombre de péptido en el laboratorio de Cohen tiene que hacer dos cosas que no tienen nada que ver entre sí. Tiene que expandirse en una frase que sea químicamente exacta — la molécula correcta, la relación correcta con la molécula vecina correcta — y, pronunciado en voz alta, tiene que aterrizar en una palabra que ya significa algo, en una lengua que la química nunca ha oído. SHLP tiene que significar Small Humanin-Like Peptide y también sonar como schlep. SHMOOSE tiene que deletrear Small Human Mitochondrial ORF Over SErine tRNA y también sonar como shmooze. Ninguna de las dos restricciones cede ante la otra. Ambas tienen que aterrizar, exactamente, a la vez.",
-          "Cohen no hace este trabajo. Construyó la regla para que los estudiantes y los posdoctorales lo hagan, y él solo retiene el poder de veto sobre lo que le traen. Nadie asigna la mitad yidis del trabajo a nadie en particular, y nadie comprueba si la persona que busca la palabra tiene alguna conexión con la lengua. Lo único que se pone a prueba es si ambas restricciones aterrizaron juntas.",
-          "«La mejor manera de conseguir que yo diga que sí», ha dicho Cohen, «es llegar con algo realmente ingenioso.» Ese es todo el incentivo que un estudiante necesita. Siguen buscando hasta que la segunda restricción encaja junto a la primera, y aprenden a hacerlo del mismo modo que cada nueva cohorte lo ha aprendido, en su mayor parte sin conocer a los estudiantes que lo aprendieron antes que ellos.",
-          "Unos doce nombres han pasado ese filtro hasta ahora. Uno de ellos vino de un colega sin formación en yidis y sin historia familiar en él — taiwanés-estadounidense, criado en el Área de la Bahía, que alcanzó, cuando llegó el momento, una palabra que había recogido de segunda mano simplemente por haber estado alrededor de ella toda su vida. La palabra era MENTSH: una persona que hace lo correcto con los demás, de forma fiable, sin necesidad de ser vigilada.",
-          "Nombró la molécula por lo que fue construida para hacer — ayudar a la gente a vivir más, con mejor salud — y buscó la palabra que encajaba. Ya estaba ahí, dimensionada exactamente para lo que había encontrado, esperando al otro lado de una lengua que nunca había estudiado a que alguien viniera a buscarla."
-        ]
-      },
-      "approved": true,
-      "provider": "xai",
-      "findings": [
-        {
-          "severity": "warning",
-          "message": "News source no longer contains 'Times of Israel, Jewish Telegraphic Agency, Forward, April 2026.'."
-        }
-      ],
-      "at": 1790064977,
-      "approved_at": 1790065243
-    },
     "he": {
       "edition": {
         "slug": "he-didnt-know-the-word-already-existed",
