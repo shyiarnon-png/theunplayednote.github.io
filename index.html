@@ -510,6 +510,13 @@
 
     <div class="articles" id="article-list">
     <!-- build:list -->
+    <a class="article-entry" href="/en/he-didn-t-know-the-word-already-existed/" onclick="return handleArticleClick(event, 21)">
+      <div class="article-source">Jewish World &nbsp;&middot;&nbsp; Times of Israel, Jewish Telegraphic Agency, Forward, April 2026.</div>
+      <h2 class="article-title">He didn't know the word already existed</h2>
+      <p class="article-subtitle">A lab rule at a California gerontology department keeps landing, by accident, on the same language</p>
+      <p class="article-lede">Pinchas Cohen, dean of the USC Leonard Davis School of Gerontology and a pioneer in the study of mitochondria-derived peptides, has a naming rule for his lab: he does not name…</p>
+      <span class="read-more">Read</span>
+    </a>
     <a class="article-entry" href="/en/two-nights-in-december-a-century-late/" onclick="return handleArticleClick(event, 20)">
       <div class="article-source">Jewish World &nbsp;&middot;&nbsp; ESO Press Release eso2611, July 28, 2026; Montargès et al., Astronomy &amp; Astrophysics 711, L12 (2026).</div>
       <h2 class="article-title">Two nights in December, a century late.</h2>
@@ -1121,6 +1128,24 @@ const articles = {
         "The name settled on afterward reaches back to the star it orbits. Betelgeuse comes from the Arabic for \"the hand of the giant.\" Its companion was named Siwarha — her bracelet.",
         "Current models put a merger of the two stars around ten thousand years from now, once Betelgeuse's outer layers reach the orbit where Siwarha now sits — long before the supernova that is expected, on present estimates, tens of thousands of years further out still."
       ]
+    },
+    {
+      "source": "Times of Israel, Jewish Telegraphic Agency, Forward, April 2026.",
+      "tag": "Jewish World",
+      "title": "He didn't know the word already existed",
+      "subtitle": "A lab rule at a California gerontology department keeps landing, by accident, on the same language",
+      "lede": "Pinchas Cohen, dean of the USC Leonard Davis School of Gerontology and a pioneer in the study of mitochondria-derived peptides, has a naming rule for his lab: he does not name…",
+      "news": {
+        "source": "Times of Israel, Jewish Telegraphic Agency, Forward, April 2026.",
+        "text": "Pinchas Cohen, dean of the USC Leonard Davis School of Gerontology and a pioneer in the study of mitochondria-derived peptides, has a naming rule for his lab: he does not name discoveries himself. Students and postdocs propose names; Cohen holds veto power. Over the past decade, that process has produced a run of peptide names that are legitimate scientific acronyms and, read aloud, Yiddish words: SHLP (Small Humanin-Like Peptide, pronounced \"schlep\"), SHMOOSE (Small Human Mitochondrial ORF Over SErine tRNA), and MENTSH, which Cohen later used to name a company he founded. About a dozen have been published; a few more, including one called NOSH and another called PUTZ, had not yet been published as of this reporting."
+      },
+      "body": [
+        "A peptide name at Cohen's lab has to do two things that have nothing to do with each other. It has to expand into a phrase that is chemically exact — the right molecule, the right relationship to the right neighboring molecule — and, spoken aloud, it has to land on a word that already means something, in a language the chemistry has never heard of. SHLP has to stand for Small Humanin-Like Peptide and also come out sounding like schlep. SHMOOSE has to spell out Small Human Mitochondrial ORF Over SErine tRNA and also come out sounding like shmooze. Neither constraint bends for the other. Both have to land, exactly, at once.",
+        "Cohen doesn't do this work. He built the rule so that students and postdocs do it, and he only holds veto power over what they bring him. Nobody assigns the Yiddish half of the job to anyone in particular, and nobody checks whether the person searching for the word has any connection to the language at all. The only thing being tested is whether both constraints landed together.",
+        "\"The best way to get me to say yes,\" Cohen has said, \"is to come up with something really cute.\" That's the whole incentive a student needs. They keep searching until the second constraint clicks into place beside the first, and they learn to do it the same way every new cohort has learned it, mostly without meeting the students who learned it before them.",
+        "About a dozen names have made it through that filter so far. One of them came from a colleague with no training in Yiddish and no family history in it — Taiwanese-American, raised in the Bay Area, who reached, when the moment came, for a word he'd picked up secondhand from simply being around it his whole life. The word was MENTSH: a person who does right by others, reliably, without needing to be watched.",
+        "He named the molecule for what it was built to do — help people live longer, in better health — and searched for the word that fit. It was already there, sized exactly for what he'd found, waiting on the far side of a language he'd never studied for someone to come looking."
+      ]
     }
   ],
   "fr": [
@@ -1560,7 +1585,8 @@ const articles = {
         "Le nom retenu ensuite remonte à l'étoile qu'il orbite. Bételgeuse vient de l'arabe pour « la main du géant ». Son compagnon a été nommé Siwarha — son bracelet.",
         "Les modèles actuels placent une fusion des deux étoiles autour de dix mille ans d'ici, une fois que les couches extérieures de Bételgeuse atteindront l'orbite où Siwarha se tient maintenant — bien avant la supernova attendue, selon les estimations présentes, des dizaines de milliers d'années plus loin encore."
       ]
-    }
+    },
+    null
   ],
   "es": [
     {
@@ -1999,7 +2025,8 @@ const articles = {
         "El nombre que se acordó después se remonta a la estrella que orbita. Betelgeuse viene del árabe para «la mano del gigante». Su compañera fue nombrada Siwarha — su pulsera.",
         "Los modelos actuales sitúan una fusión de las dos estrellas dentro de unos diez mil años, una vez que las capas exteriores de Betelgeuse alcancen la órbita donde Siwarha se sienta ahora — mucho antes de la supernova que se espera, según las estimaciones actuales, decenas de miles de años más adelante todavía."
       ]
-    }
+    },
+    null
   ],
   "he": [
     {
@@ -2438,7 +2465,8 @@ const articles = {
         "השם שהתיישב אחר כך מגיע אל הכוכב שהוא מקיף. בטלג'וז בא מהערבית ל״יד הענק״. הלוויה שלו נקרא סיווארהא — הצמיד שלה.",
         "מודלים נוכחיים מציבים מיזוג של שני הכוכבים בעוד כעשרת אלפים שנים, ברגע שהשכבות החיצוניות של בטלג'וז יגיעו למסלול שבו סיווארהא יושב עכשיו — הרבה לפני הסופרנובה שצפויה, לפי האומדנים הנוכחיים, עוד עשרות אלפי שנים הלאה."
       ]
-    }
+    },
+    null
   ]
 };
 /* /build:articles */
@@ -2473,7 +2501,8 @@ const articleSlugs = {
     "she-remembers-november-24-1999",
     "after-the-two-hundredth-touch",
     "twenty-five-thousand-tries",
-    "two-nights-in-december-a-century-late"
+    "two-nights-in-december-a-century-late",
+    "he-didn-t-know-the-word-already-existed"
   ],
   "fr": [
     "une-benediction-a-ete-frappee-elle-a-tenu",
@@ -2496,7 +2525,8 @@ const articleSlugs = {
     "elle-se-souvient-du-24-novembre-1999",
     "apres-le-deux-centieme-contact",
     "vingt-cinq-mille-essais",
-    "deux-nuits-en-decembre-un-siecle-trop-tard"
+    "deux-nuits-en-decembre-un-siecle-trop-tard",
+    null
   ],
   "es": [
     "una-bendicion-fue-golpeada-resistio",
@@ -2519,7 +2549,8 @@ const articleSlugs = {
     "ella-recuerda-el-24-de-noviembre-de-1999",
     "despues-del-ducentesimo-toque",
     "veinticinco-mil-intentos",
-    "dos-noches-en-diciembre-un-siglo-tarde"
+    "dos-noches-en-diciembre-un-siglo-tarde",
+    null
   ],
   "he": [
     "a-blessing-was-struck-it-held",
@@ -2542,7 +2573,8 @@ const articleSlugs = {
     "she-remembers-november-24-1999",
     "after-the-two-hundredth-touch",
     "twenty-five-thousand-tries",
-    "two-nights-in-december-a-century-late"
+    "two-nights-in-december-a-century-late",
+    null
   ]
 };
 /* /build:slugs */
