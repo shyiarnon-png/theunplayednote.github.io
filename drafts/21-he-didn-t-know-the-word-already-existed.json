@@ -1,0 +1,34 @@
+{
+  "languages": {
+    "fr": {
+      "edition": {
+        "slug": "il-ne-savait-pas-que-le-mot-existait-deja",
+        "title": "Il ne savait pas que le mot existait déjà.",
+        "subtitle": "Une règle de labo dans un département de gérontologie californien retombe, par accident, sur la même langue",
+        "lede": "Pinchas Cohen, doyen de la USC Leonard Davis School of Gerontology et pionnier de l'étude des peptides dérivés des mitochondries, a une règle de nommage pour son labo : il ne…",
+        "source": "Times of Israel, Jewish Telegraphic Agency, Forward, avril 2026.",
+        "tag": "Monde juif",
+        "news": {
+          "source": "Times of Israel, Jewish Telegraphic Agency, Forward, avril 2026.",
+          "text": "Pinchas Cohen, doyen de la USC Leonard Davis School of Gerontology et pionnier de l'étude des peptides dérivés des mitochondries, a une règle de nommage pour son labo : il ne nomme pas lui-même les découvertes. Les étudiants et les postdocs proposent des noms ; Cohen détient le droit de veto. Au cours de la dernière décennie, ce processus a produit une série de noms de peptides qui sont des acronymes scientifiques légitimes et, lus à voix haute, des mots yiddish : SHLP (Small Humanin-Like Peptide, prononcé « schlep »), SHMOOSE (Small Human Mitochondrial ORF Over SErine tRNA), et MENTSH, que Cohen a ensuite utilisé pour nommer une entreprise qu'il a fondée. Une dizaine ont été publiés ; quelques autres, dont un appelé NOSH et un autre appelé PUTZ, n'étaient pas encore publiés au moment de ce reportage."
+        },
+        "body": [
+          "Un nom de peptide au labo de Cohen doit faire deux choses qui n'ont rien à voir l'une avec l'autre. Il doit s'étendre en une phrase chimiquement exacte — la bonne molécule, le bon rapport à la bonne molécule voisine — et, dit à voix haute, il doit atterrir sur un mot qui signifie déjà quelque chose, dans une langue que la chimie n'a jamais entendue. SHLP doit signifier Small Humanin-Like Peptide et aussi sonner comme schlep. SHMOOSE doit épeler Small Human Mitochondrial ORF Over SErine tRNA et aussi sonner comme shmooze. Aucune contrainte ne cède à l'autre. Les deux doivent atterrir, exactement, en même temps.",
+          "Cohen ne fait pas ce travail. Il a construit la règle pour que les étudiants et les postdocs le fassent, et il ne détient qu'un droit de veto sur ce qu'ils lui apportent. Personne n'assigne la moitié yiddish de la tâche à quiconque en particulier, et personne ne vérifie si la personne qui cherche le mot a le moindre lien avec la langue. La seule chose testée, c'est si les deux contraintes ont atterri ensemble.",
+          "« La meilleure façon de me faire dire oui, a dit Cohen, c'est de trouver quelque chose de vraiment mignon. » C'est tout l'incitatif dont un étudiant a besoin. Ils continuent à chercher jusqu'à ce que la deuxième contrainte s'enclenche à côté de la première, et ils apprennent à le faire comme chaque nouvelle cohorte l'a appris, le plus souvent sans rencontrer les étudiants qui l'ont appris avant eux.",
+          "Une dizaine de noms ont passé ce filtre jusqu'ici. L'un d'eux venait d'un collègue sans formation en yiddish et sans histoire familiale avec cette langue — Taïwanais-Américain, élevé dans la Bay Area, qui a tendu la main, le moment venu, vers un mot qu'il avait ramassé de seconde main simplement pour avoir grandi autour. Le mot était MENTSH : une personne qui fait ce qu'il faut pour les autres, de façon fiable, sans qu'on ait besoin de la surveiller.",
+          "Il a nommé la molécule d'après ce qu'elle était faite pour faire — aider les gens à vivre plus longtemps, en meilleure santé — et a cherché le mot qui convenait. Il était déjà là, taillé exactement pour ce qu'il avait trouvé, attendant de l'autre côté d'une langue qu'il n'avait jamais étudiée que quelqu'un vienne le chercher."
+        ]
+      },
+      "approved": false,
+      "provider": "xai",
+      "findings": [
+        {
+          "severity": "warning",
+          "message": "News source no longer contains 'Times of Israel, Jewish Telegraphic Agency, Forward, April 2026.'."
+        }
+      ],
+      "at": 1790064947
+    }
+  }
+}
