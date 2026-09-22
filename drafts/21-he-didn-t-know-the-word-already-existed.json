@@ -20,7 +20,7 @@
           "Il a nommé la molécule d'après ce qu'elle était faite pour faire — aider les gens à vivre plus longtemps, en meilleure santé — et a cherché le mot qui convenait. Il était déjà là, taillé exactement pour ce qu'il avait trouvé, attendant de l'autre côté d'une langue qu'il n'avait jamais étudiée que quelqu'un vienne le chercher."
         ]
       },
-      "approved": false,
+      "approved": true,
       "provider": "xai",
       "findings": [
         {
@@ -28,7 +28,8 @@
           "message": "News source no longer contains 'Times of Israel, Jewish Telegraphic Agency, Forward, April 2026.'."
         }
       ],
-      "at": 1790064947
+      "at": 1790064947,
+      "approved_at": 1790065227
     },
     "es": {
       "edition": {
