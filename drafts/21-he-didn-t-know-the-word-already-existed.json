@@ -51,7 +51,7 @@
           "Nombró la molécula por lo que fue construida para hacer — ayudar a la gente a vivir más, con mejor salud — y buscó la palabra que encajaba. Ya estaba ahí, dimensionada exactamente para lo que había encontrado, esperando al otro lado de una lengua que nunca había estudiado a que alguien viniera a buscarla."
         ]
       },
-      "approved": false,
+      "approved": true,
       "provider": "xai",
       "findings": [
         {
@@ -59,7 +59,8 @@
           "message": "News source no longer contains 'Times of Israel, Jewish Telegraphic Agency, Forward, April 2026.'."
         }
       ],
-      "at": 1790064977
+      "at": 1790064977,
+      "approved_at": 1790065243
     },
     "he": {
       "edition": {
