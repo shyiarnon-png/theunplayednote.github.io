@@ -510,6 +510,13 @@
 
     <div class="articles" id="article-list">
     <!-- build:list -->
+    <a class="article-entry" href="/en/ninety-seven-phone-calls/" onclick="return handleArticleClick(event, 22)">
+      <div class="article-source">Jewish World &nbsp;&middot;&nbsp; The Forward, September 16, 2026; The Christian Century; Pittsburgh Jewish Chronicle.</div>
+      <h2 class="article-title">Ninety-seven phone calls</h2>
+      <p class="article-subtitle">A family chooses a court whose ruling they won't be able to appeal, then goes back to figuring out how to make a better roast chicken.</p>
+      <p class="article-lede">Squirrel Hill, the historic Jewish neighborhood of Pittsburgh, is home to roughly 50,000 Jews, three day schools, and about a dozen synagogues across the denominational spectrum.…</p>
+      <span class="read-more">Read</span>
+    </a>
     <a class="article-entry" href="/en/he-didn-t-know-the-word-already-existed/" onclick="return handleArticleClick(event, 21)">
       <div class="article-source">Jewish World &nbsp;&middot;&nbsp; Times of Israel, Jewish Telegraphic Agency, Forward, April 2026.</div>
       <h2 class="article-title">He didn't know the word already existed</h2>
@@ -1146,6 +1153,23 @@ const articles = {
         "About a dozen names have made it through that filter so far. One of them came from a colleague with no training in Yiddish and no family history in it — Taiwanese-American, raised in the Bay Area, who reached, when the moment came, for a word he'd picked up secondhand from simply being around it his whole life. The word was MENTSH: a person who does right by others, reliably, without needing to be watched.",
         "He named the molecule for what it was built to do — help people live longer, in better health — and searched for the word that fit. It was already there, sized exactly for what he'd found, waiting on the far side of a language he'd never studied for someone to come looking."
       ]
+    },
+    {
+      "source": "The Forward, September 16, 2026; The Christian Century; Pittsburgh Jewish Chronicle.",
+      "tag": "Jewish World",
+      "title": "Ninety-seven phone calls",
+      "subtitle": "A family chooses a court whose ruling they won't be able to appeal, then goes back to figuring out how to make a better roast chicken.",
+      "lede": "Squirrel Hill, the historic Jewish neighborhood of Pittsburgh, is home to roughly 50,000 Jews, three day schools, and about a dozen synagogues across the denominational spectrum.…",
+      "news": {
+        "source": "Squirrel Hill, the historic Jewish neighborhood of Pittsburgh, is home to roughly 50,000 Jews, three day schools, and about a dozen synagogues across the denominational spectrum. In the 1940s, Murray Avenue held at least ten kosher butchers, a handful of poultry dealers, two fish markets, six bakeries, and fourteen grocery stores; Rabbi Bernard Poupko, who led Congregation Shaare Torah from 1942 to 1996, called it the yidisher gas — the Jewish street. Today the street has one kosher supermarket, Murray Avenue Kosher, owned by the Markovic family since 1996. A second is now planned two blocks away, after talks to sell the original store to a prospective buyer, Yitzchok Glassner, fell through in 2025. The dispute between the two sides — over financial records the Markovics say Glassner used without permission to secure his new store's lease — is now before the Beth Din of America, the country's highest rabbinical court.",
+        "text": "Squirrel Hill, the historic Jewish neighborhood of Pittsburgh, is home to roughly 50,000 Jews, three day schools, and about a dozen synagogues across the denominational spectrum. In the 1940s, Murray Avenue held at least ten kosher butchers, a handful of poultry dealers, two fish markets, six bakeries, and fourteen grocery stores; Rabbi Bernard Poupko, who led Congregation Shaare Torah from 1942 to 1996, called it the yidisher gas — the Jewish street. Today the street has one kosher supermarket, Murray Avenue Kosher, owned by the Markovic family since 1996. A second is now planned two blocks away, after talks to sell the original store to a prospective buyer, Yitzchok Glassner, fell through in 2025. The dispute between the two sides — over financial records the Markovics say Glassner used without permission to secure his new store's lease — is now before the Beth Din of America, the country's highest rabbinical court."
+      },
+      "body": [
+        "Saul and Beth Markovic bought Murray Avenue Kosher in 1996. Their son Aryeh became a partner in 2021, and by last year his parents were ready to retire — which is roughly when Yitzchok Glassner, new to Pittsburgh, came asking whether the store was for sale. The two sides signed a non-disclosure agreement. Over several weeks the Markovics handed over their tax returns and profit-and-loss statements, the ordinary paperwork of a sale in progress.",
+        "The sale fell apart. Glassner decided to open his own kosher supermarket instead, in a vacant building two blocks down Murray Avenue. To secure the lease, he told a bankruptcy court that his new venture was in the process of acquiring Murray Avenue Kosher — which it was not — and submitted the Markovics' financial documents as part of that filing. The Markovics say those records are now sitting in a public bankruptcy file, shared without their consent, for a purpose they never agreed to. Glassner, in a statement, said he had tried to reach an understanding and acted properly throughout.",
+        "Both sides could have taken this to civil court. Instead, by mutual agreement, the dispute is going to the Beth Din of America, a rabbinical panel based in Manhattan. It functions like private arbitration, except the judges are rabbis, each often specializing in a different area — commercial law, contracts, family law — and once both parties submit, the ruling is final: neither side can refile the same claim before a civil judge afterward. A decision is expected within weeks, likely delayed by Yom Kippur and Sukkot; a written opinion could take longer still. What the Markovics are asking for is not the new store's closure. It's money — compensation for what the competition, launched this way, has already cost them.",
+        "None of that has slowed Aryeh Markovic down. The deli counter is being relocated, a hot-food menu is going in — chicken sandwiches, burgers, seating — and he's hired a chef to make fresh sushi daily. One of his brothers is flying in to help him get through it. \"It's imperative to get it done quickly,\" he said. He is waiting on a ruling he will not be able to argue with once it comes, and in the meantime he has ninety-seven phone calls stacked up on everything he still can decide. He mentioned the number and laughed, a little wearily, before picking up to take the next one."
+      ]
     }
   ],
   "fr": [
@@ -1603,7 +1627,8 @@ const articles = {
         "Une dizaine de noms ont passé ce filtre jusqu'ici. L'un d'eux venait d'un collègue sans formation en yiddish et sans histoire familiale avec cette langue — Taïwanais-Américain, élevé dans la Bay Area, qui a tendu la main, le moment venu, vers un mot qu'il avait ramassé de seconde main simplement pour avoir grandi autour. Le mot était MENTSH : une personne qui fait ce qu'il faut pour les autres, de façon fiable, sans qu'on ait besoin de la surveiller.",
         "Il a nommé la molécule d'après ce qu'elle était faite pour faire — aider les gens à vivre plus longtemps, en meilleure santé — et a cherché le mot qui convenait. Il était déjà là, taillé exactement pour ce qu'il avait trouvé, attendant de l'autre côté d'une langue qu'il n'avait jamais étudiée que quelqu'un vienne le chercher."
       ]
-    }
+    },
+    null
   ],
   "es": [
     {
@@ -2060,7 +2085,8 @@ const articles = {
         "Unos doce nombres han pasado ese filtro hasta ahora. Uno de ellos vino de un colega sin formación en yidis y sin historia familiar en él — taiwanés-estadounidense, criado en el Área de la Bahía, que alcanzó, cuando llegó el momento, una palabra que había recogido de segunda mano simplemente por haber estado alrededor de ella toda su vida. La palabra era MENTSH: una persona que hace lo correcto con los demás, de forma fiable, sin necesidad de ser vigilada.",
         "Nombró la molécula por lo que fue construida para hacer — ayudar a la gente a vivir más, con mejor salud — y buscó la palabra que encajaba. Ya estaba ahí, dimensionada exactamente para lo que había encontrado, esperando al otro lado de una lengua que nunca había estudiado a que alguien viniera a buscarla."
       ]
-    }
+    },
+    null
   ],
   "he": [
     {
@@ -2517,7 +2543,8 @@ const articles = {
         "כשנים עשר שמות עברו את המסנן הזה עד כה. אחד מהם בא מעמית בלי הכשרה ביידיש ובלי היסטוריה משפחתית בה — טאיוואני-אמריקאי, שגדל באזור המפרץ, שהושיט יד, כשהרגע הגיע, למילה שהוא קלט מיד שנייה פשוט מלהיות בסביבה כל חייו. המילה הייתה MENTSH: אדם שעושה טוב לאחרים, באמינות, בלי צורך שישמרו עליו.",
         "הוא קרא למולקולה על שם מה שהיא נבנתה לעשות — לעזור לאנשים לחיות יותר, בבריאות טובה יותר — וחיפש את המילה שהתאימה. היא כבר הייתה שם, בגודל מדויק למה שמצא, ממתינה בצד הרחוק של שפה שמעולם לא למד למישהו שיבוא לחפש."
       ]
-    }
+    },
+    null
   ]
 };
 /* /build:articles */
@@ -2553,7 +2580,8 @@ const articleSlugs = {
     "after-the-two-hundredth-touch",
     "twenty-five-thousand-tries",
     "two-nights-in-december-a-century-late",
-    "he-didn-t-know-the-word-already-existed"
+    "he-didn-t-know-the-word-already-existed",
+    "ninety-seven-phone-calls"
   ],
   "fr": [
     "une-benediction-a-ete-frappee-elle-a-tenu",
@@ -2577,7 +2605,8 @@ const articleSlugs = {
     "apres-le-deux-centieme-contact",
     "vingt-cinq-mille-essais",
     "deux-nuits-en-decembre-un-siecle-trop-tard",
-    "il-ne-savait-pas-que-le-mot-existait-deja"
+    "il-ne-savait-pas-que-le-mot-existait-deja",
+    null
   ],
   "es": [
     "una-bendicion-fue-golpeada-resistio",
@@ -2601,7 +2630,8 @@ const articleSlugs = {
     "despues-del-ducentesimo-toque",
     "veinticinco-mil-intentos",
     "dos-noches-en-diciembre-un-siglo-tarde",
-    "no-sabia-que-la-palabra-ya-existia"
+    "no-sabia-que-la-palabra-ya-existia",
+    null
   ],
   "he": [
     "a-blessing-was-struck-it-held",
@@ -2625,7 +2655,8 @@ const articleSlugs = {
     "after-the-two-hundredth-touch",
     "twenty-five-thousand-tries",
     "two-nights-in-december-a-century-late",
-    "he-didnt-know-the-word-already-existed"
+    "he-didnt-know-the-word-already-existed",
+    null
   ]
 };
 /* /build:slugs */
