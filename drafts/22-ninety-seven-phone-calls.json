@@ -19,7 +19,7 @@
           "דבר מזה לא האט את אריה מרקוביץ'. דלפק הדלי מועבר, תפריט אוכל חם נכנס — כריכי עוף, המבורגרים, ישיבה — והוא שכר שף להכין סושי טרי מדי יום. אחד מאחיו טס לעזור לו לעבור את זה. ״חיוני לסיים את זה מהר,״ אמר. הוא מחכה לפסיקה שלא יוכל להתווכח איתה ברגע שתבוא, ובינתיים יש לו תשעים ושבע שיחות טלפון מוערמות על כל מה שעדיין יכול להחליט. הוא הזכיר את המספר וצחק, קצת בעייפות, לפני שהרים לקחת את הבאה."
         ]
       },
-      "approved": false,
+      "approved": true,
       "provider": "xai",
       "findings": [
         {
@@ -27,7 +27,8 @@
           "message": "News source no longer contains \"Squirrel Hill, the historic Jewish neighborhood of Pittsburgh, is home to roughly 50,000 Jews, three day schools, and about a dozen synagogues across the denominational spectrum. In the 1940s, Murray Avenue held at least ten kosher butchers, a handful of poultry dealers, two fish markets, six bakeries, and fourteen grocery stores; Rabbi Bernard Poupko, who led Congregation Shaare Torah from 1942 to 1996, called it the yidisher gas — the Jewish street. Today the street has one kosher supermarket, Murray Avenue Kosher, owned by the Markovic family since 1996. A second is now planned two blocks away, after talks to sell the original store to a prospective buyer, Yitzchok Glassner, fell through in 2025. The dispute between the two sides — over financial records the Markovics say Glassner used without permission to secure his new store's lease — is now before the Beth Din of America, the country's highest rabbinical court.\"."
         }
       ],
-      "at": 1790241207
+      "at": 1790241207,
+      "approved_at": 1790241288
     }
   },
   "order": 22,
