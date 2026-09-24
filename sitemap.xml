@@ -711,6 +711,13 @@
   <url>
     <loc>https://theunplayednote.com/en/ninety-seven-phone-calls/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://theunplayednote.com/en/ninety-seven-phone-calls/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://theunplayednote.com/fr/quatre-vingt-dix-sept-appels/"/>
+    <lastmod>2026-09-24</lastmod>
+  </url>
+  <url>
+    <loc>https://theunplayednote.com/fr/quatre-vingt-dix-sept-appels/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://theunplayednote.com/en/ninety-seven-phone-calls/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://theunplayednote.com/fr/quatre-vingt-dix-sept-appels/"/>
     <lastmod>2026-09-24</lastmod>
   </url>
 </urlset>
