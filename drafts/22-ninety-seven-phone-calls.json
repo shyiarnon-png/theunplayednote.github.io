@@ -23,6 +23,35 @@
       "provider": "author",
       "findings": [],
       "at": 1790241049
+    },
+    "fr": {
+      "edition": {
+        "slug": "quatre-vingt-dix-sept-appels",
+        "title": "Quatre-vingt-dix-sept appels.",
+        "subtitle": "Une famille choisit un tribunal dont elle ne pourra pas faire appel du jugement, puis retourne à la question de mieux réussir un poulet rôti.",
+        "lede": "Squirrel Hill, le quartier juif historique de Pittsburgh, compte environ 50 000 Juifs, trois écoles de jour et une dizaine de synagogues sur tout le spectre confessionnel. Dans…",
+        "source": "The Forward, 16 septembre 2026 ; The Christian Century ; Pittsburgh Jewish Chronicle.",
+        "tag": "Monde juif",
+        "news": {
+          "source": "Squirrel Hill, le quartier juif historique de Pittsburgh, compte environ 50 000 Juifs, trois écoles de jour et une dizaine de synagogues sur tout le spectre confessionnel. Dans les années 1940, Murray Avenue regroupait au moins dix bouchers casher, quelques marchands de volaille, deux poissonneries, six boulangeries et quatorze épiceries ; le rabbin Bernard Poupko, qui dirigea Congregation Shaare Torah de 1942 à 1996, l'appelait la yidisher gas — la rue juive. Aujourd'hui la rue n'a plus qu'un supermarché casher, Murray Avenue Kosher, propriété de la famille Markovic depuis 1996. Un second est désormais prévu deux pâtés de maisons plus loin, après l'échec en 2025 des pourparlers de vente du magasin d'origine à un acheteur potentiel, Yitzchok Glassner. Le litige entre les deux parties — au sujet de documents financiers que les Markovic disent avoir été utilisés sans permission par Glassner pour obtenir le bail de son nouveau magasin — est désormais devant le Beth Din of America, la plus haute cour rabbinique du pays.",
+          "text": "Squirrel Hill, le quartier juif historique de Pittsburgh, compte environ 50 000 Juifs, trois écoles de jour et une dizaine de synagogues sur tout le spectre confessionnel. Dans les années 1940, Murray Avenue regroupait au moins dix bouchers casher, quelques marchands de volaille, deux poissonneries, six boulangeries et quatorze épiceries ; le rabbin Bernard Poupko, qui dirigea Congregation Shaare Torah de 1942 à 1996, l'appelait la yidisher gas — la rue juive. Aujourd'hui la rue n'a plus qu'un supermarché casher, Murray Avenue Kosher, propriété de la famille Markovic depuis 1996. Un second est désormais prévu deux pâtés de maisons plus loin, après l'échec en 2025 des pourparlers de vente du magasin d'origine à un acheteur potentiel, Yitzchok Glassner. Le litige entre les deux parties — au sujet de documents financiers que les Markovic disent avoir été utilisés sans permission par Glassner pour obtenir le bail de son nouveau magasin — est désormais devant le Beth Din of America, la plus haute cour rabbinique du pays."
+        },
+        "body": [
+          "Saul et Beth Markovic ont acheté Murray Avenue Kosher en 1996. Leur fils Aryeh en est devenu associé en 2021, et l'an dernier ses parents étaient prêts à prendre leur retraite — c'est à peu près alors que Yitzchok Glassner, nouveau à Pittsburgh, est venu demander si le magasin était à vendre. Les deux parties ont signé un accord de confidentialité. Pendant plusieurs semaines les Markovic ont remis leurs déclarations d'impôts et leurs comptes de résultat, les papiers ordinaires d'une vente en cours.",
+          "La vente a capoté. Glassner a décidé d'ouvrir plutôt son propre supermarché casher, dans un bâtiment vacant deux pâtés de maisons plus bas sur Murray Avenue. Pour obtenir le bail, il a dit à un tribunal des faillites que sa nouvelle entreprise était en train d'acquérir Murray Avenue Kosher — ce qui n'était pas le cas — et a joint les documents financiers des Markovic à ce dossier. Les Markovic disent que ces pièces se trouvent désormais dans un dossier public de faillite, partagées sans leur consentement, pour un usage auquel ils n'avaient jamais consenti. Glassner, dans une déclaration, a dit qu'il avait tenté de parvenir à un accord et s'était conduit correctement tout du long.",
+          "Les deux parties auraient pu porter l'affaire devant un tribunal civil. Au lieu de cela, d'un commun accord, le litige va au Beth Din of America, un panel rabbinique basé à Manhattan. Il fonctionne comme un arbitrage privé, sauf que les juges sont des rabbins, chacun souvent spécialisé dans un domaine différent — droit commercial, contrats, droit de la famille — et une fois que les deux parties se soumettent, le jugement est définitif : ni l'une ni l'autre ne peut représenter la même demande devant un juge civil ensuite. Une décision est attendue d'ici quelques semaines, probablement retardée par Yom Kippour et Souccot ; un avis écrit pourrait prendre plus longtemps encore. Ce que demandent les Markovic, ce n'est pas la fermeture du nouveau magasin. C'est de l'argent — une compensation pour ce que la concurrence, lancée de cette façon, leur a déjà coûté.",
+          "Rien de tout cela n'a ralenti Aryeh Markovic. Le comptoir de charcuterie est déplacé, un menu de plats chauds arrive — sandwiches au poulet, burgers, places assises — et il a embauché un chef pour faire des sushis frais chaque jour. Un de ses frères vient en avion l'aider à tenir. « Il est impératif que ce soit fait vite », a-t-il dit. Il attend un jugement contre lequel il ne pourra pas argumenter une fois qu'il sera rendu, et en attendant il a quatre-vingt-dix-sept appels empilés sur tout ce qu'il peut encore décider. Il a mentionné le chiffre et a ri, un peu las, avant de décrocher pour prendre le suivant."
+        ]
+      },
+      "approved": false,
+      "provider": "xai",
+      "findings": [
+        {
+          "severity": "warning",
+          "message": "News source no longer contains \"Squirrel Hill, the historic Jewish neighborhood of Pittsburgh, is home to roughly 50,000 Jews, three day schools, and about a dozen synagogues across the denominational spectrum. In the 1940s, Murray Avenue held at least ten kosher butchers, a handful of poultry dealers, two fish markets, six bakeries, and fourteen grocery stores; Rabbi Bernard Poupko, who led Congregation Shaare Torah from 1942 to 1996, called it the yidisher gas — the Jewish street. Today the street has one kosher supermarket, Murray Avenue Kosher, owned by the Markovic family since 1996. A second is now planned two blocks away, after talks to sell the original store to a prospective buyer, Yitzchok Glassner, fell through in 2025. The dispute between the two sides — over financial records the Markovics say Glassner used without permission to secure his new store's lease — is now before the Beth Din of America, the country's highest rabbinical court.\"."
+        }
+      ],
+      "at": 1790241100
     }
   },
   "order": 22,
