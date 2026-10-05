@@ -51,7 +51,7 @@
           "Después las grabaciones se codificaron según cuánto se había tocado cada pareja. La cantidad de contacto no mostró vínculo con el tamaño de la respuesta de glucosa de un voluntario. Atzil había esperado que el contacto fuera un indicador fuerte."
         ]
       },
-      "approved": false,
+      "approved": true,
       "provider": "xai",
       "findings": [
         {
@@ -59,7 +59,8 @@
           "message": "News source no longer contains 'Science Advances, September 23, 2026; Jerusalem Post, October 3, 2026.'."
         }
       ],
-      "at": 1791173414
+      "at": 1791173414,
+      "approved_at": 1791174012
     },
     "he": {
       "edition": {
