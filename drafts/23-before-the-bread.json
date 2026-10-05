@@ -1,36 +1,5 @@
 {
   "languages": {
-    "es": {
-      "edition": {
-        "slug": "antes-del-pan",
-        "title": "Antes del pan.",
-        "subtitle": "Cada voluntario vino dos veces",
-        "lede": "Masalha et al., Science Advances 12(39), eaeg4937, 23 de septiembre de 2026. Atzil Lab, Department of Psychology, Hebrew University of Jerusalem, con la unidad de endocrinología…",
-        "source": "Science Advances, 23 de septiembre de 2026; Jerusalem Post, 3 de octubre de 2026.",
-        "tag": "Mundo judío",
-        "news": {
-          "source": "Science Advances, 23 de septiembre de 2026; Jerusalem Post, 3 de octubre de 2026.",
-          "text": "Masalha et al., Science Advances 12(39), eaeg4937, 23 de septiembre de 2026. Atzil Lab, Department of Psychology, Hebrew University of Jerusalem, con la unidad de endocrinología pediátrica y diabetes del Sheba Medical Center. El artículo informa de tres experimentos preregistrados en adultos sanos, sobre glucosa, exposición al frío y respuestas al estrés, y un estudio piloto en lactantes. En el experimento de glucosa, 108 adultos hicieron cada uno la misma prueba de comida estandarizada dos veces, el mismo día, con al menos cuatro horas de diferencia y en un orden asignado al azar: una vez solos, y una vez con una pareja romántica que hacía la prueba al mismo tiempo. Medida como el área bajo la curva de glucosa por encima de 100 mg/dl, la respuesta fue un 14,55 por ciento más baja con la pareja."
-        },
-        "body": [
-          "Antes del primer bocado, el azúcar en sangre era de media comparable estuviera o no la pareja en la habitación. La comida eran 102 gramos de pan blanco de trigo, que llevan 50 gramos de carbohidrato, comidos en un laboratorio acondicionado como un salón, y las lecturas continuaron durante dos horas. Después del pan, el azúcar en sangre sube conforme se absorbe el carbohidrato y baja conforme el cuerpo lo despeja, y las dos curvas se separaron solo después de que comenzara la subida. Según la medida del estudio, el área bajo la curva por encima de 100 miligramos por decilitro, la subida fue de media más pequeña y más corta con la pareja allí.",
-          "Cada voluntario sirvió como su propia comparación, lo que saca las diferencias entre personas del resultado. Los voluntarios fueron asignados al azar a empezar con la pareja o a empezar solos, y una comparación usando solo la primera visita de cada voluntario apuntaba en la misma dirección. La diferencia era modesta según las convenciones habituales, y el artículo señala que a lo largo del estudio algunos participantes lo hicieron peor con una pareja que solos.",
-          "Una pareja es la candidata obvia para calmar a alguien, y la calma puede cambiar cómo un cuerpo maneja el azúcar, así que el estrés tenía que medirse. La actividad electrodérmica, una medida cutánea estándar de la activación, se registró a lo largo de la comida. No difirió entre las dos condiciones, y entre voluntarios no se correlacionó con la subida de glucosa.",
-          "Las parejas no tenían que compartir mesa. Atzil dice que se les dejó hacer lo que quisieran. Podían hablar, podían tocarse, y las sesiones se filmaron.",
-          "Después las grabaciones se codificaron según cuánto se había tocado cada pareja. La cantidad de contacto no mostró vínculo con el tamaño de la respuesta de glucosa de un voluntario. Atzil había esperado que el contacto fuera un indicador fuerte."
-        ]
-      },
-      "approved": true,
-      "provider": "xai",
-      "findings": [
-        {
-          "severity": "warning",
-          "message": "News source no longer contains 'Science Advances, September 23, 2026; Jerusalem Post, October 3, 2026.'."
-        }
-      ],
-      "at": 1791173414,
-      "approved_at": 1791174012
-    },
     "he": {
       "edition": {
         "slug": "before-the-bread",
