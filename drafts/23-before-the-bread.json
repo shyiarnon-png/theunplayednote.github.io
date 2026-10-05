@@ -20,7 +20,7 @@
           "Ensuite les images ont été codées pour la quantité de contact de chaque paire. La quantité de contact n'a montré aucun lien avec l'ampleur de la réponse glycémique d'un volontaire. Atzil s'attendait à ce que le toucher soit un indicateur fort."
         ]
       },
-      "approved": false,
+      "approved": true,
       "provider": "xai",
       "findings": [
         {
@@ -28,7 +28,8 @@
           "message": "News source no longer contains 'Science Advances, September 23, 2026; Jerusalem Post, October 3, 2026.'."
         }
       ],
-      "at": 1791173381
+      "at": 1791173381,
+      "approved_at": 1791174008
     },
     "es": {
       "edition": {
