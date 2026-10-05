@@ -1,0 +1,31 @@
+{
+  "languages": {
+    "en": {
+      "edition": {
+        "slug": "before-the-bread",
+        "title": "Before the bread.",
+        "subtitle": "Every volunteer came twice",
+        "lede": "Masalha et al., Science Advances 12(39), eaeg4937, September 23, 2026. Atzil Lab, Department of Psychology, Hebrew University of Jerusalem, with the pediatric endocrine and…",
+        "source": "Science Advances, September 23, 2026; Jerusalem Post, October 3, 2026.",
+        "tag": "Jewish World",
+        "news": {
+          "source": "Science Advances, September 23, 2026; Jerusalem Post, October 3, 2026.",
+          "text": "Masalha et al., Science Advances 12(39), eaeg4937, September 23, 2026. Atzil Lab, Department of Psychology, Hebrew University of Jerusalem, with the pediatric endocrine and diabetes unit at Sheba Medical Center. The paper reports three preregistered experiments on healthy adults, on glucose, cold exposure and stress responses, and a pilot study on infants. In the glucose experiment, 108 adults each took the same standardized meal test twice, on the same day, at least four hours apart and in an order assigned at random: once alone, and once with a romantic partner who took the test at the same time. Measured as the area under the glucose curve above 100 mg/dl, the response was 14.55 percent lower with the partner."
+        },
+        "body": [
+          "Before the first bite, blood sugar was on average comparable whether or not the partner was in the room. The meal was 102 grams of white wheat bread, which carries 50 grams of carbohydrate, eaten in a laboratory fitted out as a living room, and the readings continued for two hours. After bread, blood sugar climbs as the carbohydrate is absorbed and falls as the body clears it, and the two curves separated only after the climb began. By the study's measure, the area under the curve above 100 milligrams per deciliter, the climb was on average smaller and shorter with the partner there.",
+          "Each volunteer served as their own comparison, which takes the differences between people out of the result. Volunteers were assigned at random to begin with the partner or to begin alone, and a comparison using only each volunteer's first visit pointed the same way. The gap was modest by the usual conventions, and the paper notes that across the study some participants did worse with a partner than alone.",
+          "A partner is the obvious candidate for calming someone, and calm can change how a body handles sugar, so stress had to be measured. Electrodermal activity, a standard skin measure of arousal, was recorded through the meal. It did not differ between the two conditions, and across volunteers it did not correlate with the glucose rise.",
+          "The partners did not have to share a table. Atzil says they were left to do whatever they wanted. They could talk, they could touch, and the sessions were filmed.",
+          "Afterward the footage was coded for how much each pair had touched. The amount of touch showed no link to the size of a volunteer's glucose response. Atzil had expected touch to be a strong indicator."
+        ]
+      },
+      "approved": true,
+      "provider": "author",
+      "findings": [],
+      "at": 1791173331
+    }
+  },
+  "order": 23,
+  "published": "2026-10-05"
+}
