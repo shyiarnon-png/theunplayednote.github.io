@@ -1,0 +1,34 @@
+{
+  "languages": {
+    "fr": {
+      "edition": {
+        "slug": "avant-le-pain",
+        "title": "Avant le pain.",
+        "subtitle": "Chaque volontaire est venu deux fois.",
+        "lede": "Masalha et al., Science Advances 12(39), eaeg4937, 23 septembre 2026. Atzil Lab, Department of Psychology, Hebrew University of Jerusalem, avec l'unité d'endocrinologie…",
+        "source": "Science Advances, 23 septembre 2026 ; Jerusalem Post, 3 octobre 2026.",
+        "tag": "Monde juif",
+        "news": {
+          "source": "Science Advances, 23 septembre 2026 ; Jerusalem Post, 3 octobre 2026.",
+          "text": "Masalha et al., Science Advances 12(39), eaeg4937, 23 septembre 2026. Atzil Lab, Department of Psychology, Hebrew University of Jerusalem, avec l'unité d'endocrinologie pédiatrique et de diabète du Sheba Medical Center. L'article rapporte trois expériences préenregistrées sur des adultes en bonne santé, sur le glucose, l'exposition au froid et les réponses au stress, et une étude pilote sur des nourrissons. Dans l'expérience glucose, 108 adultes ont chacun passé deux fois le même test de repas standardisé, le même jour, à au moins quatre heures d'intervalle et dans un ordre assigné au hasard : une fois seuls, et une fois avec un partenaire romantique qui passait le test en même temps. Mesurée comme l'aire sous la courbe de glucose au-dessus de 100 mg/dl, la réponse était 14,55 pour cent plus basse avec le partenaire."
+        },
+        "body": [
+          "Avant la première bouchée, la glycémie était en moyenne comparable, que le partenaire soit dans la pièce ou non. Le repas était 102 grammes de pain de blé blanc, qui apporte 50 grammes de glucides, mangé dans un laboratoire aménagé en salon, et les mesures ont continué pendant deux heures. Après le pain, la glycémie monte à mesure que les glucides sont absorbés et redescend à mesure que le corps les évacue, et les deux courbes ne se sont séparées qu'après le début de la montée. Selon la mesure de l'étude, l'aire sous la courbe au-dessus de 100 milligrammes par décilitre, la montée était en moyenne plus petite et plus courte avec le partenaire présent.",
+          "Chaque volontaire servait de sa propre comparaison, ce qui retire les différences entre personnes du résultat. Les volontaires étaient assignés au hasard à commencer avec le partenaire ou à commencer seuls, et une comparaison n'utilisant que la première visite de chaque volontaire indiquait la même direction. L'écart était modeste selon les conventions habituelles, et l'article note que, dans l'étude, certains participants s'en tiraient moins bien avec un partenaire que seuls.",
+          "Un partenaire est le candidat évident pour calmer quelqu'un, et le calme peut changer la façon dont un corps gère le sucre, donc le stress devait être mesuré. L'activité électrodermale, une mesure cutanée standard de l'éveil, a été enregistrée pendant le repas. Elle n'a pas différé entre les deux conditions, et d'un volontaire à l'autre elle n'était pas corrélée à la hausse de glucose.",
+          "Les partenaires n'avaient pas à partager une table. Atzil dit qu'on les a laissés faire ce qu'ils voulaient. Ils pouvaient parler, ils pouvaient se toucher, et les séances étaient filmées.",
+          "Ensuite les images ont été codées pour la quantité de contact de chaque paire. La quantité de contact n'a montré aucun lien avec l'ampleur de la réponse glycémique d'un volontaire. Atzil s'attendait à ce que le toucher soit un indicateur fort."
+        ]
+      },
+      "approved": false,
+      "provider": "xai",
+      "findings": [
+        {
+          "severity": "warning",
+          "message": "News source no longer contains 'Science Advances, September 23, 2026; Jerusalem Post, October 3, 2026.'."
+        }
+      ],
+      "at": 1791173381
+    }
+  }
+}
