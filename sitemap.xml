@@ -744,12 +744,21 @@
     <loc>https://theunplayednote.com/en/before-the-bread/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://theunplayednote.com/en/before-the-bread/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://theunplayednote.com/fr/avant-le-pain/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://theunplayednote.com/es/antes-del-pan/"/>
     <lastmod>2026-10-05</lastmod>
   </url>
   <url>
     <loc>https://theunplayednote.com/fr/avant-le-pain/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://theunplayednote.com/en/before-the-bread/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://theunplayednote.com/fr/avant-le-pain/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://theunplayednote.com/es/antes-del-pan/"/>
+    <lastmod>2026-10-05</lastmod>
+  </url>
+  <url>
+    <loc>https://theunplayednote.com/es/antes-del-pan/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://theunplayednote.com/en/before-the-bread/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://theunplayednote.com/fr/avant-le-pain/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://theunplayednote.com/es/antes-del-pan/"/>
     <lastmod>2026-10-05</lastmod>
   </url>
 </urlset>
