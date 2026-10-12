@@ -776,12 +776,21 @@
     <loc>https://theunplayednote.com/en/the-ground-under-the-laser/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://theunplayednote.com/en/the-ground-under-the-laser/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://theunplayednote.com/fr/le-sol-sous-le-laser/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://theunplayednote.com/es/el-suelo-bajo-el-laser/"/>
     <lastmod>2026-10-12</lastmod>
   </url>
   <url>
     <loc>https://theunplayednote.com/fr/le-sol-sous-le-laser/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://theunplayednote.com/en/the-ground-under-the-laser/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://theunplayednote.com/fr/le-sol-sous-le-laser/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://theunplayednote.com/es/el-suelo-bajo-el-laser/"/>
+    <lastmod>2026-10-12</lastmod>
+  </url>
+  <url>
+    <loc>https://theunplayednote.com/es/el-suelo-bajo-el-laser/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://theunplayednote.com/en/the-ground-under-the-laser/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://theunplayednote.com/fr/le-sol-sous-le-laser/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://theunplayednote.com/es/el-suelo-bajo-el-laser/"/>
     <lastmod>2026-10-12</lastmod>
   </url>
 </urlset>
