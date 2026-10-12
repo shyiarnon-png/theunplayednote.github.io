@@ -21,7 +21,7 @@
           "Les satellites qui ont traditionnellement ancré le référentiel sont deux sphères métalliques, chacune pesant environ 400 kilogrammes. La NASA a lancé la première en 1976 ; la seconde, construite par l'Agence spatiale italienne, a suivi en 1992. On s'attend à ce que les deux restent en orbite pendant des millions d'années. Elles sont couvertes de réflecteurs et ne contiennent rien qui mesure."
         ]
       },
-      "approved": false,
+      "approved": true,
       "provider": "xai",
       "findings": [
         {
@@ -29,7 +29,8 @@
           "message": "News source no longer contains 'Geophysical Journal International, November 2026; NASA'."
         }
       ],
-      "at": 1791786169
+      "at": 1791786169,
+      "approved_at": 1791786335
     },
     "es": {
       "edition": {
