@@ -21,7 +21,7 @@
           "Los satélites que tradicionalmente han anclado el marco de referencia son dos esferas de metal, cada una de unos 400 kilogramos. La NASA lanzó la primera en 1976; la segunda, construida por la Agencia Espacial Italiana, siguió en 1992. Se espera que ambas sigan orbitando durante millones de años. Están cubiertas de reflectores y no contienen nada que mida."
         ]
       },
-      "approved": false,
+      "approved": true,
       "provider": "xai",
       "findings": [
         {
@@ -29,7 +29,8 @@
           "message": "News source no longer contains 'Geophysical Journal International, November 2026; NASA'."
         }
       ],
-      "at": 1791786223
+      "at": 1791786223,
+      "approved_at": 1791786424
     },
     "he": {
       "edition": {
