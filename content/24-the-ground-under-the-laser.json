@@ -61,6 +61,26 @@
         "El equipo de Argus se sirvió de GPS y de satélites de órbita baja además de los satélites láser, y restó la flexión que el agua, el hielo y el aire deberían causar en la corteza, tomando las cargas de modelos meteorológicos y oceánicos y de GRACE mismo. Ahora sitúa el movimiento anual en «alrededor de la mitad de lo que creíamos que era hace ocho años», dijo Argus. El artículo plantea una objeción: estaciones corregidas con datos de gravedad, luego comparadas con los mismos datos de gravedad. Sus autores sostienen que la estimación satelital permanece independiente. Cuatro estimaciones coinciden ahora a menos de 2,5 milímetros entre sí. Propagar los errores da a la estimación del equipo una incertidumbre de 0,4 milímetro, que el artículo llama irrealmente pequeña, puesto que las posiciones sucesivas están correlacionadas; la dispersión entre estimaciones de un solo sitio da unos tres milímetros.",
         "Los satélites que tradicionalmente han anclado el marco de referencia son dos esferas de metal, cada una de unos 400 kilogramos. La NASA lanzó la primera en 1976; la segunda, construida por la Agencia Espacial Italiana, siguió en 1992. Se espera que ambas sigan orbitando durante millones de años. Están cubiertas de reflectores y no contienen nada que mida."
       ]
+    },
+    "he": {
+      "slug": "the-ground-under-the-laser",
+      "title": "הקרקע מתחת ללייזר.",
+      "subtitle": "לייזר יוצא מתחנה על הקרקע ופוגע בכדור במסלול.",
+      "lede": "ארגוס ועמיתיו, Geophysical Journal International, גיליון נובמבר 2026 (מקוון 14 בספטמבר). צוות בראשות דונלד ארגוס ממעבדת ההנעה הסילונית של NASA, עם עמיתים באוניברסיטת נבדה…",
+      "source": "Geophysical Journal International, נובמבר 2026; NASA/JPL, 16 בספטמבר 2026.",
+      "tag": "העולם",
+      "news": {
+        "source": "Geophysical Journal International, נובמבר 2026; NASA/JPL, 16 בספטמבר 2026.",
+        "text": "ארגוס ועמיתיו, Geophysical Journal International, גיליון נובמבר 2026 (מקוון 14 בספטמבר). צוות בראשות דונלד ארגוס ממעבדת ההנעה הסילונית של NASA, עם עמיתים באוניברסיטת נבדה, אוניברסיטת מונטנה והמרכז הלמהולץ למדעי כדור הארץ בגרמניה, דיווח על אומדן חדש של האופן שבו המקום שלוויינים במסלול סביב כדור הארץ מקיפים אותו זז לאורך השנה, ביחס לכדור הארץ המוצק, כשמים ואוויר נעים בין חצאי הכדור. הצוות שילב מדידת טווח בלייזר ללוויינים עם GPS ועם כמה לוויינים במסלול נמוך סביב כדור הארץ. NASA ו-JPL הודיעו על התוצאה ב-16 בספטמבר 2026."
+      },
+      "body": [
+        "תחנות לייזר על הקרקע יורות פולסים קצרים אל לוויינים ומודדות כמה זמן האור לוקח לחזור. הלוויינים מקיפים את מרכז המסה של כדור הארץ, נקודת ייחוס לניווט לווייני ולמדידות גובה פני השטח. כשהוא זז ביחס לקרום, זמני המעבר זזים בכמות זעירה.",
+        "הוא אכן זז. באפריל, מי הגשמים באגן האמזונס מגיעים לשיאם השנתי, ונאס״א מדווחת שזה מנדנד את מרכז המסה של כדור הארץ כ-2.2 מילימטרים לכיוון דרום אמריקה, ביחס למרכז הגיאומטרי של כוכב הלכת. אותם המים לוחצים על הקרום שמתחתיהם, והקרום נושא את תחנות הלייזר.",
+        "זמן מעבר אינו יכול לומר איזה משניהם זז. אם מרכז המסה זז במילימטרים אחדים, הזמן משתנה. אם תחנה רוכבת על קרום שעולה או שוקע תחת שלג או גשם של עונה, הזמן משתנה גם כן.",
+        "שנים, שתי דרכים לשקול את אותו חילוף שנתי של מים בין חצאי הכדור נתנו תשובות שונות. לאורך ציר הסיבוב, מערכות הייחוס של 2008 ו-2014 הציבו את הנדנוד של מרכז המסה, ביחס לקרום, ב-11 מילימטרים, משיא לשיא. אומדנים שנבנו על לווייני הכבידה של משימת GRACE הציבו אותו ב-4.2.",
+        "הצוות של ארגוס נשען על GPS ועל לוויינים במסלול נמוך וכן על לווייני הלייזר, והחסיר את הכפיפה שמים, קרח ואוויר אמורים לגרום בקרום, כשלקח את העומסים ממודלים של מזג אוויר ואוקיינוס ומ-GRACE עצמה. הוא מציב כעת את התנועה השנתית ב״כמחצית ממה שהאמנו שהיא לפני שמונה שנים״, אמר ארגוס. המאמר מעלה התנגדות: תחנות שתוקנו בנתוני כבידה, ואז הושוו לאותם נתוני כבידה. מחבריו עומדים על כך שאומדן הלוויין נשאר עצמאי. ארבעה אומדנים מסכימים כעת בתוך 2.5 מילימטרים זה מזה. הפצת השגיאות נותנת לאומדן הצוות אי-ודאות של 0.4 מילימטר, שהמאמר מכנה קטנה באופן לא מציאותי, שכן מיקומים עוקבים מתואמים; הפיזור בין אומדנים של אתר בודד נותן כשלושה מילימטרים.",
+        "הלוויינים שעגנו באופן מסורתי את מערכת הייחוס הם שני כדורי מתכת, כל אחד שוקל כ-400 קילוגרם. נאס״א שיגרה את הראשון ב-1976; השני, שבנתה סוכנות החלל האיטלקית, בא אחריו ב-1992. שניהם צפויים להמשיך להקיף מיליוני שנים. הם מכוסים במחזירי אור ואינם מחזיקים דבר שמודד."
+      ]
     }
   }
 }
