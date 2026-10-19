@@ -1,0 +1,32 @@
+{
+  "languages": {
+    "en": {
+      "edition": {
+        "slug": "from-any-junction",
+        "title": "From any junction.",
+        "subtitle": "A puzzle about one-way roads, and the colors painted on them.",
+        "lede": "Avraham Trahtman (1944–2024), a mathematician at Bar-Ilan University, solved in 2007 a combinatorics problem known as the road coloring problem, posed in 1970 by Roy Adler and…",
+        "source": "Israel Journal of Mathematics 172 (2009); Associated Press, March 20, 2008; M. Volkov, survey on the Černý conjecture, arXiv 2508.15655 (v1, August 21, 2025).",
+        "tag": "Jewish World",
+        "news": {
+          "source": "Israel Journal of Mathematics 172 (2009); Associated Press, March 20, 2008; M. Volkov, survey on the Černý conjecture, arXiv 2508.15655 (v1, August 21, 2025).",
+          "text": "Avraham Trahtman (1944–2024), a mathematician at Bar-Ilan University, solved in 2007 a combinatorics problem known as the road coloring problem, posed in 1970 by Roy Adler and Benjamin Weiss and stated as a conjecture in 1977 by Adler, Goodwyn and Weiss. His proof was published in the Israel Journal of Mathematics in 2009. The Associated Press reported the result in March 2008. He died in Jerusalem on July 17, 2024."
+        },
+        "body": [
+          "Picture a network of one-way roads. The same number of roads leave every junction, two, say, and from any junction some route leads to every other. The lengths of the network's closed routes share no common factor greater than one. Now paint the roads so that the roads leaving a junction all wear different colors: at every junction, one red and one blue.",
+          "A traveler starts at some junction and follows a list of colors, taking at each junction the road of the color called. The question, put in 1970 and stated as a conjecture in 1977, was whether the roads can always be painted so that a single list of colors brings every traveler, from whatever junction he began, to the same junction.",
+          "By the AP's account, dozens of people had tried and failed. Weiss, who had posed it, spent eight years on it himself.",
+          "In 2007 Avraham Trahtman, then sixty-three and teaching at Bar-Ilan University, solved it. The AP reported that he wrote the solution in pencil, on eight short pages, and that it had taken him a year. A colleague, Stuart Margolis, called the result unexpected and counterintuitive. Weiss said it gave him great joy to see his problem solved.",
+          "For any network of this kind, the roads can be colored so that one list of colors, followed from any junction, ends at the same junction.",
+          "Trahtman kept working on a neighboring question: how long the shortest such list must be, for a network of n junctions. Jan Černý posed it in 1964, and a survey by Mikhail Volkov, posted in August 2025, still lists it as unresolved. Trahtman posted several texts claiming to have proved it. Volkov records that in an email to him dated February 10, 2024, Trahtman wrote that he had found an error in that proof and hoped to fix it."
+        ]
+      },
+      "approved": true,
+      "provider": "author",
+      "findings": [],
+      "at": 1792400028
+    }
+  },
+  "order": 25,
+  "published": "2026-10-19"
+}
