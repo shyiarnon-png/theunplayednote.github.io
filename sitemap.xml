@@ -808,12 +808,21 @@
     <loc>https://theunplayednote.com/en/from-any-junction/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://theunplayednote.com/en/from-any-junction/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://theunplayednote.com/fr/de-tout-carrefour/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://theunplayednote.com/es/desde-cualquier-cruce/"/>
     <lastmod>2026-10-19</lastmod>
   </url>
   <url>
     <loc>https://theunplayednote.com/fr/de-tout-carrefour/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://theunplayednote.com/en/from-any-junction/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://theunplayednote.com/fr/de-tout-carrefour/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://theunplayednote.com/es/desde-cualquier-cruce/"/>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>https://theunplayednote.com/es/desde-cualquier-cruce/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://theunplayednote.com/en/from-any-junction/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://theunplayednote.com/fr/de-tout-carrefour/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://theunplayednote.com/es/desde-cualquier-cruce/"/>
     <lastmod>2026-10-19</lastmod>
   </url>
 </urlset>
