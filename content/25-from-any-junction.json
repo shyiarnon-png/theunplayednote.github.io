@@ -21,6 +21,26 @@
         "For any network of this kind, the roads can be colored so that one list of colors, followed from any junction, ends at the same junction.",
         "Trahtman kept working on a neighboring question: how long the shortest such list must be, for a network of n junctions. Jan Černý posed it in 1964, and a survey by Mikhail Volkov, posted in August 2025, still lists it as unresolved. Trahtman posted several texts claiming to have proved it. Volkov records that in an email to him dated February 10, 2024, Trahtman wrote that he had found an error in that proof and hoped to fix it."
       ]
+    },
+    "fr": {
+      "slug": "de-tout-carrefour",
+      "title": "De tout carrefour.",
+      "subtitle": "Une énigme sur des routes à sens unique, et les couleurs peintes sur elles.",
+      "lede": "Avraham Trahtman (1944–2024), mathématicien à l'université Bar-Ilan, résolut en 2007 un problème de combinatoire connu comme le problème de la coloration des routes, posé en 1970…",
+      "source": "Israel Journal of Mathematics 172 (2009); Associated Press, 20 mars 2008; M. Volkov, survey on the Černý conjecture, arXiv 2508.15655 (v1, 21 août 2025).",
+      "tag": "Monde juif",
+      "news": {
+        "source": "Israel Journal of Mathematics 172 (2009); Associated Press, 20 mars 2008; M. Volkov, survey on the Černý conjecture, arXiv 2508.15655 (v1, 21 août 2025).",
+        "text": "Avraham Trahtman (1944–2024), mathématicien à l'université Bar-Ilan, résolut en 2007 un problème de combinatoire connu comme le problème de la coloration des routes, posé en 1970 par Roy Adler et Benjamin Weiss et énoncé comme conjecture en 1977 par Adler, Goodwyn et Weiss. Sa preuve fut publiée dans l'Israel Journal of Mathematics en 2009. The Associated Press rapporta le résultat en mars 2008. Il mourut à Jérusalem le 17 juillet 2024."
+      },
+      "body": [
+        "Imaginez un réseau de routes à sens unique. Le même nombre de routes part de chaque carrefour, deux, disons, et de tout carrefour quelque itinéraire mène à tous les autres. Les longueurs des circuits fermés du réseau n'ont aucun facteur commun supérieur à un. Maintenant peignez les routes de sorte que les routes quittant un carrefour portent toutes des couleurs différentes : à chaque carrefour, une rouge et une bleue.",
+        "Un voyageur part d'un carrefour et suit une liste de couleurs, prenant à chaque carrefour la route de la couleur appelée. La question, posée en 1970 et énoncée comme conjecture en 1977, était de savoir si les routes peuvent toujours être peintes de sorte qu'une seule liste de couleurs amène tout voyageur, de quelque carrefour qu'il soit parti, au même carrefour.",
+        "D'après l'AP, des dizaines de personnes avaient essayé et échoué. Weiss, qui l'avait posée, y consacra huit ans lui-même.",
+        "En 2007 Avraham Trahtman, alors âgé de soixante-trois ans et enseignant à l'université Bar-Ilan, la résolut. L'AP rapporta qu'il écrivit la solution au crayon, sur huit pages courtes, et que cela lui avait pris un an. Un collègue, Stuart Margolis, dit le résultat inattendu et contre-intuitif. Weiss dit que cela lui procura une grande joie de voir son problème résolu.",
+        "Pour tout réseau de ce type, les routes peuvent être colorées de sorte qu'une liste de couleurs, suivie depuis tout carrefour, aboutit au même carrefour.",
+        "Trahtman continua de travailler sur une question voisine : quelle longueur la plus courte de ces listes doit avoir, pour un réseau de n carrefours. Jan Černý la posa en 1964, et un recensement de Mikhail Volkov, publié en août 2025, la liste encore comme non résolue. Trahtman publia plusieurs textes affirmant l'avoir prouvée. Volkov consigne que dans un courriel qui lui était adressé, daté du 10 février 2024, Trahtman écrivit qu'il avait trouvé une erreur dans cette preuve et espérait la corriger."
+      ]
     }
   }
 }
