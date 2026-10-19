@@ -21,7 +21,7 @@
           "Trahtman siguió trabajando en una pregunta vecina: cuán larga debe ser la lista más corta de ese tipo, para una red de n cruces. Jan Černý la planteó en 1964, y un recuento de Mikhail Volkov, publicado en agosto de 2025, todavía la enumera como no resuelta. Trahtman publicó varios textos afirmando haberla demostrado. Volkov registra que en un correo electrónico dirigido a él con fecha del 10 de febrero de 2024, Trahtman escribió que había encontrado un error en esa demostración y esperaba corregirlo."
         ]
       },
-      "approved": false,
+      "approved": true,
       "provider": "xai",
       "findings": [
         {
@@ -29,7 +29,8 @@
           "message": "News source no longer contains 'Israel Journal of Mathematics 172 (2009); Associated Press, March 20, 2008; M. Volkov, survey on the Černý conjecture, arXiv 2508.15655 (v1, August 21, 2025).'."
         }
       ],
-      "at": 1792400129
+      "at": 1792400129,
+      "approved_at": 1792400208
     },
     "he": {
       "edition": {
