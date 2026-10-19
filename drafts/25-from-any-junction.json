@@ -21,7 +21,7 @@
           "Trahtman continua de travailler sur une question voisine : quelle longueur la plus courte de ces listes doit avoir, pour un réseau de n carrefours. Jan Černý la posa en 1964, et un recensement de Mikhail Volkov, publié en août 2025, la liste encore comme non résolue. Trahtman publia plusieurs textes affirmant l'avoir prouvée. Volkov consigne que dans un courriel qui lui était adressé, daté du 10 février 2024, Trahtman écrivit qu'il avait trouvé une erreur dans cette preuve et espérait la corriger."
         ]
       },
-      "approved": false,
+      "approved": true,
       "provider": "xai",
       "findings": [
         {
@@ -29,7 +29,8 @@
           "message": "News source no longer contains 'Israel Journal of Mathematics 172 (2009); Associated Press, March 20, 2008; M. Volkov, survey on the Černý conjecture, arXiv 2508.15655 (v1, August 21, 2025).'."
         }
       ],
-      "at": 1792400093
+      "at": 1792400093,
+      "approved_at": 1792400192
     },
     "es": {
       "edition": {
