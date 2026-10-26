@@ -39,6 +39,25 @@
         "Ensuite l'équipe a compté chaque mot chaque fois qu'il est employé, à travers des corpus anglais qui comprenaient des romans, un journal, Wikipédia, de la radio parlée transcrite et Twitter. Les mots se tenaient principalement du côté sûr de l'axe du danger.",
         "Sur Twitter, le décompte incluait les retweets : un mot était compté à nouveau chaque fois qu'un tweet le portant était transmis."
       ]
+    },
+    "es": {
+      "slug": "cada-vez-que-se-dijo",
+      "title": "Cada vez que se dijo.",
+      "subtitle": "Setenta años midiendo lo que significa una palabra.",
+      "lede": "Science Advances, 6 de mayo de 2026 (DOI 10.1126/sciadv.adr4039), publicado primero como preprint en octubre de 2021. Computational Story Lab, University of Vermont, con el Santa…",
+      "source": "Science Advances, 6 de mayo de 2026; Dodds et al., PNAS, febrero de 2015; ScienceDaily, 24 de octubre de 2026.",
+      "tag": "Mundo judío",
+      "news": {
+        "source": "Science Advances, 6 de mayo de 2026; Dodds et al., PNAS, febrero de 2015; ScienceDaily, 24 de octubre de 2026.",
+        "text": "Science Advances, 6 de mayo de 2026 (DOI 10.1126/sciadv.adr4039), publicado primero como preprint en octubre de 2021. Computational Story Lab, University of Vermont, con el Santa Fe Institute, el Complexity Science Hub en Viena, la University of California, Berkeley, la University of Adelaide y otros. Desde mediados del siglo XX, el significado de las palabras se ha descrito ampliamente a lo largo de tres dimensiones: valencia (positiva o negativa), arousal (excitado o calmado) y dominancia (controlador o sumiso). El equipo analizó un léxico de palabras inglesas valoradas por personas y varios corpus en lengua inglesa. Los autores informan de que las tres dimensiones no son independientes entre sí, argumentan que poder, peligro y estructura describen mejor las palabras, y hallan que en los corpus que estudiaron las palabras se sitúan predominantemente en el lado seguro del eje del peligro."
+      },
+      "body": [
+        "Durante unos setenta años, el significado de una palabra se ha colocado en tres escalas: cuán positiva o negativa es, cuán excitante o calmante, cuán controladora o sumisa. A lo largo de la primera, se había encontrado un patrón. La gente usa más palabras positivas que negativas. Boucher y Osgood lo llamaron la hipótesis Pollyanna en 1969, y en 2015 el grupo de Vermont lo confirmó con valoraciones humanas de 100.000 palabras extraídas de veinticuatro corpus en diez idiomas.",
+        "Una palabra puede contarse una vez, como una entrada en un léxico, o contarse cada vez que alguien la usa. El artículo publicado en mayo de 2026 hizo ambas cosas, en ese orden.",
+        "Contadas una vez, las palabras mostraron que las tres escalas no son independientes. Incluso la palabra «arousal» puntúa en valencia y dominancia además de en arousal. Un conjunto diferente de tres ejes, poder, peligro y estructura, encaja mejor con las palabras, argumentan los autores. El peligro se construye en partes casi iguales a partir de valencia negativa y alta excitación, y apenas a partir de la dominancia.",
+        "Luego el equipo contó cada palabra cada vez que se usa, a través de corpus en inglés que incluían novelas, un periódico, Wikipedia, radio hablada transcrita y Twitter. Las palabras se situaban predominantemente en el lado seguro del eje del peligro.",
+        "En Twitter, el recuento incluía retuits: una palabra se contaba de nuevo cada vez que un tuit que la llevaba se reenviaba."
+      ]
     }
   }
 }

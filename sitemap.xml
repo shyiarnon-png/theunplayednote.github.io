@@ -840,12 +840,21 @@
     <loc>https://theunplayednote.com/en/each-time-it-was-said/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://theunplayednote.com/en/each-time-it-was-said/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://theunplayednote.com/fr/chaque-fois-quil-a-ete-dit/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://theunplayednote.com/es/cada-vez-que-se-dijo/"/>
     <lastmod>2026-10-26</lastmod>
   </url>
   <url>
     <loc>https://theunplayednote.com/fr/chaque-fois-quil-a-ete-dit/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://theunplayednote.com/en/each-time-it-was-said/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://theunplayednote.com/fr/chaque-fois-quil-a-ete-dit/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://theunplayednote.com/es/cada-vez-que-se-dijo/"/>
+    <lastmod>2026-10-26</lastmod>
+  </url>
+  <url>
+    <loc>https://theunplayednote.com/es/cada-vez-que-se-dijo/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://theunplayednote.com/en/each-time-it-was-said/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://theunplayednote.com/fr/chaque-fois-quil-a-ete-dit/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://theunplayednote.com/es/cada-vez-que-se-dijo/"/>
     <lastmod>2026-10-26</lastmod>
   </url>
 </urlset>
