@@ -1,0 +1,31 @@
+{
+  "languages": {
+    "en": {
+      "edition": {
+        "slug": "each-time-it-was-said",
+        "title": "Each time it was said.",
+        "subtitle": "Seventy years of measuring what a word means.",
+        "lede": "Science Advances, May 6, 2026 (DOI 10.1126/sciadv.adr4039), first posted as a preprint in October 2021. Computational Story Lab, University of Vermont, with the Santa Fe…",
+        "source": "Science Advances, May 6, 2026; Dodds et al., PNAS, February 2015; ScienceDaily, October 24, 2026.",
+        "tag": "Jewish World",
+        "news": {
+          "source": "Science Advances, May 6, 2026; Dodds et al., PNAS, February 2015; ScienceDaily, October 24, 2026.",
+          "text": "Science Advances, May 6, 2026 (DOI 10.1126/sciadv.adr4039), first posted as a preprint in October 2021. Computational Story Lab, University of Vermont, with the Santa Fe Institute, the Complexity Science Hub in Vienna, the University of California, Berkeley, the University of Adelaide and others. Since the middle of the twentieth century, the meaning of words has been widely described along three dimensions: valence (positive or negative), arousal (excited or calm) and dominance (controlling or submissive). The team analyzed a lexicon of English words rated by people and several English-language corpora. The authors report that the three dimensions are not independent of one another, argue that power, danger and structure describe the words better, and find that in the corpora they studied words sit predominantly on the safe side of the danger axis."
+        },
+        "body": [
+          "For about seventy years, the meaning of a word has been placed on three scales: how positive or negative it is, how exciting or calming, how controlling or submissive. Along the first, a pattern had been found. People use more positive words than negative ones. Boucher and Osgood named it the Pollyanna hypothesis in 1969, and in 2015 the Vermont group confirmed it with human ratings of 100,000 words drawn from twenty-four corpora in ten languages.",
+          "A word can be counted once, as an entry in a lexicon, or counted each time someone uses it. The paper published in May 2026 did both, in that order.",
+          "Counted once, the words showed that the three scales are not independent. Even the word \"arousal\" scores on valence and dominance as well as on arousal. A different set of three axes, power, danger and structure, fits the words better, the authors argue. Danger is built in nearly equal parts from negative valence and high arousal, and hardly at all from dominance.",
+          "Then the team counted each word each time it is used, across English corpora that included novels, a newspaper, Wikipedia, transcribed talk radio and Twitter. The words sat predominantly on the safe side of the danger axis.",
+          "On Twitter, the count included retweets: a word was counted again each time a tweet carrying it was passed on."
+        ]
+      },
+      "approved": true,
+      "provider": "author",
+      "findings": [],
+      "at": 1793007430
+    }
+  },
+  "order": 26,
+  "published": "2026-10-26"
+}
