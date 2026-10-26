@@ -20,7 +20,7 @@
           "Sur Twitter, le décompte incluait les retweets : un mot était compté à nouveau chaque fois qu'un tweet le portant était transmis."
         ]
       },
-      "approved": false,
+      "approved": true,
       "provider": "xai",
       "findings": [
         {
@@ -28,7 +28,8 @@
           "message": "News source no longer contains 'Science Advances, May 6, 2026; Dodds et al., PNAS, February 2015; ScienceDaily, October 24, 2026.'."
         }
       ],
-      "at": 1793007480
+      "at": 1793007480,
+      "approved_at": 1793007645
     },
     "es": {
       "edition": {
