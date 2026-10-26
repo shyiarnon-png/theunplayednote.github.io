@@ -839,6 +839,13 @@
   <url>
     <loc>https://theunplayednote.com/en/each-time-it-was-said/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://theunplayednote.com/en/each-time-it-was-said/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://theunplayednote.com/fr/chaque-fois-quil-a-ete-dit/"/>
+    <lastmod>2026-10-26</lastmod>
+  </url>
+  <url>
+    <loc>https://theunplayednote.com/fr/chaque-fois-quil-a-ete-dit/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://theunplayednote.com/en/each-time-it-was-said/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://theunplayednote.com/fr/chaque-fois-quil-a-ete-dit/"/>
     <lastmod>2026-10-26</lastmod>
   </url>
 </urlset>

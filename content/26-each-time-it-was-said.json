@@ -20,6 +20,25 @@
         "Then the team counted each word each time it is used, across English corpora that included novels, a newspaper, Wikipedia, transcribed talk radio and Twitter. The words sat predominantly on the safe side of the danger axis.",
         "On Twitter, the count included retweets: a word was counted again each time a tweet carrying it was passed on."
       ]
+    },
+    "fr": {
+      "slug": "chaque-fois-quil-a-ete-dit",
+      "title": "Chaque fois qu'il a été dit.",
+      "subtitle": "Soixante-dix ans à mesurer ce que signifie un mot.",
+      "lede": "Science Advances, 6 mai 2026 (DOI 10.1126/sciadv.adr4039), d'abord mis en ligne en prépublication en octobre 2021. Computational Story Lab, University of Vermont, avec le Santa Fe…",
+      "source": "Science Advances, 6 mai 2026 ; Dodds et al., PNAS, février 2015 ; ScienceDaily, 24 octobre 2026.",
+      "tag": "Monde juif",
+      "news": {
+        "source": "Science Advances, 6 mai 2026 ; Dodds et al., PNAS, février 2015 ; ScienceDaily, 24 octobre 2026.",
+        "text": "Science Advances, 6 mai 2026 (DOI 10.1126/sciadv.adr4039), d'abord mis en ligne en prépublication en octobre 2021. Computational Story Lab, University of Vermont, avec le Santa Fe Institute, le Complexity Science Hub à Vienne, l'University of California, Berkeley, l'University of Adelaide et d'autres. Depuis le milieu du XXe siècle, le sens des mots a été largement décrit selon trois dimensions : valence (positif ou négatif), arousal (excité ou calme) et dominance (contrôlant ou soumis). L'équipe a analysé un lexique de mots anglais évalués par des personnes et plusieurs corpus de langue anglaise. Les auteurs rapportent que les trois dimensions ne sont pas indépendantes les unes des autres, argumentent que pouvoir, danger et structure décrivent mieux les mots, et constatent que dans les corpus étudiés les mots se tiennent principalement du côté sûr de l'axe du danger."
+      },
+      "body": [
+        "Depuis environ soixante-dix ans, le sens d'un mot a été placé sur trois échelles : à quel point il est positif ou négatif, excitant ou calmant, contrôlant ou soumis. Sur la première, un schéma avait été trouvé. Les gens emploient plus de mots positifs que de négatifs. Boucher et Osgood l'ont nommé l'hypothèse Pollyanna en 1969, et en 2015 le groupe du Vermont l'a confirmée avec des évaluations humaines de 100 000 mots tirés de vingt-quatre corpus en dix langues.",
+        "Un mot peut être compté une fois, comme entrée d'un lexique, ou compté chaque fois que quelqu'un l'emploie. L'article publié en mai 2026 a fait les deux, dans cet ordre.",
+        "Comptés une fois, les mots ont montré que les trois échelles ne sont pas indépendantes. Même le mot « arousal » marque sur la valence et la dominance autant que sur l'arousal. Un autre trio d'axes, pouvoir, danger et structure, convient mieux aux mots, argumentent les auteurs. Le danger est construit à parts presque égales de valence négative et d'arousal élevée, et à peine de dominance.",
+        "Ensuite l'équipe a compté chaque mot chaque fois qu'il est employé, à travers des corpus anglais qui comprenaient des romans, un journal, Wikipédia, de la radio parlée transcrite et Twitter. Les mots se tenaient principalement du côté sûr de l'axe du danger.",
+        "Sur Twitter, le décompte incluait les retweets : un mot était compté à nouveau chaque fois qu'un tweet le portant était transmis."
+      ]
     }
   }
 }
