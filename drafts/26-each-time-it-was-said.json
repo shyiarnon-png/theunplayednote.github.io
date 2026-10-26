@@ -20,7 +20,7 @@
           "En Twitter, el recuento incluía retuits: una palabra se contaba de nuevo cada vez que un tuit que la llevaba se reenviaba."
         ]
       },
-      "approved": false,
+      "approved": true,
       "provider": "xai",
       "findings": [
         {
@@ -28,7 +28,8 @@
           "message": "News source no longer contains 'Science Advances, May 6, 2026; Dodds et al., PNAS, February 2015; ScienceDaily, October 24, 2026.'."
         }
       ],
-      "at": 1793007496
+      "at": 1793007496,
+      "approved_at": 1793007672
     },
     "he": {
       "edition": {
