@@ -510,6 +510,13 @@
 
     <div class="articles" id="article-list">
     <!-- build:list -->
+    <a class="article-entry" href="/en/each-time-it-was-said/" onclick="return handleArticleClick(event, 26)">
+      <div class="article-source">Jewish World &nbsp;&middot;&nbsp; Science Advances, May 6, 2026; Dodds et al., PNAS, February 2015; ScienceDaily, October 24, 2026.</div>
+      <h2 class="article-title">Each time it was said.</h2>
+      <p class="article-subtitle">Seventy years of measuring what a word means.</p>
+      <p class="article-lede">Science Advances, May 6, 2026 (DOI 10.1126/sciadv.adr4039), first posted as a preprint in October 2021. Computational Story Lab, University of Vermont, with the Santa Fe…</p>
+      <span class="read-more">Read</span>
+    </a>
     <a class="article-entry" href="/en/from-any-junction/" onclick="return handleArticleClick(event, 25)">
       <div class="article-source">Jewish World &nbsp;&middot;&nbsp; Israel Journal of Mathematics 172 (2009); Associated Press, March 20, 2008; M. Volkov, survey on the Černý conjecture, arXiv 2508.15655 (v1, August 21, 2025).</div>
       <h2 class="article-title">From any junction.</h2>
@@ -1247,6 +1254,24 @@ const articles = {
         "For any network of this kind, the roads can be colored so that one list of colors, followed from any junction, ends at the same junction.",
         "Trahtman kept working on a neighboring question: how long the shortest such list must be, for a network of n junctions. Jan Černý posed it in 1964, and a survey by Mikhail Volkov, posted in August 2025, still lists it as unresolved. Trahtman posted several texts claiming to have proved it. Volkov records that in an email to him dated February 10, 2024, Trahtman wrote that he had found an error in that proof and hoped to fix it."
       ]
+    },
+    {
+      "source": "Science Advances, May 6, 2026; Dodds et al., PNAS, February 2015; ScienceDaily, October 24, 2026.",
+      "tag": "Jewish World",
+      "title": "Each time it was said.",
+      "subtitle": "Seventy years of measuring what a word means.",
+      "lede": "Science Advances, May 6, 2026 (DOI 10.1126/sciadv.adr4039), first posted as a preprint in October 2021. Computational Story Lab, University of Vermont, with the Santa Fe…",
+      "news": {
+        "source": "Science Advances, May 6, 2026; Dodds et al., PNAS, February 2015; ScienceDaily, October 24, 2026.",
+        "text": "Science Advances, May 6, 2026 (DOI 10.1126/sciadv.adr4039), first posted as a preprint in October 2021. Computational Story Lab, University of Vermont, with the Santa Fe Institute, the Complexity Science Hub in Vienna, the University of California, Berkeley, the University of Adelaide and others. Since the middle of the twentieth century, the meaning of words has been widely described along three dimensions: valence (positive or negative), arousal (excited or calm) and dominance (controlling or submissive). The team analyzed a lexicon of English words rated by people and several English-language corpora. The authors report that the three dimensions are not independent of one another, argue that power, danger and structure describe the words better, and find that in the corpora they studied words sit predominantly on the safe side of the danger axis."
+      },
+      "body": [
+        "For about seventy years, the meaning of a word has been placed on three scales: how positive or negative it is, how exciting or calming, how controlling or submissive. Along the first, a pattern had been found. People use more positive words than negative ones. Boucher and Osgood named it the Pollyanna hypothesis in 1969, and in 2015 the Vermont group confirmed it with human ratings of 100,000 words drawn from twenty-four corpora in ten languages.",
+        "A word can be counted once, as an entry in a lexicon, or counted each time someone uses it. The paper published in May 2026 did both, in that order.",
+        "Counted once, the words showed that the three scales are not independent. Even the word \"arousal\" scores on valence and dominance as well as on arousal. A different set of three axes, power, danger and structure, fits the words better, the authors argue. Danger is built in nearly equal parts from negative valence and high arousal, and hardly at all from dominance.",
+        "Then the team counted each word each time it is used, across English corpora that included novels, a newspaper, Wikipedia, transcribed talk radio and Twitter. The words sat predominantly on the safe side of the danger axis.",
+        "On Twitter, the count included retweets: a word was counted again each time a tweet carrying it was passed on."
+      ]
     }
   ],
   "fr": [
@@ -1777,7 +1802,8 @@ const articles = {
         "Pour tout réseau de ce type, les routes peuvent être colorées de sorte qu'une liste de couleurs, suivie depuis tout carrefour, aboutit au même carrefour.",
         "Trahtman continua de travailler sur une question voisine : quelle longueur la plus courte de ces listes doit avoir, pour un réseau de n carrefours. Jan Černý la posa en 1964, et un recensement de Mikhail Volkov, publié en août 2025, la liste encore comme non résolue. Trahtman publia plusieurs textes affirmant l'avoir prouvée. Volkov consigne que dans un courriel qui lui était adressé, daté du 10 février 2024, Trahtman écrivit qu'il avait trouvé une erreur dans cette preuve et espérait la corriger."
       ]
-    }
+    },
+    null
   ],
   "es": [
     {
@@ -2307,7 +2333,8 @@ const articles = {
         "Para cualquier red de este tipo, las carreteras pueden colorearse de modo que una lista de colores, seguida desde cualquier cruce, termine en el mismo cruce.",
         "Trahtman siguió trabajando en una pregunta vecina: cuán larga debe ser la lista más corta de ese tipo, para una red de n cruces. Jan Černý la planteó en 1964, y un recuento de Mikhail Volkov, publicado en agosto de 2025, todavía la enumera como no resuelta. Trahtman publicó varios textos afirmando haberla demostrado. Volkov registra que en un correo electrónico dirigido a él con fecha del 10 de febrero de 2024, Trahtman escribió que había encontrado un error en esa demostración y esperaba corregirlo."
       ]
-    }
+    },
+    null
   ],
   "he": [
     {
@@ -2837,7 +2864,8 @@ const articles = {
         "לכל רשת מסוג זה, אפשר לצבוע את הכבישים כך שרשימת צבעים אחת, שעוקבים אחריה מכל צומת, מסתיימת באותו צומת.",
         "טרחטמן המשיך לעבוד על שאלה שכנה: כמה ארוכה חייבת להיות הרשימה הקצרה ביותר כזאת, לרשת של n צמתים. יאן צ'רני הציג אותה ב-1964, וסקירה של מיכאיל וולקוב, שפורסמה באוגוסט 2025, עדיין מציינת אותה כלא פתורה. טרחטמן פרסם כמה טקסטים שטענו שהוכיח אותה. וולקוב מתעד שבמייל אליו מתאריך 10 בפברואר 2024, טרחטמן כתב שמצא שגיאה בהוכחה ההיא וקיווה לתקן אותה."
       ]
-    }
+    },
+    null
   ]
 };
 /* /build:articles */
@@ -2877,7 +2905,8 @@ const articleSlugs = {
     "ninety-seven-phone-calls",
     "before-the-bread",
     "the-ground-under-the-laser",
-    "from-any-junction"
+    "from-any-junction",
+    "each-time-it-was-said"
   ],
   "fr": [
     "une-benediction-a-ete-frappee-elle-a-tenu",
@@ -2905,7 +2934,8 @@ const articleSlugs = {
     "quatre-vingt-dix-sept-appels",
     "avant-le-pain",
     "le-sol-sous-le-laser",
-    "de-tout-carrefour"
+    "de-tout-carrefour",
+    null
   ],
   "es": [
     "una-bendicion-fue-golpeada-resistio",
@@ -2933,7 +2963,8 @@ const articleSlugs = {
     "noventa-y-siete-llamadas",
     "antes-del-pan",
     "el-suelo-bajo-el-laser",
-    "desde-cualquier-cruce"
+    "desde-cualquier-cruce",
+    null
   ],
   "he": [
     "a-blessing-was-struck-it-held",
@@ -2961,7 +2992,8 @@ const articleSlugs = {
     "ninety-seven-phone-calls",
     "before-the-bread",
     "the-ground-under-the-laser",
-    "from-any-junction"
+    "from-any-junction",
+    null
   ]
 };
 /* /build:slugs */
