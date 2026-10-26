@@ -20,7 +20,7 @@
           "בטוויטר הספירה כללה ריטוויטים: מילה נספרה שוב בכל פעם שציוץ שנשא אותה הועבר הלאה."
         ]
       },
-      "approved": false,
+      "approved": true,
       "provider": "xai",
       "findings": [
         {
@@ -28,7 +28,8 @@
           "message": "News source no longer contains 'Science Advances, May 6, 2026; Dodds et al., PNAS, February 2015; ScienceDaily, October 24, 2026.'."
         }
       ],
-      "at": 1793007528
+      "at": 1793007528,
+      "approved_at": 1793007694
     }
   }
 }
