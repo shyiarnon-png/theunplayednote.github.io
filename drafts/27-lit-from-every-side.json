@@ -29,6 +29,36 @@
         }
       ],
       "at": 1793612479
+    },
+    "es": {
+      "edition": {
+        "slug": "iluminados-desde-todos-los-lados",
+        "title": "Iluminados desde todos los lados.",
+        "subtitle": "Álamos jóvenes, tendidos de lado, sobre una plataforma que comenzaría a girar.",
+        "lede": "Caulus et al., New Phytologist, 2 de septiembre de 2026 (DOI 10.1111/nph.71238). INRAE y Université Clermont Auvergne (unidad PIAF), Clermont-Ferrand. Jóvenes álamos híbridos…",
+        "source": "New Phytologist, 2 de septiembre de 2026; INRAE, septiembre de 2026; ScienceDaily, octubre de 2026.",
+        "tag": "El mundo",
+        "news": {
+          "source": "New Phytologist, 2 de septiembre de 2026; INRAE, septiembre de 2026; ScienceDaily, octubre de 2026.",
+          "text": "Caulus et al., New Phytologist, 2 de septiembre de 2026 (DOI 10.1111/nph.71238). INRAE y Université Clermont Auvergne (unidad PIAF), Clermont-Ferrand. Jóvenes álamos híbridos (Populus tremula × alba) fueron inclinados de lado sobre una plataforma dentro de una cámara esférica iluminada de manera uniforme desde todas las direcciones. Tras unos diez días, una vez que los tallos se habían curvado hacia arriba, la plataforma comenzó a rotar, lo que elimina cualquier señal constante de gravedad. Los tallos se enderezaron en cuestión de semanas. El equipo examinó dónde se había depositado la madera de tensión, una madera que tira al formarse, antes y después de que la plataforma comenzara a girar."
+        },
+        "body": [
+          "La madera de tensión es la madera que levanta un tallo inclinado: tira al formarse. Hacia el décimo día se había formado en la cara superior de los tallos, y los tallos se habían curvado hacia arriba.",
+          "La cámara a su alrededor era una esfera, iluminada de manera uniforme desde todas las direcciones. Luego la plataforma sobre la que se alzaban comenzó a girar, de modo que ninguna dirección de la gravedad permanecía constante. A partir de entonces, nada en la cámara decía cuál era arriba.",
+          "En las semanas siguientes los tallos se desenrollaron. Después de que la plataforma comenzara a girar, la madera de tensión dejó de formarse en la cara que había tirado de los tallos hacia arriba. En la cara opuesta, la madera de tensión comenzó a formarse. Sus fibras llevan la capa gelatinosa que marca la madera de tensión.",
+          "La explicación de los autores es que un tallo percibe cuánto está curvado y forma esta madera en el lado que lo devuelve a la rectitud.",
+          "Cortado transversalmente y teñido con safranina y azul astra, uno de estos tallos muestra dos arcos de madera de tensión, uno en cada cara. El primero se depositó mientras la plataforma estaba quieta. El segundo se depositó después de que comenzara a girar, en la cara opuesta, y se tiñe de azul de la misma manera."
+        ]
+      },
+      "approved": false,
+      "provider": "xai",
+      "findings": [
+        {
+          "severity": "warning",
+          "message": "News source no longer contains 'New Phytologist, September 2, 2026; INRAE, September 2026; ScienceDaily, October 2026.'."
+        }
+      ],
+      "at": 1793612492
     }
   }
 }
