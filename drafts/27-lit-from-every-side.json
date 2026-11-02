@@ -20,7 +20,7 @@
           "בחיתוך לרוחב ובצביעה בספרנין ובאסטרה בלו, אחד הגזעים האלה מראה שתי קשתות של עץ מתיחה, אחת על כל פאה. הראשונה הונחה בעוד המשטח עמד במקום. השנייה הונחה אחרי שהחל להסתובב, על הפאה הנגדית, והיא נצבעת בכחול באותו אופן."
         ]
       },
-      "approved": false,
+      "approved": true,
       "provider": "xai",
       "findings": [
         {
@@ -28,7 +28,8 @@
           "message": "News source no longer contains 'New Phytologist, September 2, 2026; INRAE, September 2026; ScienceDaily, October 2026.'."
         }
       ],
-      "at": 1793612514
+      "at": 1793612514,
+      "approved_at": 1793612692
     }
   }
 }
