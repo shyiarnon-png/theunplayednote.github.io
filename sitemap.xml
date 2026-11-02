@@ -872,12 +872,21 @@
     <loc>https://theunplayednote.com/en/lit-from-every-side/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://theunplayednote.com/en/lit-from-every-side/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://theunplayednote.com/fr/eclaire-de-tous-les-cotes/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://theunplayednote.com/es/iluminados-desde-todos-los-lados/"/>
     <lastmod>2026-11-02</lastmod>
   </url>
   <url>
     <loc>https://theunplayednote.com/fr/eclaire-de-tous-les-cotes/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://theunplayednote.com/en/lit-from-every-side/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://theunplayednote.com/fr/eclaire-de-tous-les-cotes/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://theunplayednote.com/es/iluminados-desde-todos-los-lados/"/>
+    <lastmod>2026-11-02</lastmod>
+  </url>
+  <url>
+    <loc>https://theunplayednote.com/es/iluminados-desde-todos-los-lados/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://theunplayednote.com/en/lit-from-every-side/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://theunplayednote.com/fr/eclaire-de-tous-les-cotes/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://theunplayednote.com/es/iluminados-desde-todos-los-lados/"/>
     <lastmod>2026-11-02</lastmod>
   </url>
 </urlset>
