@@ -1,0 +1,31 @@
+{
+  "languages": {
+    "en": {
+      "edition": {
+        "slug": "lit-from-every-side",
+        "title": "Lit from every side.",
+        "subtitle": "Young poplars, laid on their sides, on a platform that would begin to turn.",
+        "lede": "Caulus et al., New Phytologist, September 2, 2026 (DOI 10.1111/nph.71238). INRAE and Université Clermont Auvergne (PIAF unit), Clermont-Ferrand. Young hybrid poplars (Populus…",
+        "source": "New Phytologist, September 2, 2026; INRAE, September 2026; ScienceDaily, October 2026.",
+        "tag": "The World",
+        "news": {
+          "source": "New Phytologist, September 2, 2026; INRAE, September 2026; ScienceDaily, October 2026.",
+          "text": "Caulus et al., New Phytologist, September 2, 2026 (DOI 10.1111/nph.71238). INRAE and Université Clermont Auvergne (PIAF unit), Clermont-Ferrand. Young hybrid poplars (Populus tremula × alba) were tilted onto their sides on a platform inside a spherical chamber lit evenly from all directions. After about ten days, once the stems had curved upward, the platform began to rotate, which removes any steady signal of gravity. The stems straightened within weeks. The team examined where tension wood, a wood that pulls as it forms, had been laid down before and after the platform began to turn."
+        },
+        "body": [
+          "Tension wood is the wood that lifts a leaning stem: it pulls as it forms. By about the tenth day it had formed on the upper face of the stems, and the stems had curved upward.",
+          "The chamber around them was a sphere, lit evenly from every direction. Then the platform they stood on began to turn, so that no direction of gravity stayed constant. From then on, nothing in the chamber said which way was up.",
+          "Over the following weeks the stems uncurled. After the platform began to turn, tension wood stopped forming on the face that had pulled the stems upward. On the opposite face, tension wood began to form. Its fibers carry the gelatinous layer that marks tension wood.",
+          "The authors' account is that a stem senses how far it is curved and forms this wood on the side that brings it back to straight.",
+          "Cut across and stained with safranin and astra blue, one of these stems shows two arcs of tension wood, one on each face. The first was laid down while the platform stood still. The second was laid down after it began to turn, on the opposite face, and it stains blue in the same way."
+        ]
+      },
+      "approved": true,
+      "provider": "author",
+      "findings": [],
+      "at": 1793612441
+    }
+  },
+  "order": 27,
+  "published": "2026-11-02"
+}
