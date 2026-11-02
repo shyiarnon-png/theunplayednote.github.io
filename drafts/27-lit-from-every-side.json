@@ -20,7 +20,7 @@
           "Cortado transversalmente y teñido con safranina y azul astra, uno de estos tallos muestra dos arcos de madera de tensión, uno en cada cara. El primero se depositó mientras la plataforma estaba quieta. El segundo se depositó después de que comenzara a girar, en la cara opuesta, y se tiñe de azul de la misma manera."
         ]
       },
-      "approved": false,
+      "approved": true,
       "provider": "xai",
       "findings": [
         {
@@ -28,7 +28,8 @@
           "message": "News source no longer contains 'New Phytologist, September 2, 2026; INRAE, September 2026; ScienceDaily, October 2026.'."
         }
       ],
-      "at": 1793612492
+      "at": 1793612492,
+      "approved_at": 1793612601
     },
     "he": {
       "edition": {
