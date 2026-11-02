@@ -20,7 +20,7 @@
           "Coupée en travers et colorée à la safranine et au bleu astra, l'une de ces tiges montre deux arcs de bois de tension, un sur chaque face. Le premier a été déposé pendant que la plateforme était immobile. Le second a été déposé après qu'elle a commencé à tourner, sur la face opposée, et il se colore en bleu de la même manière."
         ]
       },
-      "approved": false,
+      "approved": true,
       "provider": "xai",
       "findings": [
         {
@@ -28,7 +28,8 @@
           "message": "News source no longer contains 'New Phytologist, September 2, 2026; INRAE, September 2026; ScienceDaily, October 2026.'."
         }
       ],
-      "at": 1793612479
+      "at": 1793612479,
+      "approved_at": 1793612559
     },
     "es": {
       "edition": {
