@@ -19,10 +19,11 @@
           "Suzanne Dodd, la jefa de proyecto de las naves Voyager en el Jet Propulsion Laboratory de la NASA, describe lo que esto significa para quien quiera saludar. Envías tu mensaje, dice, y luego «te vas a casa y esperas dos días»."
         ]
       },
-      "approved": false,
+      "approved": true,
       "provider": "xai",
       "findings": [],
-      "at": 1794209671
+      "at": 1794209671,
+      "approved_at": 1794209836
     },
     "he": {
       "edition": {
