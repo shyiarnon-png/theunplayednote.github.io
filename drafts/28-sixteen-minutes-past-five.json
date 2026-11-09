@@ -1,29 +1,5 @@
 {
   "languages": {
-    "en": {
-      "edition": {
-        "slug": "sixteen-minutes-past-five",
-        "title": "Sixteen minutes past five.",
-        "subtitle": "Voyager 1, forty-nine years after launch.",
-        "lede": "NASA calculates that on Wednesday, November 18, 2026, Voyager 1 reaches a distance of one light-day from Earth. NASA describes it as the first human-made object to do so. Voyager…",
-        "source": "NASA/JPL, November 3, 2026; NASA, \"What Is a Light-Day?\"; Science News, October 2026.",
-        "tag": "The World",
-        "news": {
-          "source": "NASA/JPL, November 3, 2026; NASA, \"What Is a Light-Day?\"; Science News, October 2026.",
-          "text": "NASA calculates that on Wednesday, November 18, 2026, Voyager 1 reaches a distance of one light-day from Earth. NASA describes it as the first human-made object to do so. Voyager 1 was launched in 1977 and has been in interstellar space, beyond the Sun's heliosphere, since 2012."
-        },
-        "body": [
-          "NASA gave the time to the second: 5:16:07 a.m. Eastern Standard Time (10:16:07 UTC) on November 18, when Voyager 1 will be about 25.9 billion kilometers from Earth. The unit is a light-day, the distance light covers in 86,400 seconds, a day as Earth counts it.",
-          "NASA says crossing that distance changes nothing physical in the probe or in its surroundings. It keeps its course through interstellar space at about 61,000 kilometers an hour.",
-          "A message sent from Earth to the probe will take twenty-four hours to arrive, and the reply twenty-four hours to come back: forty-eight hours for even the simplest exchange.",
-          "Suzanne Dodd, the project manager for the Voyager spacecraft at NASA's Jet Propulsion Laboratory, describes what this means for anyone who wants to say hello. You send your message, she says, and then \"you go home and you wait two days.\""
-        ]
-      },
-      "approved": true,
-      "provider": "author",
-      "findings": [],
-      "at": 1794209618
-    },
     "fr": {
       "edition": {
         "slug": "seize-minutes-apres-cinq",
