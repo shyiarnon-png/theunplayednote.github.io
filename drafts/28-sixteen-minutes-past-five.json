@@ -1,30 +1,5 @@
 {
   "languages": {
-    "es": {
-      "edition": {
-        "slug": "dieciseis-minutos-pasadas-las-cinco",
-        "title": "Dieciséis minutos pasadas las cinco.",
-        "subtitle": "Voyager 1, cuarenta y nueve años después del lanzamiento.",
-        "lede": "La NASA calcula que el miércoles 18 de noviembre de 2026 la Voyager 1 alcanza una distancia de un día luz de la Tierra. La NASA la describe como el primer objeto fabricado por el…",
-        "source": "NASA/JPL, 3 de noviembre de 2026; NASA, \"What Is a Light-Day?\"; Science News, octubre de 2026.",
-        "tag": "El mundo",
-        "news": {
-          "source": "NASA/JPL, 3 de noviembre de 2026; NASA, \"What Is a Light-Day?\"; Science News, octubre de 2026.",
-          "text": "La NASA calcula que el miércoles 18 de noviembre de 2026 la Voyager 1 alcanza una distancia de un día luz de la Tierra. La NASA la describe como el primer objeto fabricado por el ser humano en hacerlo. La Voyager 1 fue lanzada en 1977 y se encuentra en el espacio interestelar, más allá de la heliosfera del Sol, desde 2012."
-        },
-        "body": [
-          "La NASA dio la hora al segundo: 5:16:07 a.m. hora estándar del Este (10:16:07 UTC) el 18 de noviembre, cuando la Voyager 1 estará a unos 25.900 millones de kilómetros de la Tierra. La unidad es un día luz, la distancia que recorre la luz en 86.400 segundos, un día como lo cuenta la Tierra.",
-          "La NASA dice que cruzar esa distancia no cambia nada físico en la sonda ni en su entorno. Sigue su rumbo a través del espacio interestelar a unos 61.000 kilómetros por hora.",
-          "Un mensaje enviado desde la Tierra a la sonda tardará veinticuatro horas en llegar, y la respuesta veinticuatro horas en volver: cuarenta y ocho horas para incluso el intercambio más simple.",
-          "Suzanne Dodd, la jefa de proyecto de las naves Voyager en el Jet Propulsion Laboratory de la NASA, describe lo que esto significa para quien quiera saludar. Envías tu mensaje, dice, y luego «te vas a casa y esperas dos días»."
-        ]
-      },
-      "approved": true,
-      "provider": "xai",
-      "findings": [],
-      "at": 1794209671,
-      "approved_at": 1794209836
-    },
     "he": {
       "edition": {
         "slug": "sixteen-minutes-past-five",
