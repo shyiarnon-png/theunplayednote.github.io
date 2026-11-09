@@ -903,6 +903,13 @@
   <url>
     <loc>https://theunplayednote.com/en/sixteen-minutes-past-five/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://theunplayednote.com/en/sixteen-minutes-past-five/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://theunplayednote.com/fr/seize-minutes-apres-cinq/"/>
+    <lastmod>2026-11-09</lastmod>
+  </url>
+  <url>
+    <loc>https://theunplayednote.com/fr/seize-minutes-apres-cinq/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://theunplayednote.com/en/sixteen-minutes-past-five/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://theunplayednote.com/fr/seize-minutes-apres-cinq/"/>
     <lastmod>2026-11-09</lastmod>
   </url>
 </urlset>
