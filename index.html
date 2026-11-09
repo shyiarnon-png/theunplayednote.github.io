@@ -510,6 +510,13 @@
 
     <div class="articles" id="article-list">
     <!-- build:list -->
+    <a class="article-entry" href="/en/sixteen-minutes-past-five/" onclick="return handleArticleClick(event, 28)">
+      <div class="article-source">The World &nbsp;&middot;&nbsp; NASA/JPL, November 3, 2026; NASA, "What Is a Light-Day?"; Science News, October 2026.</div>
+      <h2 class="article-title">Sixteen minutes past five.</h2>
+      <p class="article-subtitle">Voyager 1, forty-nine years after launch.</p>
+      <p class="article-lede">NASA calculates that on Wednesday, November 18, 2026, Voyager 1 reaches a distance of one light-day from Earth. NASA describes it as the first human-made object to do so. Voyager…</p>
+      <span class="read-more">Read</span>
+    </a>
     <a class="article-entry" href="/en/lit-from-every-side/" onclick="return handleArticleClick(event, 27)">
       <div class="article-source">The World &nbsp;&middot;&nbsp; New Phytologist, September 2, 2026; INRAE, September 2026; ScienceDaily, October 2026.</div>
       <h2 class="article-title">Lit from every side.</h2>
@@ -1297,6 +1304,23 @@ const articles = {
         "The authors' account is that a stem senses how far it is curved and forms this wood on the side that brings it back to straight.",
         "Cut across and stained with safranin and astra blue, one of these stems shows two arcs of tension wood, one on each face. The first was laid down while the platform stood still. The second was laid down after it began to turn, on the opposite face, and it stains blue in the same way."
       ]
+    },
+    {
+      "source": "NASA/JPL, November 3, 2026; NASA, \"What Is a Light-Day?\"; Science News, October 2026.",
+      "tag": "The World",
+      "title": "Sixteen minutes past five.",
+      "subtitle": "Voyager 1, forty-nine years after launch.",
+      "lede": "NASA calculates that on Wednesday, November 18, 2026, Voyager 1 reaches a distance of one light-day from Earth. NASA describes it as the first human-made object to do so. Voyager…",
+      "news": {
+        "source": "NASA/JPL, November 3, 2026; NASA, \"What Is a Light-Day?\"; Science News, October 2026.",
+        "text": "NASA calculates that on Wednesday, November 18, 2026, Voyager 1 reaches a distance of one light-day from Earth. NASA describes it as the first human-made object to do so. Voyager 1 was launched in 1977 and has been in interstellar space, beyond the Sun's heliosphere, since 2012."
+      },
+      "body": [
+        "NASA gave the time to the second: 5:16:07 a.m. Eastern Standard Time (10:16:07 UTC) on November 18, when Voyager 1 will be about 25.9 billion kilometers from Earth. The unit is a light-day, the distance light covers in 86,400 seconds, a day as Earth counts it.",
+        "NASA says crossing that distance changes nothing physical in the probe or in its surroundings. It keeps its course through interstellar space at about 61,000 kilometers an hour.",
+        "A message sent from Earth to the probe will take twenty-four hours to arrive, and the reply twenty-four hours to come back: forty-eight hours for even the simplest exchange.",
+        "Suzanne Dodd, the project manager for the Voyager spacecraft at NASA's Jet Propulsion Laboratory, describes what this means for anyone who wants to say hello. You send your message, she says, and then \"you go home and you wait two days.\""
+      ]
     }
   ],
   "fr": [
@@ -1863,7 +1887,8 @@ const articles = {
         "Le récit des auteurs est qu'une tige sent jusqu'où elle est courbée et forme ce bois du côté qui la ramène au droit.",
         "Coupée en travers et colorée à la safranine et au bleu astra, l'une de ces tiges montre deux arcs de bois de tension, un sur chaque face. Le premier a été déposé pendant que la plateforme était immobile. Le second a été déposé après qu'elle a commencé à tourner, sur la face opposée, et il se colore en bleu de la même manière."
       ]
-    }
+    },
+    null
   ],
   "es": [
     {
@@ -2429,7 +2454,8 @@ const articles = {
         "La explicación de los autores es que un tallo percibe cuánto está curvado y forma esta madera en el lado que lo devuelve a la rectitud.",
         "Cortado transversalmente y teñido con safranina y azul astra, uno de estos tallos muestra dos arcos de madera de tensión, uno en cada cara. El primero se depositó mientras la plataforma estaba quieta. El segundo se depositó después de que comenzara a girar, en la cara opuesta, y se tiñe de azul de la misma manera."
       ]
-    }
+    },
+    null
   ],
   "he": [
     {
@@ -2995,7 +3021,8 @@ const articles = {
         "הסבר המחברים הוא שגזע חש עד כמה הוא מעוקל ויוצר את העץ הזה בצד שמחזיר אותו לישר.",
         "בחיתוך לרוחב ובצביעה בספרנין ובאסטרה בלו, אחד הגזעים האלה מראה שתי קשתות של עץ מתיחה, אחת על כל פאה. הראשונה הונחה בעוד המשטח עמד במקום. השנייה הונחה אחרי שהחל להסתובב, על הפאה הנגדית, והיא נצבעת בכחול באותו אופן."
       ]
-    }
+    },
+    null
   ]
 };
 /* /build:articles */
@@ -3037,7 +3064,8 @@ const articleSlugs = {
     "the-ground-under-the-laser",
     "from-any-junction",
     "each-time-it-was-said",
-    "lit-from-every-side"
+    "lit-from-every-side",
+    "sixteen-minutes-past-five"
   ],
   "fr": [
     "une-benediction-a-ete-frappee-elle-a-tenu",
@@ -3067,7 +3095,8 @@ const articleSlugs = {
     "le-sol-sous-le-laser",
     "de-tout-carrefour",
     "chaque-fois-quil-a-ete-dit",
-    "eclaire-de-tous-les-cotes"
+    "eclaire-de-tous-les-cotes",
+    null
   ],
   "es": [
     "una-bendicion-fue-golpeada-resistio",
@@ -3097,7 +3126,8 @@ const articleSlugs = {
     "el-suelo-bajo-el-laser",
     "desde-cualquier-cruce",
     "cada-vez-que-se-dijo",
-    "iluminados-desde-todos-los-lados"
+    "iluminados-desde-todos-los-lados",
+    null
   ],
   "he": [
     "a-blessing-was-struck-it-held",
@@ -3127,7 +3157,8 @@ const articleSlugs = {
     "the-ground-under-the-laser",
     "from-any-junction",
     "each-time-it-was-said",
-    "lit-from-every-side"
+    "lit-from-every-side",
+    null
   ]
 };
 /* /build:slugs */
