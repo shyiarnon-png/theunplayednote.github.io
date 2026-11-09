@@ -1,30 +1,5 @@
 {
   "languages": {
-    "fr": {
-      "edition": {
-        "slug": "seize-minutes-apres-cinq",
-        "title": "Seize minutes après cinq.",
-        "subtitle": "Voyager 1, quarante-neuf ans après le lancement.",
-        "lede": "La NASA calcule que le mercredi 18 novembre 2026, Voyager 1 atteint une distance d'un jour-lumière de la Terre. La NASA le décrit comme le premier objet fabriqué par l'homme à le…",
-        "source": "NASA/JPL, 3 novembre 2026 ; NASA, « What Is a Light-Day? » ; Science News, octobre 2026.",
-        "tag": "Le monde",
-        "news": {
-          "source": "NASA/JPL, 3 novembre 2026 ; NASA, « What Is a Light-Day? » ; Science News, octobre 2026.",
-          "text": "La NASA calcule que le mercredi 18 novembre 2026, Voyager 1 atteint une distance d'un jour-lumière de la Terre. La NASA le décrit comme le premier objet fabriqué par l'homme à le faire. Voyager 1 a été lancée en 1977 et se trouve dans l'espace interstellaire, au-delà de l'héliosphère du Soleil, depuis 2012."
-        },
-        "body": [
-          "La NASA a donné l'heure à la seconde : 5 h 16 min 07 s, heure normale de l'Est (10 h 16 min 07 s UTC) le 18 novembre, lorsque Voyager 1 sera à environ 25,9 milliards de kilomètres de la Terre. L'unité est le jour-lumière, la distance que la lumière parcourt en 86 400 secondes, un jour tel que la Terre le compte.",
-          "La NASA dit que franchir cette distance ne change rien de physique dans la sonde ni dans son environnement. Elle poursuit sa course à travers l'espace interstellaire à environ 61 000 kilomètres à l'heure.",
-          "Un message envoyé de la Terre à la sonde mettra vingt-quatre heures à arriver, et la réponse vingt-quatre heures à revenir : quarante-huit heures pour même l'échange le plus simple.",
-          "Suzanne Dodd, responsable du projet des sondes Voyager au Jet Propulsion Laboratory de la NASA, décrit ce que cela signifie pour quiconque veut dire bonjour. Vous envoyez votre message, dit-elle, puis « vous rentrez chez vous et vous attendez deux jours. »"
-        ]
-      },
-      "approved": true,
-      "provider": "xai",
-      "findings": [],
-      "at": 1794209656,
-      "approved_at": 1794209786
-    },
     "es": {
       "edition": {
         "slug": "dieciseis-minutos-pasadas-las-cinco",
