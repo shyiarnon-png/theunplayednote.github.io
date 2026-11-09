@@ -44,7 +44,7 @@
           "סוזן דוד, מנהלת הפרויקט של חלליות וויאג'ר במעבדת ההנעה הסילונית של נאס״א, מתארת מה זה אומר לכל מי שרוצה לומר שלום. שולחים את ההודעה, היא אומרת, ואז ״הולכים הביתה ומחכים יומיים.״"
         ]
       },
-      "approved": false,
+      "approved": true,
       "provider": "xai",
       "findings": [
         {
@@ -52,7 +52,8 @@
           "message": "Paragraph 1 has Latin text (UTC), check how it renders right to left."
         }
       ],
-      "at": 1794209745
+      "at": 1794209745,
+      "approved_at": 1794209839
     }
   },
   "order": 28,
