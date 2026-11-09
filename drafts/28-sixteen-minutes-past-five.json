@@ -19,10 +19,11 @@
           "Suzanne Dodd, responsable du projet des sondes Voyager au Jet Propulsion Laboratory de la NASA, décrit ce que cela signifie pour quiconque veut dire bonjour. Vous envoyez votre message, dit-elle, puis « vous rentrez chez vous et vous attendez deux jours. »"
         ]
       },
-      "approved": false,
+      "approved": true,
       "provider": "xai",
       "findings": [],
-      "at": 1794209656
+      "at": 1794209656,
+      "approved_at": 1794209786
     },
     "es": {
       "edition": {
