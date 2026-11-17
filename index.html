@@ -510,6 +510,13 @@
 
     <div class="articles" id="article-list">
     <!-- build:list -->
+    <a class="article-entry" href="/en/the-shortest-possible-crossing/" onclick="return handleArticleClick(event, 29)">
+      <div class="article-source">Jewish World &nbsp;&middot;&nbsp; Source: Mortenfeld, van Reeuwijk, Littman and Liberzon, International Journal of Multiphase Flow (2026), doi:10.1016/j.ijmultiphaseflow.2026.105886; open-access version at arXiv:2510.21971.</div>
+      <h2 class="article-title">The shortest possible crossing.</h2>
+      <p class="article-subtitle">A team in Tel Aviv and London filmed spheres at the moment they pass from one liquid into another.</p>
+      <p class="article-lede">In a study published this year in the International Journal of Multiphase Flow, researchers at Tel Aviv University and Imperial College London released solid spheres into tanks…</p>
+      <span class="read-more">Read</span>
+    </a>
     <a class="article-entry" href="/en/sixteen-minutes-past-five/" onclick="return handleArticleClick(event, 28)">
       <div class="article-source">The World &nbsp;&middot;&nbsp; NASA/JPL, November 3, 2026; NASA, "What Is a Light-Day?"; Science News, October 2026.</div>
       <h2 class="article-title">Sixteen minutes past five.</h2>
@@ -1321,6 +1328,23 @@ const articles = {
         "A message sent from Earth to the probe will take twenty-four hours to arrive, and the reply twenty-four hours to come back: forty-eight hours for even the simplest exchange.",
         "Suzanne Dodd, the project manager for the Voyager spacecraft at NASA's Jet Propulsion Laboratory, describes what this means for anyone who wants to say hello. You send your message, she says, and then \"you go home and you wait two days.\""
       ]
+    },
+    {
+      "source": "Source: Mortenfeld, van Reeuwijk, Littman and Liberzon, International Journal of Multiphase Flow (2026), doi:10.1016/j.ijmultiphaseflow.2026.105886; open-access version at arXiv:2510.21971.",
+      "tag": "Jewish World",
+      "title": "The shortest possible crossing.",
+      "subtitle": "A team in Tel Aviv and London filmed spheres at the moment they pass from one liquid into another.",
+      "lede": "In a study published this year in the International Journal of Multiphase Flow, researchers at Tel Aviv University and Imperial College London released solid spheres into tanks…",
+      "news": {
+        "source": "Source: Mortenfeld, van Reeuwijk, Littman and Liberzon, International Journal of Multiphase Flow (2026), doi:10.1016/j.ijmultiphaseflow.2026.105886; open-access version at arXiv:2510.21971.",
+        "text": "In a study published this year in the International Journal of Multiphase Flow, researchers at Tel Aviv University and Imperial College London released solid spheres into tanks holding two layers of liquid, the lighter resting on the denser, and filmed their descent. The spheres slowed sharply at the boundary. Of the 309 tracked, 33 reversed direction and moved upward for a time before sinking again. The team measured how long each sphere was held at the boundary, across liquids of different viscosities."
+      },
+      "body": [
+        "The two liquids meet along a thin band where one density gives way to the other. Physics can say how long a sphere's passage through it should take, from its falling speed in each liquid and the thickness of the band. The authors treat the result as the shortest time the crossing can last.",
+        "A sphere entering the denser liquid can pull a sheath of the lighter liquid down with it, and how much comes down varies from one crossing to the next. Where the sheath forms, it stays wrapped around the sphere below the band, light inside heavy, buoying it up for as long as it holds. The authors argue that a more viscous upper liquid thickens the sheath and sends more of itself down. The heavier and faster the sphere, the deeper it carries its sheath before the two part.",
+        "Every crossing they measured lasted longer than the bound. The authors scale the excess by the time the sheath takes to drain from the sphere's surface, and runs made in liquids of different viscosities fall onto a single curve.",
+        "The bound belongs to a sphere that crosses with none of the upper liquid on it. The tank never held one."
+      ]
     }
   ],
   "fr": [
@@ -1904,7 +1928,8 @@ const articles = {
         "Un message envoyé de la Terre à la sonde mettra vingt-quatre heures à arriver, et la réponse vingt-quatre heures à revenir : quarante-huit heures pour même l'échange le plus simple.",
         "Suzanne Dodd, responsable du projet des sondes Voyager au Jet Propulsion Laboratory de la NASA, décrit ce que cela signifie pour quiconque veut dire bonjour. Vous envoyez votre message, dit-elle, puis « vous rentrez chez vous et vous attendez deux jours. »"
       ]
-    }
+    },
+    null
   ],
   "es": [
     {
@@ -2487,7 +2512,8 @@ const articles = {
         "Un mensaje enviado desde la Tierra a la sonda tardará veinticuatro horas en llegar, y la respuesta veinticuatro horas en volver: cuarenta y ocho horas para incluso el intercambio más simple.",
         "Suzanne Dodd, la jefa de proyecto de las naves Voyager en el Jet Propulsion Laboratory de la NASA, describe lo que esto significa para quien quiera saludar. Envías tu mensaje, dice, y luego «te vas a casa y esperas dos días»."
       ]
-    }
+    },
+    null
   ],
   "he": [
     {
@@ -3070,7 +3096,8 @@ const articles = {
         "הודעה שנשלחת מכדור הארץ אל הגשושית תיקח עשרים וארבע שעות להגיע, והתשובה עשרים וארבע שעות לחזור: ארבעים ושמונה שעות אפילו להחלפה הפשוטה ביותר.",
         "סוזן דוד, מנהלת הפרויקט של חלליות וויאג'ר במעבדת ההנעה הסילונית של נאס״א, מתארת מה זה אומר לכל מי שרוצה לומר שלום. שולחים את ההודעה, היא אומרת, ואז ״הולכים הביתה ומחכים יומיים.״"
       ]
-    }
+    },
+    null
   ]
 };
 /* /build:articles */
@@ -3113,7 +3140,8 @@ const articleSlugs = {
     "from-any-junction",
     "each-time-it-was-said",
     "lit-from-every-side",
-    "sixteen-minutes-past-five"
+    "sixteen-minutes-past-five",
+    "the-shortest-possible-crossing"
   ],
   "fr": [
     "une-benediction-a-ete-frappee-elle-a-tenu",
@@ -3144,7 +3172,8 @@ const articleSlugs = {
     "de-tout-carrefour",
     "chaque-fois-quil-a-ete-dit",
     "eclaire-de-tous-les-cotes",
-    "seize-minutes-apres-cinq"
+    "seize-minutes-apres-cinq",
+    null
   ],
   "es": [
     "una-bendicion-fue-golpeada-resistio",
@@ -3175,7 +3204,8 @@ const articleSlugs = {
     "desde-cualquier-cruce",
     "cada-vez-que-se-dijo",
     "iluminados-desde-todos-los-lados",
-    "dieciseis-minutos-pasadas-las-cinco"
+    "dieciseis-minutos-pasadas-las-cinco",
+    null
   ],
   "he": [
     "a-blessing-was-struck-it-held",
@@ -3206,7 +3236,8 @@ const articleSlugs = {
     "from-any-junction",
     "each-time-it-was-said",
     "lit-from-every-side",
-    "sixteen-minutes-past-five"
+    "sixteen-minutes-past-five",
+    null
   ]
 };
 /* /build:slugs */
