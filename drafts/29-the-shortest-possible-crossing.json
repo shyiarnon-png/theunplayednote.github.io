@@ -1,29 +1,5 @@
 {
   "languages": {
-    "en": {
-      "edition": {
-        "slug": "the-shortest-possible-crossing",
-        "title": "The shortest possible crossing.",
-        "subtitle": "A team in Tel Aviv and London filmed spheres at the moment they pass from one liquid into another.",
-        "lede": "In a study published this year in the International Journal of Multiphase Flow, researchers at Tel Aviv University and Imperial College London released solid spheres into tanks…",
-        "source": "Source: Mortenfeld, van Reeuwijk, Littman and Liberzon, International Journal of Multiphase Flow (2026), doi:10.1016/j.ijmultiphaseflow.2026.105886; open-access version at arXiv:2510.21971.",
-        "tag": "Jewish World",
-        "news": {
-          "source": "Source: Mortenfeld, van Reeuwijk, Littman and Liberzon, International Journal of Multiphase Flow (2026), doi:10.1016/j.ijmultiphaseflow.2026.105886; open-access version at arXiv:2510.21971.",
-          "text": "In a study published this year in the International Journal of Multiphase Flow, researchers at Tel Aviv University and Imperial College London released solid spheres into tanks holding two layers of liquid, the lighter resting on the denser, and filmed their descent. The spheres slowed sharply at the boundary. Of the 309 tracked, 33 reversed direction and moved upward for a time before sinking again. The team measured how long each sphere was held at the boundary, across liquids of different viscosities."
-        },
-        "body": [
-          "The two liquids meet along a thin band where one density gives way to the other. Physics can say how long a sphere's passage through it should take, from its falling speed in each liquid and the thickness of the band. The authors treat the result as the shortest time the crossing can last.",
-          "A sphere entering the denser liquid can pull a sheath of the lighter liquid down with it, and how much comes down varies from one crossing to the next. Where the sheath forms, it stays wrapped around the sphere below the band, light inside heavy, buoying it up for as long as it holds. The authors argue that a more viscous upper liquid thickens the sheath and sends more of itself down. The heavier and faster the sphere, the deeper it carries its sheath before the two part.",
-          "Every crossing they measured lasted longer than the bound. The authors scale the excess by the time the sheath takes to drain from the sphere's surface, and runs made in liquids of different viscosities fall onto a single curve.",
-          "The bound belongs to a sphere that crosses with none of the upper liquid on it. The tank never held one."
-        ]
-      },
-      "approved": true,
-      "provider": "author",
-      "findings": [],
-      "at": 1794906405
-    },
     "fr": {
       "edition": {
         "slug": "la-traversee-la-plus-courte-possible",
