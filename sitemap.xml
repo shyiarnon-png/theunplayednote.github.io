@@ -936,12 +936,21 @@
     <loc>https://theunplayednote.com/en/the-shortest-possible-crossing/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://theunplayednote.com/en/the-shortest-possible-crossing/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://theunplayednote.com/fr/la-traversee-la-plus-courte-possible/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://theunplayednote.com/es/el-cruce-mas-corto-posible/"/>
     <lastmod>2026-11-17</lastmod>
   </url>
   <url>
     <loc>https://theunplayednote.com/fr/la-traversee-la-plus-courte-possible/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://theunplayednote.com/en/the-shortest-possible-crossing/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://theunplayednote.com/fr/la-traversee-la-plus-courte-possible/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://theunplayednote.com/es/el-cruce-mas-corto-posible/"/>
+    <lastmod>2026-11-17</lastmod>
+  </url>
+  <url>
+    <loc>https://theunplayednote.com/es/el-cruce-mas-corto-posible/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://theunplayednote.com/en/the-shortest-possible-crossing/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://theunplayednote.com/fr/la-traversee-la-plus-courte-possible/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://theunplayednote.com/es/el-cruce-mas-corto-posible/"/>
     <lastmod>2026-11-17</lastmod>
   </url>
 </urlset>
