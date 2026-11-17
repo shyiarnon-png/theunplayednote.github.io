@@ -44,10 +44,11 @@
           "El límite pertenece a una esfera que cruza sin nada del líquido superior sobre ella. El tanque nunca tuvo una."
         ]
       },
-      "approved": false,
+      "approved": true,
       "provider": "xai",
       "findings": [],
-      "at": 1794906464
+      "at": 1794906464,
+      "approved_at": 1794906546
     },
     "he": {
       "edition": {
