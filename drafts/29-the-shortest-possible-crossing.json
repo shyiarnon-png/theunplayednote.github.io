@@ -47,6 +47,30 @@
       "provider": "xai",
       "findings": [],
       "at": 1794906442
+    },
+    "es": {
+      "edition": {
+        "slug": "el-cruce-mas-corto-posible",
+        "title": "El cruce más corto posible.",
+        "subtitle": "Un equipo en Tel Aviv y Londres filmó esferas en el momento en que pasan de un líquido a otro.",
+        "lede": "En un estudio publicado este año en el International Journal of Multiphase Flow, investigadores de la Universidad de Tel Aviv y del Imperial College London soltaron esferas…",
+        "source": "Source: Mortenfeld, van Reeuwijk, Littman and Liberzon, International Journal of Multiphase Flow (2026), doi:10.1016/j.ijmultiphaseflow.2026.105886; open-access version at arXiv:2510.21971.",
+        "tag": "Mundo judío",
+        "news": {
+          "source": "Source: Mortenfeld, van Reeuwijk, Littman and Liberzon, International Journal of Multiphase Flow (2026), doi:10.1016/j.ijmultiphaseflow.2026.105886; open-access version at arXiv:2510.21971.",
+          "text": "En un estudio publicado este año en el International Journal of Multiphase Flow, investigadores de la Universidad de Tel Aviv y del Imperial College London soltaron esferas sólidas en tanques con dos capas de líquido, el más ligero reposando sobre el más denso, y filmaron su descenso. Las esferas se ralentizaron bruscamente en el límite. De las 309 rastreadas, 33 invirtieron la dirección y se movieron hacia arriba durante un tiempo antes de hundirse de nuevo. El equipo midió cuánto tiempo se retenía cada esfera en el límite, a través de líquidos de distintas viscosidades."
+        },
+        "body": [
+          "Los dos líquidos se encuentran a lo largo de una banda delgada donde una densidad cede a la otra. La física puede decir cuánto debería durar el paso de una esfera a través de ella, a partir de su velocidad de caída en cada líquido y el grosor de la banda. Los autores tratan el resultado como el tiempo más corto que puede durar el cruce.",
+          "Una esfera que entra en el líquido más denso puede arrastrar consigo una envoltura del líquido más ligero, y cuánto baja varía de un cruce a otro. Donde se forma la envoltura, permanece envuelta alrededor de la esfera por debajo de la banda, ligero dentro de pesado, sosteniéndola hacia arriba mientras se mantiene. Los autores argumentan que un líquido superior más viscoso engrosa la envoltura y envía más de sí mismo hacia abajo. Cuanto más pesada y más rápida es la esfera, más profundo lleva su envoltura antes de que ambas se separen.",
+          "Cada cruce que midieron duró más que el límite. Los autores escalan el exceso por el tiempo que tarda la envoltura en drenar de la superficie de la esfera, y las pruebas hechas en líquidos de distintas viscosidades caen sobre una sola curva.",
+          "El límite pertenece a una esfera que cruza sin nada del líquido superior sobre ella. El tanque nunca tuvo una."
+        ]
+      },
+      "approved": false,
+      "provider": "xai",
+      "findings": [],
+      "at": 1794906464
     }
   },
   "order": 29,
