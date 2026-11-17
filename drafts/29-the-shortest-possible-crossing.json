@@ -19,10 +19,11 @@
           "La borne appartient à une sphère qui traverse sans rien du liquide supérieur sur elle. Le réservoir n'en a jamais contenu une."
         ]
       },
-      "approved": false,
+      "approved": true,
       "provider": "xai",
       "findings": [],
-      "at": 1794906442
+      "at": 1794906442,
+      "approved_at": 1794906543
     },
     "es": {
       "edition": {
