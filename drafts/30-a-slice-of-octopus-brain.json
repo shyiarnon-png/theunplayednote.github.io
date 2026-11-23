@@ -19,10 +19,11 @@
           "Puis les chercheurs ont lavé le médicament et, des heures après la première salve, en ont envoyé une nouvelle, brève et intense, dans les connexions qui avaient tout perdu. Avec elle elles ont retrouvé toute leur force."
         ]
       },
-      "approved": false,
+      "approved": true,
       "provider": "xai",
       "findings": [],
-      "at": 1795421880
+      "at": 1795421880,
+      "approved_at": 1795421976
     },
     "es": {
       "edition": {
