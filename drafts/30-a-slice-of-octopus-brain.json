@@ -19,10 +19,11 @@
           "Luego los investigadores lavaron el fármaco y, horas después de la primera ráfaga, enviaron una nueva, breve e intensa, a las conexiones que lo habían perdido todo. Con ella volvieron a estar a plena fuerza."
         ]
       },
-      "approved": false,
+      "approved": true,
       "provider": "xai",
       "findings": [],
-      "at": 1795421902
+      "at": 1795421902,
+      "approved_at": 1795422000
     },
     "he": {
       "edition": {
