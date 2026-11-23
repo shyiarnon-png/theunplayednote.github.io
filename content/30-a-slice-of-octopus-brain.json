@@ -19,6 +19,24 @@
         "At least four hours after a burst, with the potentiation well established, they added L-NNA, a drug that blocks nitric oxide synthase, and left it in for less than an hour. The synapses did not all respond alike. In some, the drug weakened the potentiation, and once it was washed out the strength crept back slowly on its own. In others, found mostly in the medial part of the lobe, the potentiation disappeared quickly and completely.",
         "Then the researchers washed the drug out and, hours after the first burst, sent a new one, brief and intense, into the connections that had lost everything. With it they stood at full strength again."
       ]
+    },
+    "fr": {
+      "slug": "une-tranche-de-cerveau-de-pieuvre",
+      "title": "Une tranche de cerveau de pieuvre.",
+      "subtitle": "Des chercheurs à Jérusalem ont cherché ce qui maintient en place une connexion renforcée entre deux neurones une fois qu’elle s’est formée.",
+      "lede": "Dans une étude publiée dans le Journal of Neuroscience (en ligne en octobre, dans le numéro du 18 novembre), des chercheurs de l’Université hébraïque de Jérusalem et du Ruppin…",
+      "source": "Source: Turchetti-Maia, Shomrat, Bidel, Koren, Stern-Mentch, Nesher and Hochner, Journal of Neuroscience 46(46), e1676252026 (2026).",
+      "tag": "Monde juif",
+      "news": {
+        "source": "Source: Turchetti-Maia, Shomrat, Bidel, Koren, Stern-Mentch, Nesher and Hochner, Journal of Neuroscience 46(46), e1676252026 (2026).",
+        "text": "Dans une étude publiée dans le Journal of Neuroscience (en ligne en octobre, dans le numéro du 18 novembre), des chercheurs de l’Université hébraïque de Jérusalem et du Ruppin Academic Center rendent compte de la potentialisation à long terme, un renforcement durable des connexions entre neurones, dans le lobe vertical d’Octopus vulgaris. Les auteurs proposent que la potentialisation repose sur une boucle dans laquelle l’oxyde nitrique réactive la synthase d’oxyde nitrique, l’enzyme qui le produit, maintenant l’enzyme active."
+      },
+      "body": [
+        "Une brève et intense salve de stimulation peut renforcer la connexion entre deux neurones, et la connexion reste plus forte une fois la salve passée. Dans l’hippocampe des mammifères, la phase durable de ce renforcement dépend de la fabrication de nouvelles protéines par la cellule. Dans le lobe vertical de la pieuvre, l’équipe a maintenu la synthèse protéique bloquée dans des tranches de tissu cérébral pendant environ deux heures et demie et a continué d’enregistrer les connexions pendant dix heures ou plus. La potentialisation a tenu tout du long.",
+        "Quand les chercheurs ont bloqué la synthase d’oxyde nitrique pendant la stimulation elle-même, la salve a tout de même induit la potentialisation, et le médicament en a retenu l’expression, la transmission plus forte qui aurait suivi autrement.",
+        "Au moins quatre heures après une salve, la potentialisation bien établie, ils ont ajouté le L-NNA, un médicament qui bloque la synthase d’oxyde nitrique, et l’ont laissé moins d’une heure. Les synapses n’ont pas toutes répondu de la même façon. Chez certaines, le médicament a affaibli la potentialisation, et une fois lavé la force est revenue lentement d’elle-même. Chez d’autres, surtout dans la partie médiale du lobe, la potentialisation a disparu vite et complètement.",
+        "Puis les chercheurs ont lavé le médicament et, des heures après la première salve, en ont envoyé une nouvelle, brève et intense, dans les connexions qui avaient tout perdu. Avec elle elles ont retrouvé toute leur force."
+      ]
     }
   }
 }
