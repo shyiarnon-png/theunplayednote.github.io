@@ -1,30 +1,5 @@
 {
   "languages": {
-    "es": {
-      "edition": {
-        "slug": "una-rebanada-de-cerebro-de-pulpo",
-        "title": "Una rebanada de cerebro de pulpo.",
-        "subtitle": "Investigadores en Jerusalén buscaron qué mantiene en su sitio una conexión reforzada entre dos neuronas una vez que se ha formado.",
-        "lede": "En un estudio publicado en el Journal of Neuroscience (en línea en octubre, en el número del 18 de noviembre), investigadores de la Universidad Hebrea de Jerusalén y del Centro…",
-        "source": "Source: Turchetti-Maia, Shomrat, Bidel, Koren, Stern-Mentch, Nesher and Hochner, Journal of Neuroscience 46(46), e1676252026 (2026).",
-        "tag": "Mundo judío",
-        "news": {
-          "source": "Source: Turchetti-Maia, Shomrat, Bidel, Koren, Stern-Mentch, Nesher and Hochner, Journal of Neuroscience 46(46), e1676252026 (2026).",
-          "text": "En un estudio publicado en el Journal of Neuroscience (en línea en octubre, en el número del 18 de noviembre), investigadores de la Universidad Hebrea de Jerusalén y del Centro Académico Ruppin informan sobre la potenciación a largo plazo, un fortalecimiento duradero de las conexiones entre neuronas, en el lóbulo vertical de Octopus vulgaris. Los autores proponen que la potenciación se sostiene en un bucle en el que el óxido nítrico reactiva la sintasa de óxido nítrico, la enzima que lo produce, manteniendo la enzima activa."
-        },
-        "body": [
-          "Una ráfaga breve e intensa de estimulación puede fortalecer la conexión entre dos neuronas, y la conexión permanece más fuerte después de que la ráfaga ha pasado. En el hipocampo de los mamíferos, la fase duradera de este fortalecimiento depende de que la célula produzca proteínas nuevas. En el lóbulo vertical del pulpo, el equipo mantuvo bloqueada la síntesis de proteínas en rebanadas de tejido cerebral durante unas dos horas y media y siguió registrando las conexiones durante diez horas o más. La potenciación se mantuvo a través de todo ello.",
-          "Cuando los investigadores bloquearon la sintasa de óxido nítrico durante la estimulación misma, la ráfaga aún indujo la potenciación, y el fármaco retuvo su expresión, la transmisión más fuerte que de otro modo habría seguido.",
-          "Al menos cuatro horas después de una ráfaga, con la potenciación bien establecida, añadieron L-NNA, un fármaco que bloquea la sintasa de óxido nítrico, y lo dejaron menos de una hora. Las sinapsis no respondieron todas igual. En algunas, el fármaco debilitó la potenciación, y una vez lavado la fuerza volvió a subir despacio por sí sola. En otras, halladas sobre todo en la parte medial del lóbulo, la potenciación desapareció rápida y completamente.",
-          "Luego los investigadores lavaron el fármaco y, horas después de la primera ráfaga, enviaron una nueva, breve e intensa, a las conexiones que lo habían perdido todo. Con ella volvieron a estar a plena fuerza."
-        ]
-      },
-      "approved": true,
-      "provider": "xai",
-      "findings": [],
-      "at": 1795421902,
-      "approved_at": 1795422000
-    },
     "he": {
       "edition": {
         "slug": "a-slice-of-octopus-brain",
