@@ -43,7 +43,7 @@
           "אז החוקרים שטפו את התרופה החוצה, ושעות אחרי ההתפרצות הראשונה שלחו התפרצות חדשה, קצרה ואינטנסיבית, אל החיבורים שאיבדו הכול. איתה הם עמדו שוב במלוא החוזק."
         ]
       },
-      "approved": false,
+      "approved": true,
       "provider": "xai",
       "findings": [
         {
@@ -51,7 +51,8 @@
           "message": "Paragraph 3 has Latin text (NNA), check how it renders right to left."
         }
       ],
-      "at": 1795421927
+      "at": 1795421927,
+      "approved_at": 1795421996
     }
   }
 }
