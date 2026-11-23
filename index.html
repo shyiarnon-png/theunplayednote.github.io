@@ -510,6 +510,13 @@
 
     <div class="articles" id="article-list">
     <!-- build:list -->
+    <a class="article-entry" href="/en/a-slice-of-octopus-brain/" onclick="return handleArticleClick(event, 30)">
+      <div class="article-source">Jewish World &nbsp;&middot;&nbsp; Source: Turchetti-Maia, Shomrat, Bidel, Koren, Stern-Mentch, Nesher and Hochner, Journal of Neuroscience 46(46), e1676252026 (2026).</div>
+      <h2 class="article-title">A slice of octopus brain</h2>
+      <p class="article-subtitle">Researchers in Jerusalem looked for what holds a strengthened connection between two neurons in place once it has formed.</p>
+      <p class="article-lede">In a study published in the Journal of Neuroscience (online in October, in the November 18 issue), researchers at the Hebrew University of Jerusalem and the Ruppin Academic Center…</p>
+      <span class="read-more">Read</span>
+    </a>
     <a class="article-entry" href="/en/the-shortest-possible-crossing/" onclick="return handleArticleClick(event, 29)">
       <div class="article-source">Jewish World &nbsp;&middot;&nbsp; Source: Mortenfeld, van Reeuwijk, Littman and Liberzon, International Journal of Multiphase Flow (2026), doi:10.1016/j.ijmultiphaseflow.2026.105886; open-access version at arXiv:2510.21971.</div>
       <h2 class="article-title">The shortest possible crossing.</h2>
@@ -1345,6 +1352,23 @@ const articles = {
         "Every crossing they measured lasted longer than the bound. The authors scale the excess by the time the sheath takes to drain from the sphere's surface, and runs made in liquids of different viscosities fall onto a single curve.",
         "The bound belongs to a sphere that crosses with none of the upper liquid on it. The tank never held one."
       ]
+    },
+    {
+      "source": "Source: Turchetti-Maia, Shomrat, Bidel, Koren, Stern-Mentch, Nesher and Hochner, Journal of Neuroscience 46(46), e1676252026 (2026).",
+      "tag": "Jewish World",
+      "title": "A slice of octopus brain",
+      "subtitle": "Researchers in Jerusalem looked for what holds a strengthened connection between two neurons in place once it has formed.",
+      "lede": "In a study published in the Journal of Neuroscience (online in October, in the November 18 issue), researchers at the Hebrew University of Jerusalem and the Ruppin Academic Center…",
+      "news": {
+        "source": "Source: Turchetti-Maia, Shomrat, Bidel, Koren, Stern-Mentch, Nesher and Hochner, Journal of Neuroscience 46(46), e1676252026 (2026).",
+        "text": "In a study published in the Journal of Neuroscience (online in October, in the November 18 issue), researchers at the Hebrew University of Jerusalem and the Ruppin Academic Center report on long-term potentiation, a lasting strengthening of the connections between neurons, in the vertical lobe of Octopus vulgaris. The authors propose that the potentiation rests on a loop in which nitric oxide reactivates nitric oxide synthase, the enzyme that produces it, keeping the enzyme active."
+      },
+      "body": [
+        "A brief, intense burst of stimulation can strengthen the connection between two neurons, and the connection stays stronger after the burst has passed. In the mammalian hippocampus, the lasting phase of this strengthening depends on the cell making new proteins. In the octopus vertical lobe, the team kept protein synthesis blocked in slices of brain tissue for about two and a half hours and went on recording the connections for ten hours or more. The potentiation held through all of it.",
+        "When the researchers blocked nitric oxide synthase during the stimulation itself, the burst still induced the potentiation, and the drug held back its expression, the stronger transmission that would otherwise have followed.",
+        "At least four hours after a burst, with the potentiation well established, they added L-NNA, a drug that blocks nitric oxide synthase, and left it in for less than an hour. The synapses did not all respond alike. In some, the drug weakened the potentiation, and once it was washed out the strength crept back slowly on its own. In others, found mostly in the medial part of the lobe, the potentiation disappeared quickly and completely.",
+        "Then the researchers washed the drug out and, hours after the first burst, sent a new one, brief and intense, into the connections that had lost everything. With it they stood at full strength again."
+      ]
     }
   ],
   "fr": [
@@ -1945,7 +1969,8 @@ const articles = {
         "Chaque traversée qu'ils ont mesurée a duré plus longtemps que la borne. Les auteurs mettent l'excès à l'échelle du temps que met la gaine à s'écouler de la surface de la sphère, et les essais faits dans des liquides de viscosités différentes tombent sur une seule courbe.",
         "La borne appartient à une sphère qui traverse sans rien du liquide supérieur sur elle. Le réservoir n'en a jamais contenu une."
       ]
-    }
+    },
+    null
   ],
   "es": [
     {
@@ -2545,7 +2570,8 @@ const articles = {
         "Cada cruce que midieron duró más que el límite. Los autores escalan el exceso por el tiempo que tarda la envoltura en drenar de la superficie de la esfera, y las pruebas hechas en líquidos de distintas viscosidades caen sobre una sola curva.",
         "El límite pertenece a una esfera que cruza sin nada del líquido superior sobre ella. El tanque nunca tuvo una."
       ]
-    }
+    },
+    null
   ],
   "he": [
     {
@@ -3145,7 +3171,8 @@ const articles = {
         "כל מעבר שמדדו נמשך יותר מהגבול. המחברים מנרמלים את העודף לפי הזמן שלוקח לנדן להתנקז מפני הכדור, והרצות שנעשו בנוזלים בעלי צמיגויות שונות נופלות על עקומה אחת.",
         "הגבול שייך לכדור שחוצה בלי אף טיפה מהנוזל העליון עליו. המיכל מעולם לא החזיק אחד כזה."
       ]
-    }
+    },
+    null
   ]
 };
 /* /build:articles */
@@ -3189,7 +3216,8 @@ const articleSlugs = {
     "each-time-it-was-said",
     "lit-from-every-side",
     "sixteen-minutes-past-five",
-    "the-shortest-possible-crossing"
+    "the-shortest-possible-crossing",
+    "a-slice-of-octopus-brain"
   ],
   "fr": [
     "une-benediction-a-ete-frappee-elle-a-tenu",
@@ -3221,7 +3249,8 @@ const articleSlugs = {
     "chaque-fois-quil-a-ete-dit",
     "eclaire-de-tous-les-cotes",
     "seize-minutes-apres-cinq",
-    "la-traversee-la-plus-courte-possible"
+    "la-traversee-la-plus-courte-possible",
+    null
   ],
   "es": [
     "una-bendicion-fue-golpeada-resistio",
@@ -3253,7 +3282,8 @@ const articleSlugs = {
     "cada-vez-que-se-dijo",
     "iluminados-desde-todos-los-lados",
     "dieciseis-minutos-pasadas-las-cinco",
-    "el-cruce-mas-corto-posible"
+    "el-cruce-mas-corto-posible",
+    null
   ],
   "he": [
     "a-blessing-was-struck-it-held",
@@ -3285,7 +3315,8 @@ const articleSlugs = {
     "each-time-it-was-said",
     "lit-from-every-side",
     "sixteen-minutes-past-five",
-    "the-shortest-possible-crossing"
+    "the-shortest-possible-crossing",
+    null
   ]
 };
 /* /build:slugs */

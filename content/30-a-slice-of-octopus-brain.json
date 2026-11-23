@@ -1,0 +1,24 @@
+{
+  "order": 30,
+  "published": "2026-11-23",
+  "editions": {
+    "en": {
+      "slug": "a-slice-of-octopus-brain",
+      "title": "A slice of octopus brain",
+      "subtitle": "Researchers in Jerusalem looked for what holds a strengthened connection between two neurons in place once it has formed.",
+      "lede": "In a study published in the Journal of Neuroscience (online in October, in the November 18 issue), researchers at the Hebrew University of Jerusalem and the Ruppin Academic Center…",
+      "source": "Source: Turchetti-Maia, Shomrat, Bidel, Koren, Stern-Mentch, Nesher and Hochner, Journal of Neuroscience 46(46), e1676252026 (2026).",
+      "tag": "Jewish World",
+      "news": {
+        "source": "Source: Turchetti-Maia, Shomrat, Bidel, Koren, Stern-Mentch, Nesher and Hochner, Journal of Neuroscience 46(46), e1676252026 (2026).",
+        "text": "In a study published in the Journal of Neuroscience (online in October, in the November 18 issue), researchers at the Hebrew University of Jerusalem and the Ruppin Academic Center report on long-term potentiation, a lasting strengthening of the connections between neurons, in the vertical lobe of Octopus vulgaris. The authors propose that the potentiation rests on a loop in which nitric oxide reactivates nitric oxide synthase, the enzyme that produces it, keeping the enzyme active."
+      },
+      "body": [
+        "A brief, intense burst of stimulation can strengthen the connection between two neurons, and the connection stays stronger after the burst has passed. In the mammalian hippocampus, the lasting phase of this strengthening depends on the cell making new proteins. In the octopus vertical lobe, the team kept protein synthesis blocked in slices of brain tissue for about two and a half hours and went on recording the connections for ten hours or more. The potentiation held through all of it.",
+        "When the researchers blocked nitric oxide synthase during the stimulation itself, the burst still induced the potentiation, and the drug held back its expression, the stronger transmission that would otherwise have followed.",
+        "At least four hours after a burst, with the potentiation well established, they added L-NNA, a drug that blocks nitric oxide synthase, and left it in for less than an hour. The synapses did not all respond alike. In some, the drug weakened the potentiation, and once it was washed out the strength crept back slowly on its own. In others, found mostly in the medial part of the lobe, the potentiation disappeared quickly and completely.",
+        "Then the researchers washed the drug out and, hours after the first burst, sent a new one, brief and intense, into the connections that had lost everything. With it they stood at full strength again."
+      ]
+    }
+  }
+}
